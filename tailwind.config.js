@@ -8,59 +8,142 @@ export default {
   theme: {
     extend: {
       colors: {
+        cream: '#FFF7EE',
+        papaya: {
+          DEFAULT: '#FF7A59',
+          deep: '#D9442B',
+          50: '#FFF5F2',
+          100: '#FFE6DA',
+          200: '#FFD7CD',
+          300: '#FFB3A1',
+          400: '#FF8E75',
+          500: '#FF7A59',
+          600: '#E85E3B',
+          700: '#D9442B',
+          800: '#B82E18',
+          900: '#8A200F',
+        },
+        mango: {
+          DEFAULT: '#FFB627',
+          50: '#FFFDF5',
+          100: '#FFF9E5',
+          200: '#FFF1CC',
+          300: '#FFE294',
+          400: '#FFCC52',
+          500: '#FFB627',
+          600: '#E69910',
+          700: '#C27A05',
+          800: '#945B00',
+        },
+        leaf: {
+          DEFAULT: '#1FA886',
+          deep: '#0F7A62',
+          50: '#F0FAF6',
+          100: '#DDF5EC',
+          200: '#BBE9D8',
+          300: '#84D6BC',
+          400: '#48BE9D',
+          500: '#1FA886',
+          600: '#168B6E',
+          700: '#0F7A62',
+          800: '#0C5B49',
+        },
+        grape: {
+          DEFAULT: '#7C5CFF',
+          50: '#F6F4FF',
+          100: '#ECE6FF',
+          200: '#D6C8FF',
+          300: '#B89FFF',
+          400: '#9772FF',
+          500: '#7C5CFF',
+          600: '#643EE8',
+          700: '#5029CA',
+          800: '#3D1C9F',
+        },
+        ink: {
+          DEFAULT: '#231F2E',
+          50: '#F7F6F8',
+          100: '#EBE9ED',
+          200: '#D3CFD8',
+          300: '#B2ACB9',
+          400: '#8C8496',
+          500: '#6B6677',
+          600: '#534E5E',
+          700: '#3E3948',
+          800: '#2D2836',
+          900: '#231F2E',
+          950: '#15121D',
+        },
+        muted: {
+          DEFAULT: '#6B6677',
+          light: '#8F8A9B',
+          dark: '#4D4857',
+        },
+        tint: {
+          peach: '#FFE6DA',
+          mint: '#DDF5EC',
+          butter: '#FFF1CC',
+          lavender: '#ECE6FF',
+        },
+        dark: {
+          bg: '#15121D',
+          surface: 'rgba(255, 255, 255, 0.08)',
+          card: '#1F1A2B',
+          border: 'rgba(255, 255, 255, 0.12)',
+        },
         brand: {
           plum: {
-            50: '#f7f2f9',
-            100: '#eee5f3',
-            200: '#ddcde8',
-            300: '#c5a7d7',
-            400: '#a77dc0',
-            500: '#905d9e',
-            600: '#6b3d81',
-            700: '#592d6c', // Logo primary plum
-            800: '#462355',
-            900: '#341a3f',
-            950: '#1e0c26',
+            50: '#ECE6FF',
+            100: '#E3DAFC',
+            200: '#D6C8FF',
+            300: '#B89FFF',
+            400: '#9772FF',
+            500: '#7C5CFF', // Grape
+            600: '#643EE8',
+            700: '#5029CA',
+            800: '#3D1C9F',
+            900: '#231F2E', // Ink text
+            950: '#15121D', // Dark mode background
           },
           peach: {
-            50: '#fef7f4',
-            100: '#fbdccd', // Logo soft peach
-            200: '#f7b87d', // Logo peach/apricot
-            300: '#f89e5d',
-            400: '#fa8045',
-            500: '#f46026',
-            600: '#df4518',
-            700: '#b83214',
-            800: '#932a17',
-            900: '#772518',
+            50: '#FFF5F2',
+            100: '#FFE6DA', // Tint peach
+            200: '#FFD7CD',
+            300: '#FFB3A1',
+            400: '#FF8E75',
+            500: '#FF7A59', // Papaya
+            600: '#E85E3B',
+            700: '#D9442B', // Papaya Deep
+            800: '#B82E18',
+            900: '#8A200F',
           },
           sage: {
-            50: '#f5f7f3',
-            100: '#e8ece4',
-            200: '#d1dbcb',
-            300: '#b1c3a8',
-            400: '#a5ac6f', // Logo olive/sage
-            500: '#78946e', // Logo leafy foliage
-            600: '#5c7653',
-            700: '#485e42',
-            800: '#3c4c37',
-            900: '#334030',
+            50: '#F0FAF6',
+            100: '#DDF5EC', // Tint mint
+            200: '#BBE9D8',
+            300: '#84D6BC',
+            400: '#48BE9D',
+            500: '#1FA886', // Leaf
+            600: '#168B6E',
+            700: '#0F7A62', // Leaf Deep
+            800: '#0C5B49',
+            900: '#084033',
           },
           amber: {
-            50: '#fffbeb',
-            100: '#fef3c7',
-            200: '#fde68a',
-            300: '#fcd34d',
-            400: '#fbbf24',
-            500: '#f59e0b',
-            600: '#d97706',
-            700: '#b45309',
+            50: '#FFFDF5',
+            100: '#FFF1CC', // Tint butter
+            200: '#FFF0C2',
+            300: '#FFE294',
+            400: '#FFCC52',
+            500: '#FFB627', // Mango
+            600: '#E69910',
+            700: '#C27A05',
           },
           canvas: {
-            light: '#fdfbf7', // Warm calming cream
-            lightAlt: '#fef7f2',
-            dark: '#140b19',   // Deep midnight plum
-            darkCard: '#1d1024',
+            light: '#FFF7EE', // Background cream
+            lightAlt: '#FFE6DA', // Section tint peach
+            dark: '#15121D',   // Deep midnight ink
+            darkCard: '#1F1A2B',
             darkBorder: 'rgba(255, 255, 255, 0.1)',
           }
         }

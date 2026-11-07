@@ -15,19 +15,41 @@ import {
   Clock,
   MapPin,
   CheckCircle2,
-  Instagram,
   Smile,
   Quote,
   Activity,
-  Mail,
-  Send
+  Send,
+  Check,
+  HelpCircle,
+  Lightbulb,
+  BookOpen,
+  Users,
+  Award,
+  Coffee,
+  Sparkle
 } from 'lucide-react';
+
 import SEO from '../components/common/SEO';
 import LiquidGlass from '../components/common/LiquidGlass';
 import BreathingWidget from '../components/widgets/BreathingWidget';
 import MoodCheckin from '../components/widgets/MoodCheckin';
 import DailyAffirmation from '../components/widgets/DailyAffirmation';
 import CounsellingQuiz from '../components/widgets/CounsellingQuiz';
+import TestimonialsSlider from '../components/widgets/TestimonialsSlider';
+import CountUpNumber from '../components/common/CountUpNumber';
+import PhotoPlaceholder from '../components/illustrations/PhotoPlaceholder';
+import CalmPersonIllustration from '../components/illustrations/CalmPersonIllustration';
+import BrainHeartIllustration from '../components/illustrations/BrainHeartIllustration';
+import CounsellingSanctuaryIllustration from '../components/illustrations/CounsellingSanctuaryIllustration';
+import OrganicWaveDivider from '../components/illustrations/OrganicWaveDivider';
+import {
+  PapayaDoodle,
+  MangoDoodle,
+  LeafDoodle,
+  TeaCupDoodle,
+  UntangleDoodle,
+  FloatingElement
+} from '../components/illustrations/BrandDoodles';
 import { useLanguage } from '../context/LanguageContext';
 import { getAllBlogs, getAllConcepts } from '../utils/contentLoader';
 import logoImg from '../assets/logo.png';
@@ -68,7 +90,7 @@ export default function Home({ onOpenBooking }) {
   }, [rawBlogs, language, t]);
 
   // FAQ State
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState(0);
 
   // Home Newsletter State
   const [homeNewsletterName, setHomeNewsletterName] = useState('');
@@ -160,35 +182,99 @@ export default function Home({ onOpenBooking }) {
   };
 
   const faqs = getFaqs();
-  const marqueeConcerns = t('marquee') || [];
+  const marqueeConcerns = t('marquee') || [
+    "Anxiety & Panic",
+    "Overthinking Loops",
+    "Stress & Burnout",
+    "Self-Esteem & Inner Critic",
+    "Procrastination & Inertia",
+    "Career Crossroads",
+    "Grade 11 & 12 Psychology Tuition"
+  ];
+
+  // Storytelling steps for "How Counselling Works"
+  const counsellingSteps = [
+    {
+      num: "01",
+      title: language === 'mr' ? "सुरक्षित प्राथमिक संवाद (Intake)" : language === 'hi' ? "पहला सुरक्षित संवाद (Intake)" : "Initial Safe Connection",
+      desc: language === 'mr' ? "कोणत्याही पूर्वग्रहाविना तुमचे विचार आणि वर्तमान ताणतणाव मोकळेपणाने मांडण्यासाठी शांत जागा." : language === 'hi' ? "बिना किसी निर्णय या दबाव के अपने मन की बात रखने के लिए एक शांत और सुरक्षित शुरुआत।" : "A pressure-free, confidential space to share what brings you here and map your current mental landscape.",
+      icon: Heart,
+      tag: "Session 1",
+      color: "border-papaya/30 bg-tint-peach/40 dark:bg-white/5",
+    },
+    {
+      num: "02",
+      title: language === 'mr' ? "विचार आणि भावनांची उकल" : language === 'hi' ? "विचारों और भावनाओं को समझना" : "Unraveling Core Patterns",
+      desc: language === 'mr' ? "वारंवार होणारे ओव्हरथिंकिंग, नकारात्मक विचारांचे चक्र आणि भावनिक मुळे हळुवारपणे समजून घेणे." : language === 'hi' ? "लगातार चलने वाले विचारों के चक्र, तनाव के कारणों और भावनाओं की तह तक पहुंचना।" : "Gently discovering the triggers, internal dialogues, and emotional cycles that cause chronic anxiety or stuckness.",
+      icon: UntangleDoodle,
+      isCustomIcon: true,
+      tag: "Exploration",
+      color: "border-mango/30 bg-tint-butter/40 dark:bg-white/5",
+    },
+    {
+      num: "03",
+      title: language === 'mr' ? "वैयक्तिक मानसशास्त्रीय तंत्रे" : language === 'hi' ? "व्यक्तिगत मनोवैज्ञानिक टूल्स" : "Tailored Eclectic Tools",
+      desc: language === 'mr' ? "CBT विचार-बदल तंत्रे, श्वासाचे व्यायाम आणि स्वतःप्रती दयाळू दृष्टिकोन विकसित करणे." : language === 'hi' ? "CBT तकनीकें, ब्रीदिंग टूल्स और स्वयं के प्रति दयालु नजरिया जो आपके जीवन में आसानी से फिट हो सके।" : "Equipping you with practical CBT coping strategies, somatic grounding, and self-compassion tools built for you.",
+      icon: Compass,
+      tag: "Practices",
+      color: "border-leaf/30 bg-tint-mint/40 dark:bg-white/5",
+    },
+    {
+      num: "04",
+      title: language === 'mr' ? "शाश्वत आत्मविश्वास व जिज्ञासा" : language === 'hi' ? "स्थायी आत्मविश्वास और स्पष्टता" : "Sustainable Clarity & Curiosity",
+      desc: language === 'mr' ? "आयुष्यातील आव्हानांना नव्या ताकदीने आणि जिज्ञासू वृत्तीने सामोरे जाण्याची क्षमता." : language === 'hi' ? "जीवन की चुनौतियों का सामना आत्मविश्वास और शांत जिज्ञासु मन से करने की स्थायी क्षमता।" : "Walking forward with calm emotional regulation, healthier boundaries, and an unshakeable curious mindset.",
+      icon: Sparkles,
+      tag: "Growth",
+      color: "border-grape/30 bg-tint-lavender/40 dark:bg-white/5",
+    },
+  ];
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden bg-cream dark:bg-dark-bg text-ink dark:text-white transition-colors duration-300">
       <SEO
         title="Fruitful Mind | Discover The Curious You | Simran Mistry - Psychologist Pune"
         description="Compassionate, eclectic psychological counselling for anxiety, overthinking, career decisions, and psychology tuition in Kothrud, Pune by Simran Mistry."
       />
 
-      {/* Floating Ambient Blobs for Glass Depth */}
-      <div className="ambient-blob-plum absolute -top-20 -left-20 h-[500px] w-[500px] rounded-full pointer-events-none" />
-      <div className="ambient-blob-peach absolute top-60 -right-20 h-[550px] w-[550px] rounded-full pointer-events-none" />
-      <div className="ambient-blob-sage absolute top-[1200px] left-10 h-[450px] w-[450px] rounded-full pointer-events-none" />
+      {/* Floating Animated Ambient Blobs for Glass Depth */}
+      <div className="ambient-blob-papaya absolute -top-24 -left-20 h-[550px] w-[550px] rounded-full pointer-events-none" />
+      <div className="ambient-blob-mango absolute top-72 -right-24 h-[600px] w-[600px] rounded-full pointer-events-none" />
+      <div className="ambient-blob-leaf absolute top-[1300px] -left-20 h-[500px] w-[500px] rounded-full pointer-events-none" />
+      <div className="ambient-blob-grape absolute top-[2400px] -right-20 h-[550px] w-[550px] rounded-full pointer-events-none" />
+      <div className="ambient-blob-papaya absolute top-[3800px] left-10 h-[500px] w-[500px] rounded-full pointer-events-none" />
+
+      {/* Floating Decorative Brand Elements across hero viewport */}
+      <div className="hidden lg:block">
+        <FloatingElement className="absolute top-36 left-12 z-10" duration={7} delay={0.2} yOffset={18}>
+          <PapayaDoodle className="w-14 h-14 drop-shadow-md" />
+        </FloatingElement>
+        <FloatingElement className="absolute top-44 right-16 z-10" duration={8} delay={1} yOffset={22}>
+          <MangoDoodle className="w-14 h-14 drop-shadow-md" />
+        </FloatingElement>
+        <FloatingElement className="absolute top-[520px] left-8 z-10" duration={6.5} delay={0.5} yOffset={14}>
+          <LeafDoodle className="w-12 h-12 drop-shadow-sm" color="#1FA886" />
+        </FloatingElement>
+        <FloatingElement className="absolute top-[680px] right-12 z-10" duration={7.5} delay={1.5} yOffset={16}>
+          <TeaCupDoodle className="w-12 h-12 drop-shadow-sm" />
+        </FloatingElement>
+      </div>
 
       {/* ========================================================= */}
-      {/* 1. HERO SECTION                                           */}
+      {/* 1. HERO SECTION (VISUAL-FIRST WITH SPLIT TEXT & MOTION)  */}
       {/* ========================================================= */}
       <section className="relative pt-32 sm:pt-40 pb-20 sm:pb-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-            {/* Left Column */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+            {/* Left Column: Split-text and Emotionally Grounding Content */}
             <div className="lg:col-span-7 space-y-6">
+              {/* Badge Pill with Sparkle */}
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-2 rounded-full border border-brand-peach-300/60 bg-brand-peach-100/70 px-4 py-1.5 text-xs sm:text-sm font-bold text-brand-plum-900 backdrop-blur-md dark:border-white/10 dark:bg-brand-plum-900/60 dark:text-brand-peach-200"
+                className="inline-flex items-center gap-2 rounded-full border border-papaya/30 bg-tint-peach/80 px-4 py-2 text-xs sm:text-sm font-bold text-papaya-deep backdrop-blur-md dark:border-white/10 dark:bg-white/10 dark:text-mango shadow-sm"
               >
-                <Sparkles className="h-4 w-4 text-brand-peach-600 dark:text-brand-peach-300" />
+                <Sparkles className="h-4 w-4 text-papaya animate-spin" style={{ animationDuration: '6s' }} />
                 <span>{t('hero.badge')}</span>
               </motion.div>
 
@@ -197,19 +283,21 @@ export default function Home({ onOpenBooking }) {
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1, duration: 0.5 }}
-                  className="font-heading font-extrabold text-sm sm:text-base uppercase tracking-widest text-brand-plum-700 dark:text-brand-peach-300"
+                  className="font-heading font-extrabold text-sm sm:text-base uppercase tracking-widest text-leaf-deep dark:text-mango flex items-center gap-2"
                 >
-                  "{t('hero.tagline')}"
+                  <Sparkle className="h-4 w-4 text-mango" />
+                  <span>"{t('hero.tagline')}"</span>
                 </motion.p>
 
+                {/* Headline with Papaya to Mango Gradient highlight */}
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.6 }}
-                  className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-brand-plum-950 dark:text-white leading-[1.15]"
+                  className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink dark:text-white leading-[1.14]"
                 >
                   {t('hero.headline')}{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-plum-700 via-brand-peach-500 to-brand-sage-600 dark:from-brand-peach-300 dark:via-brand-peach-200 dark:to-brand-sage-300">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-papaya-deep via-papaya to-mango">
                     {t('hero.headlineHighlight')}
                   </span>
                 </motion.h1>
@@ -219,22 +307,22 @@ export default function Home({ onOpenBooking }) {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
-                className="text-base sm:text-lg text-brand-plum-800/90 dark:text-brand-plum-100 max-w-2xl leading-relaxed"
+                className="text-base sm:text-lg text-ink/85 dark:text-zinc-200 max-w-2xl leading-relaxed"
               >
                 {t('hero.subheading')}
               </motion.p>
 
-              {/* Action Buttons */}
+              {/* Action Buttons: Papaya to Mango Gradient CTA & Liquid Glass */}
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2"
+                className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2"
               >
                 <button
                   type="button"
                   onClick={() => onOpenBooking('Free 15-Min Discovery Call')}
-                  className="rounded-full bg-gradient-to-r from-brand-plum-700 via-brand-plum-600 to-brand-peach-500 hover:from-brand-plum-800 hover:to-brand-peach-600 text-white font-bold px-7 py-4 text-sm sm:text-base shadow-lg shadow-brand-plum-800/20 transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
+                  className="rounded-full bg-gradient-to-r from-papaya-deep via-papaya to-mango hover:from-papaya hover:to-mango text-white font-bold px-8 py-4 text-sm sm:text-base shadow-xl shadow-papaya/30 transition-all flex items-center justify-center gap-2.5 transform hover:-translate-y-1 active:translate-y-0"
                 >
                   <Calendar className="h-4 w-4" />
                   <span>{t('hero.ctaPrimary')}</span>
@@ -242,101 +330,141 @@ export default function Home({ onOpenBooking }) {
 
                 <Link
                   to="/services"
-                  className="rounded-full border border-brand-plum-300/80 bg-white/70 hover:bg-white text-brand-plum-900 font-bold px-6 py-4 text-sm sm:text-base shadow-sm backdrop-blur-md transition-all flex items-center justify-center gap-2 dark:border-white/15 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
+                  className="rounded-full border border-papaya/30 bg-white/80 hover:bg-white text-ink font-bold px-7 py-4 text-sm sm:text-base shadow-md backdrop-blur-md transition-all flex items-center justify-center gap-2 dark:border-white/15 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 transform hover:-translate-y-0.5"
                 >
                   <span>{t('hero.ctaSecondary')}</span>
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-4 w-4 text-papaya-deep dark:text-mango" />
                 </Link>
               </motion.div>
 
-              {/* Quick Trust Strip */}
-              <div className="pt-4 flex flex-wrap items-center gap-5 sm:gap-8 text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200">
-                <div className="flex items-center gap-2">
-                  <ShieldCheck className="h-4 w-4 text-brand-sage-600 dark:text-brand-sage-300" />
+              {/* Quick Trust Strip with Lucide Icons */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                className="pt-4 flex flex-wrap items-center gap-5 sm:gap-8 text-xs sm:text-sm text-ink/80 dark:text-zinc-300 border-t border-papaya/15 dark:border-white/10"
+              >
+                <div className="flex items-center gap-2 font-medium">
+                  <ShieldCheck className="h-4 w-4 text-leaf-deep dark:text-leaf" />
                   <span>{t('common.confidential')}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-brand-peach-600 dark:text-brand-peach-300" />
+                <div className="flex items-center gap-2 font-medium">
+                  <MapPin className="h-4 w-4 text-papaya-deep dark:text-mango" />
                   <span>{t('common.puneOnline')}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Smile className="h-4 w-4 text-brand-plum-600 dark:text-brand-plum-300" />
+                <div className="flex items-center gap-2 font-medium">
+                  <Smile className="h-4 w-4 text-grape dark:text-grape-light" />
                   <span>{t('common.stigmaFree')}</span>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
-            {/* Right Column: Hero Visual Card */}
+            {/* Right Column: Visual Center Piece (Layered Card with Calm Person SVG + Photo + Liquid Glass) */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ delay: 0.25, duration: 0.7 }}
               className="lg:col-span-5 relative"
             >
               <LiquidGlass
                 variant="hero"
-                tint="peach"
-                className="rounded-3xl border-white/80 dark:border-white/15 shadow-2xl p-6 sm:p-8"
+                tint="papaya"
+                className="rounded-3xl border-white/80 dark:border-white/15 shadow-2xl p-6 sm:p-8 relative overflow-hidden"
               >
-                <div className="flex items-center gap-4 pb-6 border-b border-brand-plum-100 dark:border-white/10">
-                  <div className="h-16 w-16 rounded-2xl overflow-hidden bg-white/90 p-1.5 shadow-md border border-white/60 flex items-center justify-center flex-shrink-0">
-                    <img src={logoImg} alt="Fruitful Mind" className="h-full w-full object-contain" />
+                {/* Visual Header Strip with Logo & Verified Psychologist Tag */}
+                <div className="flex items-center justify-between pb-5 border-b border-papaya/15 dark:border-white/10">
+                  <div className="flex items-center gap-3.5">
+                    <div className="h-14 w-14 rounded-2xl overflow-hidden bg-white p-1.5 shadow-md border border-white/60 flex items-center justify-center flex-shrink-0">
+                      <img src={logoImg} alt="Fruitful Mind" className="h-full w-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-extrabold text-xl text-ink dark:text-white leading-tight">
+                        Fruitful Mind
+                      </h3>
+                      <p className="text-xs font-bold text-papaya-deep dark:text-mango">
+                        {t('common.bySimran')}
+                      </p>
+                      <p className="text-[11px] text-muted dark:text-zinc-300">
+                        Master's in Counselling Psychology
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-heading font-extrabold text-xl text-brand-plum-950 dark:text-white">
-                      Fruitful Mind
-                    </h3>
-                    <p className="text-xs font-semibold text-brand-plum-600 dark:text-brand-peach-300">
-                      {t('common.bySimran')}
-                    </p>
-                    <p className="text-[11px] text-brand-plum-500 dark:text-brand-plum-300">
-                      Master's in Counselling Psychology
-                    </p>
-                  </div>
+
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold bg-tint-mint text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light border border-leaf/20">
+                    <ShieldCheck className="h-3 w-3" />
+                    <span>Verified</span>
+                  </span>
                 </div>
 
-                <div className="py-6 space-y-3">
-                  <span className="text-xs font-bold uppercase tracking-wider text-brand-plum-600 dark:text-brand-peach-200">
+                {/* Hero Main Graphic: Calm Person Mindful SVG Illustration */}
+                <div className="py-4 relative flex items-center justify-center">
+                  <div className="w-full max-w-[320px] aspect-square flex items-center justify-center">
+                    <CalmPersonIllustration className="w-full h-full drop-shadow-md" />
+                  </div>
+
+                  {/* Floating Speech Prompt Pill */}
+                  <motion.div
+                    animate={{ y: [-4, 4, -4] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                    className="absolute -bottom-2 left-2 rounded-full bg-white/95 dark:bg-ink/95 backdrop-blur-md px-3.5 py-1.5 text-xs font-bold text-ink dark:text-white shadow-lg border border-papaya/20 flex items-center gap-1.5"
+                  >
+                    <Heart className="h-3.5 w-3.5 text-papaya fill-papaya" />
+                    <span>"You are safe here"</span>
+                  </motion.div>
+
+                  <motion.div
+                    animate={{ y: [4, -4, 4] }}
+                    transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
+                    className="absolute top-2 right-2 rounded-full bg-tint-mint/95 dark:bg-leaf-deep/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-leaf-deep dark:text-white shadow-md border border-leaf/20 flex items-center gap-1"
+                  >
+                    <Compass className="h-3 w-3" />
+                    <span>Eclectic & Grounded</span>
+                  </motion.div>
+                </div>
+
+                {/* 3 Pillars Visual Mini-Cards */}
+                <div className="pt-4 space-y-2.5">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-muted dark:text-zinc-300">
                     {t('hero.pillarsTitle')}
                   </span>
-                  <div className="grid grid-cols-1 gap-2.5">
-                    <div className="flex items-center gap-3 rounded-2xl bg-white/80 dark:bg-white/10 p-3 shadow-sm border border-white/60 dark:border-white/5">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-peach-100 text-brand-peach-600 dark:bg-brand-peach-900/40 dark:text-brand-peach-300">
-                        <Heart className="h-5 w-5" />
+                  <div className="grid grid-cols-1 gap-2">
+                    <div className="flex items-center gap-3 rounded-2xl bg-white/80 dark:bg-white/10 p-2.5 shadow-sm border border-white/60 dark:border-white/5 transition-transform hover:scale-[1.01]">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-tint-peach text-papaya-deep dark:bg-papaya/20 dark:text-mango">
+                        <Heart className="h-4 w-4" />
                       </div>
-                      <div>
-                        <h4 className="text-xs sm:text-sm font-bold text-brand-plum-900 dark:text-white">
+                      <div className="min-w-0 flex-1">
+                        <h4 className="text-xs font-bold text-ink dark:text-white truncate">
                           {t('hero.pillar1Title')}
                         </h4>
-                        <p className="text-[11px] text-brand-plum-600 dark:text-brand-plum-300">
+                        <p className="text-[11px] text-muted dark:text-zinc-300 truncate">
                           {t('hero.pillar1Desc')}
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3 rounded-2xl bg-white/80 dark:bg-white/10 p-3 shadow-sm border border-white/60 dark:border-white/5">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-sage-100 text-brand-sage-600 dark:bg-brand-sage-900/40 dark:text-brand-sage-300">
-                        <Compass className="h-5 w-5" />
+                    <div className="flex items-center gap-3 rounded-2xl bg-white/80 dark:bg-white/10 p-2.5 shadow-sm border border-white/60 dark:border-white/5 transition-transform hover:scale-[1.01]">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-tint-mint text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light">
+                        <Compass className="h-4 w-4" />
                       </div>
-                      <div>
-                        <h4 className="text-xs sm:text-sm font-bold text-brand-plum-900 dark:text-white">
+                      <div className="min-w-0 flex-1">
+                        <h4 className="text-xs font-bold text-ink dark:text-white truncate">
                           {t('hero.pillar2Title')}
                         </h4>
-                        <p className="text-[11px] text-brand-plum-600 dark:text-brand-plum-300">
+                        <p className="text-[11px] text-muted dark:text-zinc-300 truncate">
                           {t('hero.pillar2Desc')}
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3 rounded-2xl bg-white/80 dark:bg-white/10 p-3 shadow-sm border border-white/60 dark:border-white/5">
-                      <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-plum-100 text-brand-plum-700 dark:bg-brand-plum-900/40 dark:text-brand-peach-300">
-                        <GraduationCap className="h-5 w-5" />
+                    <div className="flex items-center gap-3 rounded-2xl bg-white/80 dark:bg-white/10 p-2.5 shadow-sm border border-white/60 dark:border-white/5 transition-transform hover:scale-[1.01]">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-tint-lavender text-grape dark:bg-grape/20 dark:text-grape-light">
+                        <GraduationCap className="h-4 w-4" />
                       </div>
-                      <div>
-                        <h4 className="text-xs sm:text-sm font-bold text-brand-plum-900 dark:text-white">
+                      <div className="min-w-0 flex-1">
+                        <h4 className="text-xs font-bold text-ink dark:text-white truncate">
                           {t('hero.pillar3Title')}
                         </h4>
-                        <p className="text-[11px] text-brand-plum-600 dark:text-brand-plum-300">
+                        <p className="text-[11px] text-muted dark:text-zinc-300 truncate">
                           {t('hero.pillar3Desc')}
                         </p>
                       </div>
@@ -344,7 +472,8 @@ export default function Home({ onOpenBooking }) {
                   </div>
                 </div>
 
-                <div className="pt-2 flex items-center justify-between text-xs">
+                {/* Bottom Card Ribbon */}
+                <div className="pt-4 mt-2 border-t border-papaya/15 dark:border-white/10 flex items-center justify-between text-xs">
                   <a
                     href="https://wa.me/919769512475"
                     target="_blank"
@@ -354,7 +483,7 @@ export default function Home({ onOpenBooking }) {
                     <MessageCircle className="h-4 w-4" />
                     <span>{t('common.whatsapp')}</span>
                   </a>
-                  <span className="text-brand-plum-500 dark:text-brand-plum-300">
+                  <span className="text-muted dark:text-zinc-300 font-medium">
                     {t('common.puneOnline')}
                   </span>
                 </div>
@@ -365,113 +494,149 @@ export default function Home({ onOpenBooking }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 2. STATS & MARQUEE STRIP                                  */}
+      {/* 2. STATS WITH COUNT-UP & INFINITE MARQUEE STRIP           */}
       {/* ========================================================= */}
-      <section className="relative py-8 bg-brand-plum-900 text-white overflow-hidden shadow-inner">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+      <section className="relative py-10 bg-gradient-to-r from-ink via-[#2D2836] to-ink text-white overflow-hidden shadow-2xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div className="space-y-1">
-              <span className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-peach-300">
-                {t('hero.stats.exp')}
-              </span>
-              <p className="text-xs text-brand-plum-200">{t('hero.stats.expLabel')}</p>
+            {/* Stat 1 */}
+            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm space-y-1">
+              <div className="inline-flex p-2 rounded-xl bg-papaya/20 text-papaya mb-1">
+                <Heart className="h-5 w-5" />
+              </div>
+              <div className="font-heading text-3xl sm:text-4xl font-extrabold text-mango">
+                <CountUpNumber end="4" suffix="+ Years" />
+              </div>
+              <p className="text-xs text-zinc-300">{t('hero.stats.expLabel')}</p>
             </div>
-            <div className="space-y-1">
-              <span className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-peach-300">
+
+            {/* Stat 2 */}
+            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm space-y-1">
+              <div className="inline-flex p-2 rounded-xl bg-mango/20 text-mango mb-1">
+                <GraduationCap className="h-5 w-5" />
+              </div>
+              <div className="font-heading text-3xl sm:text-4xl font-extrabold text-mango">
                 Master's
-              </span>
-              <p className="text-xs text-brand-plum-200">Counselling Psychology</p>
+              </div>
+              <p className="text-xs text-zinc-300">Counselling Psychology</p>
             </div>
-            <div className="space-y-1">
-              <span className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-peach-300">
+
+            {/* Stat 3 */}
+            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm space-y-1">
+              <div className="inline-flex p-2 rounded-xl bg-leaf/20 text-leaf mb-1">
+                <Compass className="h-5 w-5" />
+              </div>
+              <div className="font-heading text-3xl sm:text-4xl font-extrabold text-mango">
                 {t('hero.stats.approach')}
-              </span>
-              <p className="text-xs text-brand-plum-200">{t('hero.stats.approachLabel')}</p>
+              </div>
+              <p className="text-xs text-zinc-300">{t('hero.stats.approachLabel')}</p>
             </div>
-            <div className="space-y-1">
-              <span className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-peach-300">
-                {t('hero.stats.confidential')}
-              </span>
-              <p className="text-xs text-brand-plum-200">{t('hero.stats.confidentialLabel')}</p>
+
+            {/* Stat 4 */}
+            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm space-y-1">
+              <div className="inline-flex p-2 rounded-xl bg-grape/20 text-grape-light mb-1">
+                <ShieldCheck className="h-5 w-5" />
+              </div>
+              <div className="font-heading text-3xl sm:text-4xl font-extrabold text-mango">
+                100%
+              </div>
+              <p className="text-xs text-zinc-300">{t('hero.stats.confidentialLabel')}</p>
             </div>
           </div>
         </div>
 
-        {/* Infinite Marquee */}
-        <div className="relative flex overflow-x-hidden border-t border-brand-plum-800/80 pt-4">
-          <div className="animate-marquee whitespace-nowrap flex items-center gap-8 text-xs sm:text-sm font-semibold tracking-wider uppercase text-brand-peach-200/90">
+        {/* Infinite Marquee of Psychological Concerns */}
+        <div className="relative flex overflow-x-hidden border-t border-white/10 pt-4">
+          <div className="animate-marquee whitespace-nowrap flex items-center gap-8 text-xs sm:text-sm font-bold tracking-wider uppercase text-zinc-200">
             {marqueeConcerns.concat(marqueeConcerns).map((item, idx) => (
               <span key={idx} className="flex items-center gap-8">
                 <span>{item}</span>
-                <span className="text-brand-peach-400">•</span>
+                <span className="text-mango">•</span>
               </span>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Gentle Wave Divider */}
+      <OrganicWaveDivider fill="#FFF7EE" className="dark:hidden" />
+
       {/* ========================================================= */}
-      {/* 3. MEET SIMRAN & THE PHILOSOPHY                           */}
+      {/* 3. MEET SIMRAN & PRACTICE PHILOSOPHY (VISUAL & AUTHENTIC) */}
       {/* ========================================================= */}
       <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-5 relative">
-              <LiquidGlass
-                variant="card"
-                tint="sage"
-                interactive={false}
-                className="p-8 rounded-3xl border-white/80 dark:border-white/10 shadow-xl"
-              >
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-brand-peach-200 via-brand-plum-200 to-brand-sage-200 flex flex-col items-center justify-center p-6 text-center">
-                  <div className="h-28 w-28 rounded-full overflow-hidden bg-white/90 p-2 shadow-lg mb-4">
-                    <img src={logoImg} alt="Simran Mistry" className="h-full w-full object-contain" />
-                  </div>
-                  <h3 className="font-heading text-2xl font-bold text-brand-plum-950">
-                    Simran Mistry
-                  </h3>
-                  <p className="text-xs font-bold text-brand-plum-700 mt-1">
-                    {t('common.bySimran')}
-                  </p>
-                  <p className="text-xs text-brand-plum-600 mt-1 max-w-xs">
-                    Master's in Counselling Psychology • {t('common.puneOnline')}
-                  </p>
-                  <div className="mt-6 rounded-full bg-white/80 px-4 py-1.5 text-xs font-semibold text-brand-plum-800 shadow-sm">
-                    Eclectic • Trauma-Informed • Compassionate
-                  </div>
+            {/* Left Column: Clearly Marked Photo Placeholder for Simran Mistry */}
+            <div className="lg:col-span-5 relative space-y-4">
+              <PhotoPlaceholder
+                src="/assets/images/simran-placeholder.jpg"
+                alt="Simran Mistry - Psychologist Pune"
+                type="simran"
+                label="Client Photo Placeholder"
+                sublabel="Simran Mistry, Psychologist"
+                aspectRatio="aspect-[4/5]"
+              />
+
+              {/* Floating verified badge */}
+              <div className="flex items-center justify-between p-3.5 rounded-2xl bg-white/80 dark:bg-white/10 backdrop-blur-md border border-papaya/20 shadow-md text-xs">
+                <div className="flex items-center gap-2">
+                  <Award className="h-4 w-4 text-papaya-deep dark:text-mango" />
+                  <span className="font-bold text-ink dark:text-white">Master's in Counselling Psychology</span>
                 </div>
-              </LiquidGlass>
+                <span className="text-[11px] text-muted dark:text-zinc-300">Kothrud, Pune</span>
+              </div>
             </div>
 
+            {/* Right Column: Visual Breakdown of Philosophy & Authentic Voice */}
             <div className="lg:col-span-7 space-y-6">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-plum-100 px-3.5 py-1 text-xs font-bold text-brand-plum-800 dark:bg-brand-plum-900/60 dark:text-brand-peach-200">
-                <Brain className="h-3.5 w-3.5 text-brand-plum-600 dark:text-brand-peach-300" />
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-tint-peach px-3.5 py-1 text-xs font-bold text-papaya-deep dark:bg-white/10 dark:text-mango">
+                <Brain className="h-3.5 w-3.5 text-papaya" />
                 <span>{t('aboutSection.badge')}</span>
               </span>
 
-              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-plum-950 dark:text-white leading-tight">
+              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-ink dark:text-white leading-tight">
                 {t('aboutSection.headline')}
               </h2>
 
-              <p className="text-base sm:text-lg text-brand-plum-800/90 dark:text-brand-plum-100 leading-relaxed">
+              <p className="text-base sm:text-lg text-ink/85 dark:text-zinc-200 leading-relaxed">
                 {t('aboutSection.p1')}
               </p>
 
-              <p className="text-sm sm:text-base text-brand-plum-700 dark:text-brand-plum-200 leading-relaxed">
-                {t('aboutSection.p2')}
-              </p>
+              {/* Converted into visually rich chunk boxes (Key Takeaway & Philosophy) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div className="p-4 rounded-2xl bg-tint-mint/60 dark:bg-white/5 border border-leaf/20 shadow-sm space-y-1.5">
+                  <div className="flex items-center gap-2 text-xs font-bold text-leaf-deep dark:text-leaf">
+                    <Heart className="h-4 w-4" />
+                    <span>Non-Judgmental Warmth</span>
+                  </div>
+                  <p className="text-xs text-ink/80 dark:text-zinc-300 leading-relaxed">
+                    A safe container where you don't have to worry about pleasing anyone or defending your feelings.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-tint-butter/60 dark:bg-white/5 border border-mango/30 shadow-sm space-y-1.5">
+                  <div className="flex items-center gap-2 text-xs font-bold text-mango-600 dark:text-mango">
+                    <Compass className="h-4 w-4" />
+                    <span>Eclectic & Science-Backed</span>
+                  </div>
+                  <p className="text-xs text-ink/80 dark:text-zinc-300 leading-relaxed">
+                    Integrating CBT, humanistic listening, and nervous system regulation adapted to your personality.
+                  </p>
+                </div>
+              </div>
 
               {/* Client's Authentic Voice from Requirements Form */}
-              <div className="rounded-2xl border-l-4 border-brand-peach-500 bg-brand-peach-50/70 p-5 dark:border-brand-peach-400 dark:bg-white/5 space-y-3 shadow-sm">
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-peach-700 dark:text-brand-peach-300">
-                  <Heart className="h-3.5 w-3.5" />
+              <div className="rounded-2xl border-l-4 border-papaya bg-tint-peach/70 p-5 dark:border-papaya dark:bg-white/5 space-y-3 shadow-sm">
+                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-papaya-deep dark:text-mango">
+                  <Coffee className="h-3.5 w-3.5" />
                   <span>{t('welcomeBio.badge')}</span>
                 </div>
-                <blockquote className="text-xs sm:text-sm text-brand-plum-900 dark:text-brand-plum-100 italic leading-relaxed">
-                  {t('welcomeBio.quote')}
+                <blockquote className="text-xs sm:text-sm text-ink dark:text-zinc-100 italic leading-relaxed">
+                  "{t('welcomeBio.quote')}"
                 </blockquote>
-                <div className="flex flex-wrap items-center justify-between gap-2 pt-2 text-[11px] text-brand-plum-600 dark:text-brand-plum-300 border-t border-brand-plum-100 dark:border-white/10">
-                  <span className="font-bold text-brand-plum-900 dark:text-white">
+                <div className="flex flex-wrap items-center justify-between gap-2 pt-2 text-[11px] text-muted dark:text-zinc-300 border-t border-papaya/15 dark:border-white/10">
+                  <span className="font-bold text-ink dark:text-white">
                     — {t('welcomeBio.author')} ({t('welcomeBio.credentials')})
                   </span>
                   <span>📍 {t('welcomeBio.location')}</span>
@@ -481,7 +646,7 @@ export default function Home({ onOpenBooking }) {
               <div className="pt-2 flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/about"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-plum-700 hover:bg-brand-plum-800 text-white font-bold px-6 py-3.5 text-sm shadow-md transition-colors"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-papaya-deep to-papaya text-white font-bold px-7 py-3.5 text-sm shadow-md transition-all hover:shadow-lg active:scale-95"
                 >
                   <span>{t('aboutSection.readStory')}</span>
                   <ArrowRight className="h-4 w-4" />
@@ -489,9 +654,9 @@ export default function Home({ onOpenBooking }) {
                 <button
                   type="button"
                   onClick={() => onOpenBooking('Free 15-Min Discovery Call')}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-plum-300 bg-white/70 hover:bg-white text-brand-plum-900 font-bold px-6 py-3.5 text-sm shadow-sm transition-colors dark:border-white/10 dark:bg-white/10 dark:text-white"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-papaya/30 bg-white/80 hover:bg-white text-ink font-bold px-6 py-3.5 text-sm shadow-sm transition-colors dark:border-white/10 dark:bg-white/10 dark:text-white"
                 >
-                  <Calendar className="h-4 w-4" />
+                  <Calendar className="h-4 w-4 text-papaya" />
                   <span>{t('common.freeDiscovery')}</span>
                 </button>
               </div>
@@ -501,111 +666,271 @@ export default function Home({ onOpenBooking }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 4. THE 3 AREAS OF WORK (SERVICES)                         */}
+      {/* 4. STORYTELLING: HOW COUNSELLING WORKS (STEPS TIMELINE)   */}
       {/* ========================================================= */}
-      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-brand-peach-50/40 dark:bg-white/[0.02]">
+      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-tint-peach/30 via-cream to-tint-mint/30 dark:from-white/[0.02] dark:to-transparent">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-peach-200/60 px-3.5 py-1 text-xs font-bold text-brand-plum-900 dark:bg-brand-plum-900/60 dark:text-brand-peach-200">
-              <Sparkles className="h-3.5 w-3.5 text-brand-peach-600 dark:text-brand-peach-300" />
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-tint-mint px-3.5 py-1 text-xs font-bold text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light">
+              <Lightbulb className="h-3.5 w-3.5" />
+              <span>{language === 'mr' ? 'प्रक्रिया' : language === 'hi' ? 'प्रक्रिया' : 'The Roadmap'}</span>
+            </span>
+            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-ink dark:text-white">
+              {language === 'mr' ? 'समुपदेशन कसे कार्य करते?' : language === 'hi' ? 'काउंसलिंग कैसे काम करती है?' : 'How Counselling Works'}
+            </h2>
+            <p className="text-sm sm:text-base text-muted dark:text-zinc-300">
+              {language === 'mr'
+                ? 'पहिल्या संवादापासून ते शाश्वत मानसिक संतुलनापर्यंतचा एक सुरक्षित व संवेदनशील प्रवास.'
+                : language === 'hi'
+                ? 'पहली बातचीत से लेकर स्थायी शांति और स्पष्टता तक का एक कोमल, सुरक्षित सफर।'
+                : 'A safe, collaborative 4-step journey tailored to your rhythm—no pressure, no judgments.'}
+            </p>
+          </div>
+
+          {/* 4-Step Visual Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {counsellingSteps.map((step, idx) => {
+              const StepIcon = step.icon;
+              return (
+                <LiquidGlass
+                  key={idx}
+                  variant="card"
+                  tint="default"
+                  interactive={true}
+                  className={`flex flex-col justify-between p-6 rounded-3xl border ${step.color} shadow-lg relative overflow-hidden`}
+                >
+                  <div>
+                    {/* Step Top Banner */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="font-heading text-3xl font-extrabold text-papaya-deep dark:text-mango">
+                        {step.num}
+                      </span>
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/80 dark:bg-white/10 text-ink dark:text-white border border-white/60">
+                        {step.tag}
+                      </span>
+                    </div>
+
+                    <div className="h-12 w-12 rounded-2xl bg-white dark:bg-white/10 p-2 shadow-sm flex items-center justify-center text-papaya-deep dark:text-mango mb-4">
+                      {step.isCustomIcon ? (
+                        <StepIcon className="w-10 h-6" />
+                      ) : (
+                        <StepIcon className="h-6 w-6" />
+                      )}
+                    </div>
+
+                    <h3 className="font-heading text-lg font-bold text-ink dark:text-white mb-2 leading-snug">
+                      {step.title}
+                    </h3>
+
+                    <p className="text-xs sm:text-sm text-muted dark:text-zinc-300 leading-relaxed">
+                      {step.desc}
+                    </p>
+                  </div>
+
+                  <div className="pt-4 mt-6 border-t border-black/5 dark:border-white/10 flex items-center gap-1.5 text-[11px] font-bold text-papaya-deep dark:text-mango">
+                    <Check className="h-3.5 w-3.5" />
+                    <span>Gentle & Collaborative</span>
+                  </div>
+                </LiquidGlass>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================= */}
+      {/* 5. THE 3 AREAS OF WORK (SERVICES WITH RICH COVER PHOTOS)   */}
+      {/* ========================================================= */}
+      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-tint-peach px-3.5 py-1 text-xs font-bold text-papaya-deep dark:bg-white/10 dark:text-mango">
+              <Sparkles className="h-3.5 w-3.5 text-papaya" />
               <span>{t('servicesPage.badge')}</span>
             </span>
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-plum-950 dark:text-white">
+            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-ink dark:text-white">
               {t('servicesPage.title')}
             </h2>
-            <p className="text-sm sm:text-base text-brand-plum-700 dark:text-brand-plum-200">
+            <p className="text-sm sm:text-base text-muted dark:text-zinc-300">
               {t('servicesPage.subtitle')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Service 1 */}
-            <LiquidGlass
-              variant="card"
-              tint="peach"
-              className="flex flex-col justify-between p-8 rounded-3xl border-white/80 dark:border-white/15"
-            >
-              <div>
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-peach-100 text-brand-peach-600 dark:bg-brand-peach-900/50 dark:text-brand-peach-300 mb-6 shadow-sm">
-                  <Heart className="h-7 w-7" />
-                </div>
-                <h3 className="font-heading text-xl sm:text-2xl font-bold text-brand-plum-950 dark:text-white">
-                  {t('servicesPage.service1Name')}
-                </h3>
-                <p className="mt-3 text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200 leading-relaxed">
-                  {t('servicesPage.service1Tagline')}
-                </p>
-              </div>
-
-              <div className="pt-8">
-                <button
-                  type="button"
-                  onClick={() => onOpenBooking('Emotional Wellbeing Counselling')}
-                  className="w-full rounded-full bg-brand-plum-700 hover:bg-brand-plum-800 text-white font-bold py-3 px-4 text-xs sm:text-sm shadow-md transition-colors flex items-center justify-center gap-2"
-                >
-                  <Calendar className="h-4 w-4" />
-                  <span>{t('servicesPage.service1Cta')}</span>
-                </button>
-              </div>
-            </LiquidGlass>
-
-            {/* Service 2 */}
-            <LiquidGlass
-              variant="card"
-              tint="sage"
-              className="flex flex-col justify-between p-8 rounded-3xl border-white/80 dark:border-white/15"
-            >
-              <div>
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-sage-100 text-brand-sage-600 dark:bg-brand-sage-900/50 dark:text-brand-sage-300 mb-6 shadow-sm">
-                  <Compass className="h-7 w-7" />
-                </div>
-                <h3 className="font-heading text-xl sm:text-2xl font-bold text-brand-plum-950 dark:text-white">
-                  {t('servicesPage.service2Name')}
-                </h3>
-                <p className="mt-3 text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200 leading-relaxed">
-                  {t('servicesPage.service2Tagline')}
-                </p>
-              </div>
-
-              <div className="pt-8">
-                <button
-                  type="button"
-                  onClick={() => onOpenBooking('Career Counselling')}
-                  className="w-full rounded-full bg-brand-sage-600 hover:bg-brand-sage-700 text-white font-bold py-3 px-4 text-xs sm:text-sm shadow-md transition-colors flex items-center justify-center gap-2"
-                >
-                  <Calendar className="h-4 w-4" />
-                  <span>{t('servicesPage.service2Cta')}</span>
-                </button>
-              </div>
-            </LiquidGlass>
-
-            {/* Service 3 */}
+            {/* Service 1: Emotional Wellbeing */}
             <LiquidGlass
               variant="card"
               tint="default"
-              className="flex flex-col justify-between p-8 rounded-3xl border-white/80 dark:border-white/15"
+              interactive={true}
+              className="flex flex-col justify-between p-0 overflow-hidden rounded-3xl border-white/80 dark:border-white/15 shadow-xl hover:-translate-y-2 transition-transform duration-300"
             >
-              <div>
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-plum-100 text-brand-plum-700 dark:bg-brand-plum-900/50 dark:text-brand-peach-300 mb-6 shadow-sm">
-                  <GraduationCap className="h-7 w-7" />
+              {/* Cover Photo */}
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img
+                  src="/assets/images/service-emotional-wellbeing.jpg"
+                  alt="Emotional Wellbeing Counselling"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 rounded-full bg-white/90 dark:bg-ink/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-papaya-deep dark:text-mango shadow-sm">
+                  1-on-1 Sessions
                 </div>
-                <h3 className="font-heading text-xl sm:text-2xl font-bold text-brand-plum-950 dark:text-white">
-                  {t('servicesPage.service3Name')}
-                </h3>
-                <p className="mt-3 text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200 leading-relaxed">
-                  {t('servicesPage.service3Tagline')}
-                </p>
               </div>
 
-              <div className="pt-8">
-                <button
-                  type="button"
-                  onClick={() => onOpenBooking('Psychology Tuition (Grade 11/12)')}
-                  className="w-full rounded-full bg-brand-plum-700 hover:bg-brand-plum-800 text-white font-bold py-3 px-4 text-xs sm:text-sm shadow-md transition-colors flex items-center justify-center gap-2"
-                >
-                  <Calendar className="h-4 w-4" />
-                  <span>{t('servicesPage.service3Cta')}</span>
-                </button>
+              <div className="p-7 flex flex-col justify-between flex-1 space-y-4">
+                <div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-tint-peach text-papaya-deep dark:bg-papaya/20 dark:text-mango mb-4 shadow-sm">
+                    <Heart className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading text-xl sm:text-2xl font-bold text-ink dark:text-white">
+                    {t('servicesPage.service1Name')}
+                  </h3>
+                  <p className="mt-2 text-xs sm:text-sm text-muted dark:text-zinc-300 leading-relaxed">
+                    {t('servicesPage.service1Tagline')}
+                  </p>
+
+                  {/* Key Takeaways Pills */}
+                  <div className="flex flex-wrap gap-1.5 pt-3">
+                    <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-cream dark:bg-white/10 text-ink dark:text-white">
+                      Anxiety & Worry
+                    </span>
+                    <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-cream dark:bg-white/10 text-ink dark:text-white">
+                      Overthinking
+                    </span>
+                    <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-cream dark:bg-white/10 text-ink dark:text-white">
+                      Self-Criticism
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-black/5 dark:border-white/10">
+                  <button
+                    type="button"
+                    onClick={() => onOpenBooking('Emotional Wellbeing Counselling')}
+                    className="w-full rounded-full bg-gradient-to-r from-papaya-deep to-papaya hover:from-papaya hover:to-mango text-white font-bold py-3 px-4 text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2"
+                  >
+                    <Calendar className="h-4 w-4" />
+                    <span>{t('servicesPage.service1Cta')}</span>
+                  </button>
+                </div>
+              </div>
+            </LiquidGlass>
+
+            {/* Service 2: Career Counselling */}
+            <LiquidGlass
+              variant="card"
+              tint="default"
+              interactive={true}
+              className="flex flex-col justify-between p-0 overflow-hidden rounded-3xl border-white/80 dark:border-white/15 shadow-xl hover:-translate-y-2 transition-transform duration-300"
+            >
+              {/* Cover Photo */}
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img
+                  src="/assets/images/service-career-counselling.jpg"
+                  alt="Career Counselling & Exploration"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 rounded-full bg-white/90 dark:bg-ink/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-leaf-deep dark:text-leaf-light shadow-sm">
+                  Clarity & Purpose
+                </div>
+              </div>
+
+              <div className="p-7 flex flex-col justify-between flex-1 space-y-4">
+                <div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-tint-mint text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light mb-4 shadow-sm">
+                    <Compass className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading text-xl sm:text-2xl font-bold text-ink dark:text-white">
+                    {t('servicesPage.service2Name')}
+                  </h3>
+                  <p className="mt-2 text-xs sm:text-sm text-muted dark:text-zinc-300 leading-relaxed">
+                    {t('servicesPage.service2Tagline')}
+                  </p>
+
+                  {/* Key Takeaways Pills */}
+                  <div className="flex flex-wrap gap-1.5 pt-3">
+                    <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-cream dark:bg-white/10 text-ink dark:text-white">
+                      Career Crossroad
+                    </span>
+                    <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-cream dark:bg-white/10 text-ink dark:text-white">
+                      Imposter Feelings
+                    </span>
+                    <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-cream dark:bg-white/10 text-ink dark:text-white">
+                      Work Burnout
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-black/5 dark:border-white/10">
+                  <button
+                    type="button"
+                    onClick={() => onOpenBooking('Career Counselling')}
+                    className="w-full rounded-full bg-leaf-deep hover:bg-leaf text-white font-bold py-3 px-4 text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2"
+                  >
+                    <Calendar className="h-4 w-4" />
+                    <span>{t('servicesPage.service2Cta')}</span>
+                  </button>
+                </div>
+              </div>
+            </LiquidGlass>
+
+            {/* Service 3: Psychology Tuition */}
+            <LiquidGlass
+              variant="card"
+              tint="default"
+              interactive={true}
+              className="flex flex-col justify-between p-0 overflow-hidden rounded-3xl border-white/80 dark:border-white/15 shadow-xl hover:-translate-y-2 transition-transform duration-300"
+            >
+              {/* Cover Photo */}
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img
+                  src="/assets/images/service-psychology-tuition.jpg"
+                  alt="Psychology Tuition Grade 11 & 12"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 rounded-full bg-white/90 dark:bg-ink/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-grape dark:text-grape-light shadow-sm">
+                  Grades 11 & 12
+                </div>
+              </div>
+
+              <div className="p-7 flex flex-col justify-between flex-1 space-y-4">
+                <div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-tint-lavender text-grape dark:bg-grape/20 dark:text-grape-light mb-4 shadow-sm">
+                    <GraduationCap className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading text-xl sm:text-2xl font-bold text-ink dark:text-white">
+                    {t('servicesPage.service3Name')}
+                  </h3>
+                  <p className="mt-2 text-xs sm:text-sm text-muted dark:text-zinc-300 leading-relaxed">
+                    {t('servicesPage.service3Tagline')}
+                  </p>
+
+                  {/* Key Takeaways Pills */}
+                  <div className="flex flex-wrap gap-1.5 pt-3">
+                    <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-cream dark:bg-white/10 text-ink dark:text-white">
+                      CBSE & ISC Curricula
+                    </span>
+                    <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-cream dark:bg-white/10 text-ink dark:text-white">
+                      Concept Mastery
+                    </span>
+                    <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-cream dark:bg-white/10 text-ink dark:text-white">
+                      Exam Confidence
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-black/5 dark:border-white/10">
+                  <button
+                    type="button"
+                    onClick={() => onOpenBooking('Psychology Tuition (Grade 11/12)')}
+                    className="w-full rounded-full bg-grape hover:bg-grape-dark text-white font-bold py-3 px-4 text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2"
+                  >
+                    <Calendar className="h-4 w-4" />
+                    <span>{t('servicesPage.service3Cta')}</span>
+                  </button>
+                </div>
               </div>
             </LiquidGlass>
           </div>
@@ -613,19 +938,19 @@ export default function Home({ onOpenBooking }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 5. INTERACTIVE WELLNESS LAB (Breathing + Mood + Affirm)    */}
+      {/* 6. INTERACTIVE WELLNESS LAB (BREATHING + MOOD + AFFIRM)   */}
       {/* ========================================================= */}
-      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-tint-butter/30 via-cream to-tint-peach/30 dark:from-white/[0.02] dark:to-transparent">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-14 space-y-2">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-peach-100 px-3 py-1 text-xs font-bold text-brand-plum-900 dark:bg-brand-plum-900/60 dark:text-brand-peach-200">
-              <Activity className="h-3.5 w-3.5 text-brand-peach-600 dark:text-brand-peach-300" />
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-tint-peach px-3 py-1 text-xs font-bold text-papaya-deep dark:bg-white/10 dark:text-mango">
+              <Activity className="h-3.5 w-3.5 text-papaya" />
               <span>{t('breathingWidget.badge')}</span>
             </span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-plum-950 dark:text-white">
+            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-ink dark:text-white">
               {t('common.takePause')}
             </h2>
-            <p className="text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200">
+            <p className="text-xs sm:text-sm text-muted dark:text-zinc-300">
               {t('breathingWidget.subtitle')}
             </p>
           </div>
@@ -644,15 +969,19 @@ export default function Home({ onOpenBooking }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 6. "IS COUNSELLING RIGHT FOR ME?" QUIZ                    */}
+      {/* 7. "IS COUNSELLING RIGHT FOR ME?" QUIZ WIDGET             */}
       {/* ========================================================= */}
-      <section className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-brand-peach-100/30 dark:bg-white/[0.02]">
+      <section className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10 space-y-2">
-            <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-plum-950 dark:text-white">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-tint-mint px-3.5 py-1 text-xs font-bold text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light">
+              <HelpCircle className="h-3.5 w-3.5" />
+              <span>Self-Reflection</span>
+            </span>
+            <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-ink dark:text-white">
               {t('quizWidget.title')}
             </h2>
-            <p className="text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200 max-w-lg mx-auto">
+            <p className="text-xs sm:text-sm text-muted dark:text-zinc-300 max-w-lg mx-auto">
               {t('quizWidget.subtitle')}
             </p>
           </div>
@@ -662,27 +991,53 @@ export default function Home({ onOpenBooking }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 7. PSYCHOLOGY CONCEPTS TEASER                             */}
+      {/* 8. TESTIMONIALS SLIDER (PLACEHOLDERS ONLY AS REQUIRED)    */}
+      {/* ========================================================= */}
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-tint-peach/20 dark:bg-white/[0.02]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-tint-peach px-3 py-1 text-xs font-bold text-papaya-deep dark:bg-white/10 dark:text-mango">
+              <Heart className="h-3.5 w-3.5 text-papaya" />
+              <span>Real Experiences</span>
+            </span>
+            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-ink dark:text-white">
+              {language === 'mr' ? 'अनुभव आणि विश्वास' : language === 'hi' ? 'अनुभव एवं विश्वास' : 'Stories of Clarity & Growth'}
+            </h2>
+            <p className="text-xs sm:text-sm text-muted dark:text-zinc-300">
+              {language === 'mr'
+                ? 'गोपनीयता आणि सन्मान जपत समुपदेशनाचा अनुभव घेतलेल्या व्यक्तींचे अनुभव.'
+                : language === 'hi'
+                ? 'गोपनीयता और सम्मान के साथ काउंसलिंग की यात्रा तय करने वालों के विचार।'
+                : 'What clients experience in our safe, confidential psychological space.'}
+            </p>
+          </div>
+
+          <TestimonialsSlider />
+        </div>
+      </section>
+
+      {/* ========================================================= */}
+      {/* 9. PSYCHOLOGY CONCEPTS TEASER (WITH VISUAL COVERS)        */}
       {/* ========================================================= */}
       <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-plum-100 px-3 py-1 text-xs font-bold text-brand-plum-800 dark:bg-brand-plum-900/60 dark:text-brand-peach-200">
-                <Brain className="h-3.5 w-3.5 text-brand-plum-600 dark:text-brand-peach-300" />
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-tint-mint px-3 py-1 text-xs font-bold text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light">
+                <Brain className="h-3.5 w-3.5 text-leaf" />
                 <span>{t('conceptsPage.badge')}</span>
               </span>
-              <h2 className="mt-2 font-heading text-3xl sm:text-4xl font-extrabold text-brand-plum-950 dark:text-white">
+              <h2 className="mt-2 font-heading text-3xl sm:text-4xl font-extrabold text-ink dark:text-white">
                 {t('conceptsPage.title')}
               </h2>
-              <p className="mt-1 text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200">
+              <p className="mt-1 text-xs sm:text-sm text-muted dark:text-zinc-300">
                 {t('conceptsPage.subtitle')}
               </p>
             </div>
 
             <Link
               to="/psychology-concepts"
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-brand-plum-800 hover:text-brand-plum-950 dark:text-brand-peach-300 dark:hover:text-white group"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-papaya-deep hover:text-papaya dark:text-mango group"
             >
               <span>{t('common.viewAll')}</span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -690,84 +1045,113 @@ export default function Home({ onOpenBooking }) {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {concepts.map((concept) => (
-              <LiquidGlass
-                key={concept.id}
-                variant="card"
-                tint="default"
-                interactive={true}
-                className="flex flex-col justify-between p-6 rounded-2xl border-white/70 dark:border-white/10"
-              >
-                <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-brand-peach-600 dark:text-brand-peach-300">
-                    {concept.category}
-                  </span>
-                  <h3 className="mt-1.5 font-heading text-lg font-bold text-brand-plum-950 dark:text-white">
-                    {concept.title}
-                  </h3>
-                  <p className="mt-2 text-xs text-brand-plum-700 dark:text-brand-plum-200 line-clamp-3">
-                    {concept.shortDefinition}
-                  </p>
-                </div>
+            {concepts.map((concept, idx) => {
+              // Visual cover matching each concept
+              const conceptImages = [
+                "/assets/images/concept-cbt.jpg",
+                "/assets/images/concept-attachment.jpg",
+                "/assets/images/concept-boundaries.jpg",
+                "/assets/images/concept-emotion-reg.jpg"
+              ];
+              const coverImg = conceptImages[idx % conceptImages.length];
 
-                <div className="pt-4 mt-4 border-t border-brand-plum-100 dark:border-white/10 flex items-center justify-between text-xs">
-                  <span className="text-[11px] font-medium text-brand-plum-500 dark:text-brand-plum-300">
-                    {concept.difficulty}
-                  </span>
-                  <Link
-                    to="/psychology-concepts"
-                    className="font-bold text-brand-plum-800 hover:text-brand-plum-950 dark:text-brand-peach-300 inline-flex items-center gap-1"
-                  >
-                    <span>{t('common.readArticle')}</span>
-                    <ArrowRight className="h-3 w-3" />
-                  </Link>
-                </div>
-              </LiquidGlass>
-            ))}
+              return (
+                <LiquidGlass
+                  key={concept.id}
+                  variant="card"
+                  tint="default"
+                  interactive={true}
+                  className="flex flex-col justify-between p-0 overflow-hidden rounded-2xl border-white/70 dark:border-white/10 shadow-md hover:-translate-y-1.5 transition-transform duration-300"
+                >
+                  {/* Cover Graphic */}
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <img
+                      src={coverImg}
+                      alt={concept.title}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                    <div className="absolute top-2.5 left-2.5 rounded-full bg-white/90 dark:bg-ink/90 backdrop-blur-md px-2.5 py-0.5 text-[10px] font-bold text-papaya-deep dark:text-mango uppercase tracking-wider">
+                      {concept.category}
+                    </div>
+                  </div>
+
+                  <div className="p-5 flex flex-col justify-between flex-1">
+                    <div>
+                      <h3 className="font-heading text-base font-bold text-ink dark:text-white line-clamp-1">
+                        {concept.title}
+                      </h3>
+                      <p className="mt-2 text-xs text-muted dark:text-zinc-300 line-clamp-3 leading-relaxed">
+                        {concept.shortDefinition}
+                      </p>
+                    </div>
+
+                    <div className="pt-4 mt-4 border-t border-black/5 dark:border-white/10 flex items-center justify-between text-xs">
+                      <span className="text-[11px] font-medium text-muted dark:text-zinc-400">
+                        {concept.difficulty}
+                      </span>
+                      <Link
+                        to="/psychology-concepts"
+                        className="font-bold text-papaya-deep hover:text-papaya dark:text-mango inline-flex items-center gap-1"
+                      >
+                        <span>{t('common.readArticle')}</span>
+                        <ArrowRight className="h-3 w-3" />
+                      </Link>
+                    </div>
+                  </div>
+                </LiquidGlass>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* ========================================================= */}
-      {/* 8. COURSE TEASER                                          */}
+      {/* 10. COURSE TEASER (ILLUSTRATED HERO BANNER)               */}
       {/* ========================================================= */}
       <section className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <LiquidGlass
             variant="hero"
-            tint="peach"
-            className="rounded-3xl border-white/80 dark:border-white/15 p-8 sm:p-12 shadow-xl"
+            tint="papaya"
+            className="rounded-3xl border-white/80 dark:border-white/15 p-8 sm:p-12 shadow-2xl relative overflow-hidden"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-8 space-y-4">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-plum-700 text-white px-3.5 py-1 text-xs font-bold">
-                  <Sparkles className="h-3.5 w-3.5 text-brand-peach-300" />
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-papaya-deep to-papaya text-white px-3.5 py-1 text-xs font-bold shadow-sm">
+                  <Sparkles className="h-3.5 w-3.5 text-mango" />
                   <span>{t('coursePage.badge')}</span>
                 </span>
-                <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-plum-950 dark:text-white">
+                <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-ink dark:text-white">
                   {t('coursePage.title')}
                 </h2>
-                <p className="text-sm sm:text-base text-brand-plum-800 dark:text-brand-plum-100 leading-relaxed max-w-2xl">
+                <p className="text-sm sm:text-base text-ink/85 dark:text-zinc-200 leading-relaxed max-w-2xl">
                   {t('coursePage.subtitle')}
                 </p>
-                <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-brand-plum-700 dark:text-brand-plum-200 pt-2">
-                  <span>• {t('coursePage.duration')}</span>
-                  <span>• {t('coursePage.cohortSize')}</span>
-                  <span>• {t('coursePage.kit')}</span>
+                <div className="flex flex-wrap items-center gap-3 text-xs font-semibold text-muted dark:text-zinc-300 pt-2">
+                  <span className="px-3 py-1 rounded-full bg-white/70 dark:bg-white/10 border border-white/60">
+                    • {t('coursePage.duration')}
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-white/70 dark:bg-white/10 border border-white/60">
+                    • {t('coursePage.cohortSize')}
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-white/70 dark:bg-white/10 border border-white/60">
+                    • {t('coursePage.kit')}
+                  </span>
                 </div>
               </div>
 
               <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3">
                 <Link
                   to="/course"
-                  className="rounded-full bg-brand-plum-700 hover:bg-brand-plum-800 text-white font-bold py-4 px-6 text-sm text-center shadow-md transition-colors"
+                  className="rounded-full bg-gradient-to-r from-papaya-deep to-papaya text-white font-bold py-4 px-6 text-sm text-center shadow-lg hover:shadow-xl transition-all"
                 >
                   {t('common.learnMore')}
                 </Link>
                 <button
                   type="button"
                   onClick={() => onOpenBooking('Course Waitlist Enquiry')}
-                  className="rounded-full bg-white/80 hover:bg-white text-brand-plum-900 font-bold py-3.5 px-6 text-sm text-center border border-white/60 shadow-sm dark:bg-white/10 dark:text-white transition-colors"
+                  className="rounded-full bg-white/80 hover:bg-white text-ink font-bold py-3.5 px-6 text-sm text-center border border-white/60 shadow-sm dark:bg-white/10 dark:text-white transition-colors"
                 >
                   {t('coursePage.waitlistBtn')}
                 </button>
@@ -778,24 +1162,24 @@ export default function Home({ onOpenBooking }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 9. FEATURED BLOGS                                         */}
+      {/* 11. FEATURED READINGS (BLOGS WITH VISUAL COVERS)          */}
       {/* ========================================================= */}
       <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-peach-200/60 px-3 py-1 text-xs font-bold text-brand-plum-900 dark:bg-brand-plum-900/60 dark:text-brand-peach-200">
-                <Heart className="h-3.5 w-3.5 text-brand-peach-600 dark:text-brand-peach-300" />
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-tint-peach px-3 py-1 text-xs font-bold text-papaya-deep dark:bg-white/10 dark:text-mango">
+                <Heart className="h-3.5 w-3.5 text-papaya" />
                 <span>{t('nav.blogs')}</span>
               </span>
-              <h2 className="mt-2 font-heading text-3xl sm:text-4xl font-extrabold text-brand-plum-950 dark:text-white">
+              <h2 className="mt-2 font-heading text-3xl sm:text-4xl font-extrabold text-ink dark:text-white">
                 {language === 'mr' ? 'सिमरन यांनी लिहिलेले निवडक लेख' : language === 'hi' ? 'सिमरन द्वारा लिखित चुनिंदा लेख' : 'Featured Readings by Simran'}
               </h2>
             </div>
 
             <Link
               to="/blogs"
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-brand-plum-800 hover:text-brand-plum-950 dark:text-brand-peach-300 dark:hover:text-white group"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-papaya-deep hover:text-papaya dark:text-mango group"
             >
               <span>{t('common.viewAll')}</span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -803,78 +1187,89 @@ export default function Home({ onOpenBooking }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {blogs.map((blog) => (
-              <LiquidGlass
-                key={blog.slug}
-                variant="card"
-                tint="default"
-                interactive={true}
-                className="flex flex-col justify-between p-0 overflow-hidden rounded-3xl border-white/70 dark:border-white/10"
-              >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src={blog.coverImage}
-                    alt={blog.title}
-                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                  <div className="absolute top-4 left-4 rounded-full bg-white/90 dark:bg-brand-plum-950/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-brand-plum-900 dark:text-brand-peach-200">
-                    {blog.category}
-                  </div>
-                </div>
+            {blogs.map((blog, idx) => {
+              // Ensure royalty-free cover images for blog cards
+              const blogImages = [
+                "/assets/images/blog-overthinking.jpg",
+                "/assets/images/blog-procrastination.jpg",
+                "/assets/images/blog-self-esteem.jpg"
+              ];
+              const blogCover = blog.coverImage || blogImages[idx % blogImages.length];
 
-                <div className="p-6 flex flex-col justify-between flex-1">
-                  <div>
-                    <div className="flex items-center gap-3 text-xs text-brand-plum-600 dark:text-brand-plum-300 mb-2">
-                      <span className="flex items-center gap-1">
-                        <Clock className="h-3.5 w-3.5" />
-                        <span>{blog.readTime}</span>
-                      </span>
-                      <span>•</span>
-                      <span>{new Date(blog.date).toLocaleDateString(language === 'mr' || language === 'hi' ? 'mr-IN' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+              return (
+                <LiquidGlass
+                  key={blog.slug}
+                  variant="card"
+                  tint="default"
+                  interactive={true}
+                  className="flex flex-col justify-between p-0 overflow-hidden rounded-3xl border-white/70 dark:border-white/10 shadow-xl hover:-translate-y-2 transition-transform duration-300"
+                >
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <img
+                      src={blogCover}
+                      alt={blog.title}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4 rounded-full bg-white/90 dark:bg-ink/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-papaya-deep dark:text-mango shadow-sm">
+                      {blog.category}
+                    </div>
+                  </div>
+
+                  <div className="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                      <div className="flex items-center gap-3 text-xs text-muted dark:text-zinc-300 mb-2">
+                        <span className="flex items-center gap-1">
+                          <Clock className="h-3.5 w-3.5" />
+                          <span>{blog.readTime}</span>
+                        </span>
+                        <span>•</span>
+                        <span>{new Date(blog.date).toLocaleDateString(language === 'mr' || language === 'hi' ? 'mr-IN' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                      </div>
+
+                      <h3 className="font-heading text-xl font-bold text-ink dark:text-white line-clamp-2">
+                        {blog.title}
+                      </h3>
+
+                      <p className="mt-2 text-xs sm:text-sm text-muted dark:text-zinc-300 line-clamp-3 leading-relaxed">
+                        {blog.excerpt}
+                      </p>
                     </div>
 
-                    <h3 className="font-heading text-xl font-bold text-brand-plum-950 dark:text-white line-clamp-2">
-                      {blog.title}
-                    </h3>
-
-                    <p className="mt-2 text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200 line-clamp-3 leading-relaxed">
-                      {blog.excerpt}
-                    </p>
+                    <div className="pt-5 mt-4 border-t border-black/5 dark:border-white/10 flex items-center justify-between">
+                      <span className="text-xs font-semibold text-papaya-deep dark:text-mango">
+                        {t('common.bySimran')}
+                      </span>
+                      <Link
+                        to={`/blogs/${blog.slug}`}
+                        className="inline-flex items-center gap-1 text-xs font-bold text-ink hover:text-papaya dark:text-white group"
+                      >
+                        <span>{t('common.readArticle')}</span>
+                        <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                      </Link>
+                    </div>
                   </div>
-
-                  <div className="pt-5 mt-4 border-t border-brand-plum-100 dark:border-white/10 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-brand-plum-600 dark:text-brand-peach-300">
-                      {t('common.bySimran')}
-                    </span>
-                    <Link
-                      to={`/blogs/${blog.slug}`}
-                      className="inline-flex items-center gap-1 text-xs font-bold text-brand-plum-900 hover:text-brand-peach-600 dark:text-white group"
-                    >
-                      <span>{t('common.readArticle')}</span>
-                      <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </div>
-                </div>
-              </LiquidGlass>
-            ))}
+                </LiquidGlass>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* ========================================================= */}
-      {/* 10. FAQ ACCORDION                                         */}
+      {/* 12. FAQ ACCORDION (SMOOTH ANIMATED LUCIDE ACCORDION)      */}
       {/* ========================================================= */}
-      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-tint-peach/15 dark:bg-white/[0.01]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14 space-y-3">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-plum-100 px-3.5 py-1 text-xs font-bold text-brand-plum-800 dark:bg-brand-plum-900/60 dark:text-brand-peach-200">
-              <Sparkles className="h-3.5 w-3.5 text-brand-plum-600 dark:text-brand-peach-300" />
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-tint-peach px-3.5 py-1 text-xs font-bold text-papaya-deep dark:bg-white/10 dark:text-mango">
+              <Sparkles className="h-3.5 w-3.5 text-papaya" />
               <span>{t('faqSection.badge')}</span>
             </span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-plum-950 dark:text-white">
+            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-ink dark:text-white">
               {t('faqSection.title')}
             </h2>
-            <p className="text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200">
+            <p className="text-xs sm:text-sm text-muted dark:text-zinc-300">
               {t('faqSection.subtitle')}
             </p>
           </div>
@@ -888,19 +1283,19 @@ export default function Home({ onOpenBooking }) {
                   variant="card"
                   tint="default"
                   interactive={false}
-                  className="p-5 sm:p-6 rounded-2xl border-white/70 dark:border-white/10"
+                  className="p-5 sm:p-6 rounded-2xl border-white/80 dark:border-white/10 shadow-sm"
                 >
                   <button
                     type="button"
                     onClick={() => setOpenFaq(isOpen ? null : index)}
-                    className="w-full flex items-center justify-between text-left gap-4 focus:outline-none"
+                    className="w-full flex items-center justify-between text-left gap-4 focus:outline-none cursor-pointer"
                     aria-expanded={isOpen}
                   >
-                    <span className="font-heading text-base sm:text-lg font-bold text-brand-plum-950 dark:text-white">
+                    <span className="font-heading text-base sm:text-lg font-bold text-ink dark:text-white">
                       {faq.q}
                     </span>
                     <ChevronDown
-                      className={`h-5 w-5 text-brand-plum-600 dark:text-brand-peach-300 transition-transform duration-300 flex-shrink-0 ${
+                      className={`h-5 w-5 text-papaya-deep dark:text-mango transition-transform duration-300 flex-shrink-0 ${
                         isOpen ? 'rotate-180' : ''
                       }`}
                     />
@@ -910,7 +1305,7 @@ export default function Home({ onOpenBooking }) {
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
-                      className="pt-4 text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200 leading-relaxed border-t border-brand-plum-100 dark:border-white/10 mt-4"
+                      className="pt-4 text-xs sm:text-sm text-muted dark:text-zinc-300 leading-relaxed border-t border-black/5 dark:border-white/10 mt-4"
                     >
                       {faq.a}
                     </motion.div>
@@ -923,36 +1318,36 @@ export default function Home({ onOpenBooking }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 11. DEDICATED NEWSLETTER SECTION ON HOME                  */}
+      {/* 13. DEDICATED NEWSLETTER SECTION ON HOME                  */}
       {/* ========================================================= */}
       <section className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <LiquidGlass
             variant="card"
-            tint="peach"
+            tint="papaya"
             className="rounded-3xl border-white/80 dark:border-white/15 p-8 sm:p-12 shadow-xl"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-6 space-y-3">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-peach-200/60 px-3.5 py-1 text-xs font-bold text-brand-plum-900 dark:bg-brand-plum-900/60 dark:text-brand-peach-200">
-                  <Heart className="h-3.5 w-3.5 text-brand-peach-600 dark:text-brand-peach-300" />
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/80 px-3.5 py-1 text-xs font-bold text-papaya-deep dark:bg-white/10 dark:text-mango">
+                  <Heart className="h-3.5 w-3.5 text-papaya" />
                   <span>{t('homeNewsletter.badge')}</span>
                 </span>
-                <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-plum-950 dark:text-white">
+                <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-ink dark:text-white">
                   {t('homeNewsletter.title')}
                 </h2>
-                <p className="text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200 leading-relaxed">
+                <p className="text-xs sm:text-sm text-muted dark:text-zinc-300 leading-relaxed">
                   {t('homeNewsletter.subtitle')}
                 </p>
-                <p className="text-[11px] text-brand-plum-500 dark:text-brand-plum-400">
+                <p className="text-[11px] text-muted/80 dark:text-zinc-400">
                   {t('homeNewsletter.guarantee')}
                 </p>
               </div>
 
               <div className="lg:col-span-6">
                 {homeNewsletterStatus === 'success' ? (
-                  <div className="rounded-2xl bg-brand-sage-100 p-6 text-brand-sage-900 dark:bg-brand-sage-900/40 dark:text-brand-sage-200 text-center space-y-2">
-                    <CheckCircle2 className="h-8 w-8 text-brand-sage-600 dark:text-brand-sage-400 mx-auto" />
+                  <div className="rounded-2xl bg-tint-mint p-6 text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light text-center space-y-2">
+                    <CheckCircle2 className="h-8 w-8 text-leaf mx-auto" />
                     <h4 className="font-heading text-lg font-bold">
                       {t('homeNewsletter.success')}
                     </h4>
@@ -966,7 +1361,7 @@ export default function Home({ onOpenBooking }) {
                       value={homeNewsletterName}
                       onChange={(e) => setHomeNewsletterName(e.target.value)}
                       placeholder={t('homeNewsletter.namePlaceholder')}
-                      className="w-full rounded-2xl border border-brand-plum-200/80 bg-white/90 px-4 py-3 text-sm text-brand-plum-900 shadow-sm focus:border-brand-peach-500 focus:outline-none focus:ring-2 focus:ring-brand-peach-200 dark:border-white/15 dark:bg-brand-canvas-dark dark:text-white"
+                      className="w-full rounded-2xl border border-papaya/20 bg-white/90 px-4 py-3 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
                     />
                     <input
                       type="email"
@@ -976,12 +1371,12 @@ export default function Home({ onOpenBooking }) {
                       value={homeNewsletterEmail}
                       onChange={(e) => setHomeNewsletterEmail(e.target.value)}
                       placeholder={t('homeNewsletter.emailPlaceholder')}
-                      className="w-full rounded-2xl border border-brand-plum-200/80 bg-white/90 px-4 py-3 text-sm text-brand-plum-900 shadow-sm focus:border-brand-peach-500 focus:outline-none focus:ring-2 focus:ring-brand-peach-200 dark:border-white/15 dark:bg-brand-canvas-dark dark:text-white"
+                      className="w-full rounded-2xl border border-papaya/20 bg-white/90 px-4 py-3 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
                     />
                     <button
                       type="submit"
                       disabled={homeNewsletterStatus === 'loading'}
-                      className="w-full rounded-full bg-brand-plum-700 hover:bg-brand-plum-800 text-white font-bold py-3.5 px-6 text-xs sm:text-sm shadow-md transition-colors flex items-center justify-center gap-2 active:scale-95"
+                      className="w-full rounded-full bg-gradient-to-r from-papaya-deep to-papaya hover:from-papaya hover:to-mango text-white font-bold py-3.5 px-6 text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 active:scale-95"
                     >
                       <Send className="h-4 w-4" />
                       <span>
@@ -999,25 +1394,28 @@ export default function Home({ onOpenBooking }) {
       </section>
 
       {/* ========================================================= */}
-      {/* 12. FINAL CONTACT & DISCOVERY STRIP                       */}
+      {/* 14. FINAL DISCOVERY & CONSULTATION CALL STRIP             */}
       {/* ========================================================= */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <LiquidGlass
             variant="hero"
-            tint="peach"
-            className="rounded-3xl border-white/80 dark:border-white/15 p-8 sm:p-12 text-center shadow-2xl"
+            tint="papaya"
+            className="rounded-3xl border-white/80 dark:border-white/15 p-8 sm:p-14 text-center shadow-2xl relative overflow-hidden"
           >
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-peach-200/70 px-4 py-1 text-xs font-bold text-brand-plum-900 dark:bg-brand-plum-900/60 dark:text-brand-peach-200">
-              <Calendar className="h-3.5 w-3.5 text-brand-peach-600 dark:text-brand-peach-300" />
+            {/* Background Warm Aura */}
+            <div className="ambient-blob-papaya absolute -top-20 left-1/3 h-64 w-64 rounded-full pointer-events-none" />
+
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-white/80 px-4 py-1.5 text-xs font-bold text-papaya-deep dark:bg-white/10 dark:text-mango shadow-sm">
+              <Calendar className="h-3.5 w-3.5 text-papaya" />
               <span>{t('common.bookNow')}</span>
             </span>
 
-            <h2 className="mt-4 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-plum-950 dark:text-white max-w-2xl mx-auto">
+            <h2 className="mt-4 font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-ink dark:text-white max-w-2xl mx-auto">
               {language === 'mr' ? 'स्वतःतील शांत व जिज्ञासू मनाला भेटण्यास तयार आहात?' : language === 'hi' ? 'अपने भीतर के शांत एवं जिज्ञासु मन से मिलने के लिए तैयार हैं?' : 'Ready to meet the curious, grounded you?'}
             </h2>
 
-            <p className="mt-3 text-sm sm:text-base text-brand-plum-800 dark:text-brand-plum-200 max-w-xl mx-auto leading-relaxed">
+            <p className="mt-3 text-sm sm:text-base text-ink/80 dark:text-zinc-200 max-w-xl mx-auto leading-relaxed">
               {language === 'mr' ? 'समुपदेशनाचा पहिला टप्पा नेहमीच विश्वासाचा असतो. पहिल्या दिवसापासून आपण एका संवेदनशील आणि सुरक्षित वातावरणात सुरुवात करतो.' : language === 'hi' ? 'काउंसलिंग की ओर पहला कदम हमेशा विश्वास का होता है। पहले दिन से ही हम एक सुरक्षित और संवेदनशील माहौल में आगे बढ़ते हैं।' : 'Taking the first step into counselling requires courage. We ensure a warm, respectful, and confidential space from day one.'}
             </p>
 
@@ -1025,7 +1423,7 @@ export default function Home({ onOpenBooking }) {
               <button
                 type="button"
                 onClick={() => onOpenBooking('Free 15-Min Discovery Call')}
-                className="w-full sm:w-auto rounded-full bg-brand-plum-700 hover:bg-brand-plum-800 text-white font-bold px-8 py-4 text-sm sm:text-base shadow-lg transition-colors flex items-center justify-center gap-2"
+                className="w-full sm:w-auto rounded-full bg-gradient-to-r from-papaya-deep via-papaya to-mango hover:from-papaya hover:to-mango text-white font-bold px-9 py-4 text-sm sm:text-base shadow-xl shadow-papaya/30 transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
               >
                 <Calendar className="h-4 w-4" />
                 <span>{t('common.freeDiscovery')}</span>
@@ -1035,14 +1433,14 @@ export default function Home({ onOpenBooking }) {
                 href="https://wa.me/919769512475"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-4 text-sm sm:text-base shadow-md transition-colors flex items-center justify-center gap-2"
+                className="w-full sm:w-auto rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 text-sm sm:text-base shadow-md transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
               >
                 <MessageCircle className="h-4 w-4" />
                 <span>WhatsApp: +91 9769512475</span>
               </a>
             </div>
 
-            <p className="mt-4 text-xs text-brand-plum-600 dark:text-brand-plum-300">
+            <p className="mt-5 text-xs text-muted dark:text-zinc-300">
               {t('common.puneOnline')}
             </p>
           </LiquidGlass>

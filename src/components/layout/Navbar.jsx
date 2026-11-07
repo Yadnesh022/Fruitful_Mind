@@ -42,7 +42,7 @@ export default function Navbar({ onOpenBooking }) {
       <div className="relative pointer-events-auto w-full max-w-6xl">
         {/* Nova Glow Halo (Ambient Aura Behind the Pill) */}
         <div
-          className={`absolute -inset-[2px] rounded-full bg-gradient-to-r from-brand-peach-400/45 via-brand-plum-500/35 to-brand-peach-300/45 blur-md transition-opacity duration-500 pointer-events-none ${
+          className={`absolute -inset-[2px] rounded-full bg-gradient-to-r from-papaya/50 via-mango/40 to-leaf/40 blur-md transition-opacity duration-500 pointer-events-none ${
             scrolled ? 'opacity-85' : 'opacity-60'
           }`}
           aria-hidden="true"
@@ -52,8 +52,8 @@ export default function Navbar({ onOpenBooking }) {
         <div
           className={`relative flex items-center justify-between h-14 sm:h-16 px-3 sm:px-5 rounded-full transition-all duration-300 ${
             scrolled
-              ? 'bg-white/85 dark:bg-brand-canvas-darkCard/90 shadow-[0_12px_40px_-10px_rgba(89,45,108,0.22)] dark:shadow-[0_16px_50px_-10px_rgba(0,0,0,0.7)] border border-white/80 dark:border-white/15'
-              : 'bg-white/75 dark:bg-brand-canvas-darkCard/80 shadow-[0_10px_35px_-10px_rgba(89,45,108,0.14)] dark:shadow-[0_12px_40px_-10px_rgba(0,0,0,0.55)] border border-white/70 dark:border-white/10'
+              ? 'bg-white/85 dark:bg-[#1F1A2B]/90 shadow-[0_12px_40px_-10px_rgba(35,31,46,0.18)] dark:shadow-[0_16px_50px_-10px_rgba(0,0,0,0.7)] border border-white/80 dark:border-white/15'
+              : 'bg-white/75 dark:bg-[#1F1A2B]/80 shadow-[0_10px_35px_-10px_rgba(35,31,46,0.12)] dark:shadow-[0_12px_40px_-10px_rgba(0,0,0,0.55)] border border-white/70 dark:border-white/10'
           } backdrop-blur-2xl`}
         >
           {/* Top Specular Edge Highlight */}
@@ -148,18 +148,18 @@ export default function Navbar({ onOpenBooking }) {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               onClick={onOpenBooking}
-              className="relative hidden sm:inline-flex items-center gap-1.5 rounded-full px-4 sm:px-5 py-2 text-xs font-bold text-white shadow-[0_0_20px_-3px_rgba(247,184,125,0.55)] hover:shadow-[0_0_25px_-1px_rgba(247,184,125,0.8)] transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-brand-peach-400 overflow-hidden"
+              className="relative hidden sm:inline-flex items-center gap-1.5 rounded-full px-4 sm:px-5 py-2 text-xs font-bold text-white shadow-[0_4px_16px_rgba(217,68,43,0.35)] hover:shadow-[0_6px_22px_rgba(217,68,43,0.5)] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-papaya overflow-hidden"
               style={{
-                background: 'linear-gradient(135deg, #6b3d81 0%, #592d6c 50%, #f7b87d 100%)',
+                background: 'linear-gradient(135deg, #D9442B 0%, #FF7A59 60%, #FFB627 100%)',
               }}
             >
               {/* Inner animated light sweep */}
               <div
-                className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-1000"
+                className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-1000"
                 aria-hidden="true"
               />
 
-              <Calendar className="h-3.5 w-3.5 text-brand-peach-200 relative z-10" />
+              <Calendar className="h-3.5 w-3.5 text-white relative z-10" />
               <span className="relative z-10">{t('nav.bookSession')}</span>
             </motion.button>
 
@@ -242,12 +242,12 @@ export default function Navbar({ onOpenBooking }) {
                       setMobileMenuOpen(false);
                       onOpenBooking();
                     }}
-                    className="w-full flex items-center justify-center gap-2 rounded-2xl py-3 text-sm font-bold text-white shadow-lg shadow-brand-plum-900/20"
+                    className="w-full flex items-center justify-center gap-2 rounded-2xl py-3 text-sm font-bold text-white shadow-lg shadow-papaya/30"
                     style={{
-                      background: 'linear-gradient(135deg, #6b3d81 0%, #592d6c 50%, #f7b87d 100%)',
+                      background: 'linear-gradient(135deg, #D9442B 0%, #FF7A59 60%, #FFB627 100%)',
                     }}
                   >
-                    <Calendar className="h-4 w-4 text-brand-peach-200" />
+                    <Calendar className="h-4 w-4 text-white" />
                     <span>{t('nav.bookSession')}</span>
                   </button>
                 </div>

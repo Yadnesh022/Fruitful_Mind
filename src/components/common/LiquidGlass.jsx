@@ -62,11 +62,15 @@ export default function LiquidGlass({
 
   // Color tint overlays to maintain high contrast (WCAG AA)
   const tintStyles = {
-    default: 'bg-white/65 dark:bg-brand-canvas-darkCard/75 text-brand-plum-950 dark:text-brand-plum-50',
-    peach: 'bg-gradient-to-br from-brand-peach-100/50 via-white/55 to-brand-peach-50/40 dark:from-brand-peach-900/20 dark:via-brand-canvas-darkCard/70 dark:to-brand-plum-950/40 text-brand-plum-950 dark:text-white',
-    plum: 'bg-brand-plum-700/90 text-white shadow-brand-plum-800/30',
-    sage: 'bg-gradient-to-br from-brand-sage-100/60 via-white/55 to-brand-sage-50/30 dark:from-brand-sage-900/20 dark:via-brand-canvas-darkCard/70 dark:to-brand-canvas-dark/40 text-brand-plum-950 dark:text-white',
-    none: 'bg-white/35 dark:bg-brand-canvas-darkCard/40',
+    default: 'bg-white/65 dark:bg-white/[0.08] text-ink dark:text-white',
+    papaya: 'bg-gradient-to-br from-[#FFE6DA]/75 via-white/70 to-[#FFF7EE]/60 dark:from-[#D9442B]/20 dark:via-[#1F1A2B]/75 dark:to-[#15121D]/50 text-ink dark:text-white',
+    mango: 'bg-gradient-to-br from-[#FFF1CC]/75 via-white/70 to-[#FFF7EE]/60 dark:from-[#FFB627]/15 dark:via-[#1F1A2B]/75 dark:to-[#15121D]/50 text-ink dark:text-white',
+    leaf: 'bg-gradient-to-br from-[#DDF5EC]/75 via-white/70 to-[#FFF7EE]/60 dark:from-[#0F7A62]/20 dark:via-[#1F1A2B]/75 dark:to-[#15121D]/50 text-ink dark:text-white',
+    grape: 'bg-gradient-to-br from-[#ECE6FF]/75 via-white/70 to-[#FFF7EE]/60 dark:from-[#7C5CFF]/20 dark:via-[#1F1A2B]/75 dark:to-[#15121D]/50 text-ink dark:text-white',
+    peach: 'bg-gradient-to-br from-[#FFE6DA]/70 via-white/65 to-[#FFF7EE]/50 dark:from-[#D9442B]/20 dark:via-[#1F1A2B]/70 dark:to-[#15121D]/50 text-ink dark:text-white',
+    plum: 'bg-gradient-to-r from-[#D9442B] to-[#FF7A59] text-white shadow-lg shadow-papaya/25',
+    sage: 'bg-gradient-to-br from-[#DDF5EC]/70 via-white/65 to-[#FFF7EE]/50 dark:from-[#0F7A62]/20 dark:via-[#1F1A2B]/70 dark:to-[#15121D]/50 text-ink dark:text-white',
+    none: 'bg-white/40 dark:bg-white/[0.04]',
   };
 
   // Statically pick component from map so React never unmounts children

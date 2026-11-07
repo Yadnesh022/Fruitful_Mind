@@ -4,24 +4,42 @@
 
 @layer base {
   :root {
-    --color-primary-plum: #592d6c;
-    --color-primary-plum-rgb: 89, 45, 108;
-    --color-peach: #f7b87d;
-    --color-peach-light: #fbdccd;
-    --color-sage: #78946e;
-    --color-canvas-light: #fdfbf7;
-    --color-canvas-dark: #140b19;
+    --color-cream: #FFF7EE;
+    --color-papaya: #FF7A59;
+    --color-papaya-deep: #D9442B;
+    --color-mango: #FFB627;
+    --color-leaf: #1FA886;
+    --color-leaf-deep: #0F7A62;
+    --color-grape: #7C5CFF;
+    --color-ink: #231F2E;
+    --color-muted: #6B6677;
+    --color-tint-peach: #FFE6DA;
+    --color-tint-mint: #DDF5EC;
+    --color-tint-butter: #FFF1CC;
+    --color-tint-lavender: #ECE6FF;
+    --color-canvas-light: #FFF7EE;
+    --color-canvas-dark: #15121D;
   }
 
   body {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-size: 1.0625rem; /* ~17px */
+    line-height: 1.7;
+    color: #231F2E;
+    background-color: #FFF7EE;
     overflow-x: hidden;
     min-height: 100vh;
+  }
+
+  .dark body {
+    color: #F7F6F8;
+    background-color: #15121D;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
     letter-spacing: -0.02em;
+    line-height: 1.25;
   }
 }
 
@@ -47,16 +65,16 @@ html.lenis, html.lenis body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(253, 220, 205, 0.15);
+  background: rgba(255, 230, 218, 0.3);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(89, 45, 108, 0.25);
+  background: rgba(255, 122, 89, 0.35);
   border-radius: 9999px;
   border: 2px solid transparent;
   background-clip: content-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(89, 45, 108, 0.45);
+  background: rgba(217, 68, 43, 0.65);
   background-clip: content-box;
 }
 
@@ -66,16 +84,16 @@ html.lenis, html.lenis body {
   backdrop-filter: blur(16px) saturate(160%);
   -webkit-backdrop-filter: blur(16px) saturate(160%);
   border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 10px 30px -5px rgba(89, 45, 108, 0.07),
+  box-shadow: 0 10px 30px -5px rgba(35, 31, 46, 0.06),
               inset 0 1px 1px 0 rgba(255, 255, 255, 0.8),
-              inset 0 -1px 2px 0 rgba(89, 45, 108, 0.05);
+              inset 0 -1px 2px 0 rgba(255, 122, 89, 0.05);
 }
 
 .dark .glass-surface {
-  background: rgba(29, 16, 36, 0.65);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.45),
               inset 0 1px 1px 0 rgba(255, 255, 255, 0.15),
               inset 0 -1px 2px 0 rgba(0, 0, 0, 0.3);
@@ -96,8 +114,8 @@ html.lenis, html.lenis body {
   height: 50%;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.45) 0%,
-    rgba(255, 255, 255, 0.05) 60%,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.08) 60%,
     transparent 100%
   );
   border-radius: inherit;
@@ -121,26 +139,57 @@ html.lenis, html.lenis body {
 }
 
 /* Ambient animated blur blobs */
+.ambient-blob-papaya {
+  background: radial-gradient(circle, rgba(255, 122, 89, 0.32) 0%, rgba(217, 68, 43, 0.08) 60%, transparent 80%);
+  filter: blur(65px);
+}
+.ambient-blob-mango {
+  background: radial-gradient(circle, rgba(255, 182, 39, 0.35) 0%, rgba(255, 241, 204, 0.12) 60%, transparent 80%);
+  filter: blur(65px);
+}
+.ambient-blob-leaf {
+  background: radial-gradient(circle, rgba(31, 168, 134, 0.3) 0%, rgba(15, 122, 98, 0.08) 60%, transparent 80%);
+  filter: blur(60px);
+}
+.ambient-blob-grape {
+  background: radial-gradient(circle, rgba(124, 92, 255, 0.28) 0%, rgba(92, 56, 235, 0.06) 60%, transparent 80%);
+  filter: blur(60px);
+}
+
+/* Backwards-compatibility aliases */
 .ambient-blob-plum {
-  background: radial-gradient(circle, rgba(144, 93, 158, 0.35) 0%, rgba(89, 45, 108, 0.08) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(124, 92, 255, 0.28) 0%, rgba(92, 56, 235, 0.06) 60%, transparent 80%);
   filter: blur(60px);
 }
 .ambient-blob-peach {
-  background: radial-gradient(circle, rgba(247, 184, 125, 0.45) 0%, rgba(251, 220, 205, 0.12) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(255, 122, 89, 0.32) 0%, rgba(217, 68, 43, 0.08) 60%, transparent 80%);
   filter: blur(65px);
 }
 .ambient-blob-sage {
-  background: radial-gradient(circle, rgba(120, 148, 110, 0.35) 0%, rgba(165, 172, 111, 0.1) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(31, 168, 134, 0.3) 0%, rgba(15, 122, 98, 0.08) 60%, transparent 80%);
   filter: blur(60px);
 }
+
+.dark .ambient-blob-papaya {
+  background: radial-gradient(circle, rgba(255, 122, 89, 0.22) 0%, rgba(217, 68, 43, 0.05) 60%, transparent 80%);
+}
+.dark .ambient-blob-mango {
+  background: radial-gradient(circle, rgba(255, 182, 39, 0.2) 0%, rgba(255, 182, 39, 0.04) 60%, transparent 80%);
+}
+.dark .ambient-blob-leaf {
+  background: radial-gradient(circle, rgba(31, 168, 134, 0.2) 0%, rgba(15, 122, 98, 0.04) 60%, transparent 80%);
+}
+.dark .ambient-blob-grape {
+  background: radial-gradient(circle, rgba(124, 92, 255, 0.2) 0%, rgba(92, 56, 235, 0.04) 60%, transparent 80%);
+}
 .dark .ambient-blob-plum {
-  background: radial-gradient(circle, rgba(144, 93, 158, 0.28) 0%, rgba(89, 45, 108, 0.08) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(124, 92, 255, 0.2) 0%, rgba(92, 56, 235, 0.04) 60%, transparent 80%);
 }
 .dark .ambient-blob-peach {
-  background: radial-gradient(circle, rgba(247, 184, 125, 0.2) 0%, rgba(244, 96, 38, 0.05) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(255, 122, 89, 0.2) 0%, rgba(217, 68, 43, 0.05) 60%, transparent 80%);
 }
 .dark .ambient-blob-sage {
-  background: radial-gradient(circle, rgba(120, 148, 110, 0.22) 0%, rgba(100, 130, 90, 0.05) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(31, 168, 134, 0.2) 0%, rgba(15, 122, 98, 0.04) 60%, transparent 80%);
 }
 
 /* Respect prefers-reduced-motion */

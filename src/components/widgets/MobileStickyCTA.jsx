@@ -17,7 +17,7 @@ export default function MobileStickyCTA({ onOpenBooking }) {
       >
         <button
           onClick={onOpenBooking}
-          className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-brand-plum-700 py-2.5 text-xs font-bold text-white shadow-md active:scale-95 transition-transform"
+          className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-papaya-deep via-papaya to-mango py-2.5 text-xs font-bold text-white shadow-md active:scale-95 transition-transform"
         >
           <Calendar className="h-4 w-4" />
           <span>{t('nav.bookSession')}</span>
