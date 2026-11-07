@@ -1,0 +1,2639 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "blogs": "Articles",
+      "wellbeingGuide": "Guide",
+      "concepts": "Concepts",
+      "course": "Course",
+      "contact": "Contact",
+      "bookSession": "Book a Session"
+    },
+    "common": {
+      "confidential": "100% Confidential",
+      "puneOnline": "Kothrud, Pune & Online",
+      "stigmaFree": "Warm & Stigma-Free",
+      "bookNow": "Book Session",
+      "learnMore": "Learn More",
+      "exploreServices": "Explore Services",
+      "readArticle": "Read Article",
+      "viewAll": "View All",
+      "whatsapp": "Chat on WhatsApp",
+      "call": "Call Directly",
+      "email": "Email Simran",
+      "submit": "Send Message",
+      "takePause": "Take a 1-Minute Pause",
+      "freeDiscovery": "Book Free 15-Min Discovery Call",
+      "bySimran": "By Simran Mistry, Psychologist"
+    },
+    "hero": {
+      "badge": "Psychologist • Pune & Online Worldwide",
+      "tagline": "Discover The Curious You",
+      "headline": "A gentle, judgment-free space to",
+      "headlineHighlight": "untangle your mind.",
+      "subheading": "Whether you are navigating anxiety, quiet overthinking, career transitions, or academic psychology, you don't have to carry it alone. Personalized, eclectic therapy tailored to you.",
+      "ctaPrimary": "Schedule Free Discovery Call",
+      "ctaSecondary": "Explore Services",
+      "stats": {
+        "exp": "3+ Years",
+        "expLabel": "Clinical Practice",
+        "approach": "Eclectic",
+        "approachLabel": "Tailored to You",
+        "confidential": "100%",
+        "confidentialLabel": "Safe & Private"
+      },
+      "pillarsTitle": "Dedicated Pillars of Care",
+      "pillar1Title": "Emotional Wellbeing Counselling",
+      "pillar1Desc": "Anxiety • Overthinking • Stress • Self-Esteem",
+      "pillar2Title": "Career Counselling & Clarity",
+      "pillar2Desc": "Strengths Discovery • Career Crossroads",
+      "pillar3Title": "Psychology Tuition & Mentorship",
+      "pillar3Desc": "Grade 11, 12 & Graduate Level Psychology"
+    },
+    "marquee": [
+      "Anxiety & Panic",
+      "Overthinking Loops",
+      "Stress & Burnout",
+      "Self-Esteem & Inner Critic",
+      "Procrastination & Inertia",
+      "Career Crossroads",
+      "Grade 11 & 12 Psychology Tuition",
+      "Graduate Psychology Coaching",
+      "Emotional Regulation"
+    ],
+    "aboutSection": {
+      "badge": "Therapeutic Philosophy",
+      "headline": "\"Discover The Curious You\" is not a slogan—it is the foundation of healing.",
+      "p1": "When life feels overwhelming, we instinctively judge ourselves. We ask: 'Why can't I just stop overthinking? Why am I procrastinating? Why do I feel so anxious?'",
+      "p2": "In my practice, we replace harsh self-criticism with gentle curiosity. Your brain isn't broken; it has formed adaptive protective patterns to keep you safe. By understanding how your unique mind works through an eclectic blend of Cognitive Behavioural Therapy, Compassion-Focused work, and somatic grounding, we unravel those knotty thoughts without judgment.",
+      "readStory": "Read Simran's Full Story & Approach"
+    },
+    "aboutPage": {
+      "badge": "Meet Your Psychologist",
+      "heroTitle": "\"Therapy is not about fixing you. It is about discovering the curious you.\"",
+      "heroSubtitle": "Welcome to Fruitful Mind. I am Simran Mistry, a Psychologist and Counsellor with over 3 years of clinical practice, dedicated to providing a warm, non-judgmental space in Kothrud, Pune and online.",
+      "journeyTitle": "My Journey & Perspective",
+      "journeyP1": "Growing up, I noticed how frequently people dismissed emotional pain as a personal failure. If someone struggled with constant worry, they were told to 'stop thinking so much.' If someone delayed crucial tasks, they were branded as 'lazy.' If someone struggled with self-worth, they were told to 'just be confident.'",
+      "journeyP2": "During my academic training completing my Master's in Counselling Psychology and my subsequent 3+ years of clinical and counselling practice, I realized that human distress is almost never an absence of willpower. It is an overwhelmed nervous system seeking safety.",
+      "journeyP3": "I founded Fruitful Mind with a core belief: true mental wellbeing does not come from toxic positivity or forcing yourself into clinical checklists. It comes from creating a safe, empathetic space where you can look at your feelings, fears, and behaviors with curiosity rather than condemnation.",
+      "qualTitle": "Professional Qualifications & Ethics",
+      "qual1": "Master's Degree in Counselling Psychology",
+      "qual2": "3+ Years of Clinical Practice in anxiety, career transitions, and student coaching",
+      "qual3": "Eclectic Therapeutic Framework (CBT, Humanistic, Compassion-Focused, Somatics)",
+      "qual4": "Strict Confidentiality & Ethical Adherence aligned with clinical standards",
+      "eclecticBadge": "How We Work Together",
+      "eclecticTitle": "What does an \"Eclectic Approach\" mean for you?",
+      "eclecticSubtitle": "No two minds are identical. Instead of forcing you into a rigid single therapy model, I draw from the most effective psychological frameworks to suit your unique temperament.",
+      "cbtTitle": "Cognitive Behavioural (CBT)",
+      "cbtSub": "Reframing Thoughts",
+      "cbtDesc": "We identify distorted thought patterns (catastrophizing, all-or-nothing thinking) and replace them with grounded, workable reality.",
+      "humanisticTitle": "Humanistic / Client-Centered",
+      "humanisticSub": "Unconditional Regard",
+      "humanisticDesc": "You are the ultimate expert on your life. My role is to hold a safe mirror, helping you uncover your innate wisdom and self-direction.",
+      "cftTitle": "Compassion-Focused (CFT)",
+      "cftSub": "Softening The Inner Critic",
+      "cftDesc": "We teach your brain how to generate feelings of warmth and safety toward yourself, especially when you have made a mistake.",
+      "somaticTitle": "Somatic & Mindfulness",
+      "somaticSub": "Nervous System Grounding",
+      "somaticDesc": "Anxiety is physical. We incorporate breathwork, vagal resets, and body-scanning so your physiology calms down alongside your mind.",
+      "valuesTitle": "Our Non-Negotiable Practice Values",
+      "val1Title": "1. Absolute Confidentiality",
+      "val1Desc": "Your identity, struggles, and session conversations are strictly protected. What is spoken in session stays in session.",
+      "val2Title": "2. Judgment-Free Empathy",
+      "val2Desc": "No thought is 'too taboo,' no emotion is 'silly,' and no life choice is judged. You are received with unconditional human dignity.",
+      "val3Title": "3. Practical Empowerment",
+      "val3Desc": "Therapy should not create perpetual dependence. You will acquire tangible tools and frameworks to navigate life independently."
+    },
+    "servicesPage": {
+      "badge": "Dedicated Offerings",
+      "title": "Three Dedicated Pathways",
+      "subtitle": "Whether you need deep emotional healing, career direction, or academic mastery in psychology, each pathway is grounded in evidence and empathy.",
+      "service1Name": "Emotional Wellbeing Counselling",
+      "service1Tagline": "Anxiety • Overthinking • Stress Management • Self-Esteem • Procrastination",
+      "service1Cta": "Book Counselling Session",
+      "service2Name": "Career Counselling & Guidance",
+      "service2Tagline": "Vocational Clarity • Burnout Recovery • Transition Roadmapping",
+      "service2Cta": "Book Career Consultation",
+      "service3Name": "Psychology Tuition & Mentorship",
+      "service3Tagline": "Grade 11, Grade 12 (CBSE/ISC/State) & Graduate/Undergraduate Level",
+      "service3Cta": "Enquire About Tuition Batches",
+      "whoTitle": "Who This Is For",
+      "outcomesTitle": "Key Outcomes & Tools",
+      "formatLabel": "50-minute sessions • Online (Google Meet) or In-person (Kothrud, Pune)",
+      "journeyBadge": "Process",
+      "journeyTitle": "The Journey: What to Expect",
+      "journeySubtitle": "Therapy is not an interrogation. Here is how we gently collaborate from day one.",
+      "step1Title": "Safe Intake & Grounding",
+      "step1Desc": "A gentle first meeting to discuss your current challenges, understand your history, and set comfort boundaries with zero pressure.",
+      "step2Title": "Pattern Mapping",
+      "step2Desc": "We map out the thoughts, triggers, and bodily reactions that keep you stuck, viewing them with curiosity rather than self-blame.",
+      "step3Title": "Toolkit Practice",
+      "step3Desc": "You receive personalized psychological exercises (CBT reframes, somatic calming, boundary scripts) to experiment with in your daily life.",
+      "step4Title": "Grounded Integration",
+      "step4Desc": "As your nervous system settles and clarity grows, you transition to holding confidence and emotional resilience independently.",
+      "headerBadge": "Dedicated Offerings",
+      "headerTitle": "Grounded Care & Academic Excellence",
+      "headerSubtitle": "Every service at Fruitful Mind is delivered with personalized attention, clinical ethics, and unconditional respect for your pace.",
+      "locationPuneOnline": "Kothrud, Pune & Online Worldwide",
+      "service1": {
+        "name": "Emotional Wellbeing Counselling",
+        "tagline": "Anxiety • Overthinking • Stress Management • Self-Esteem • Procrastination",
+        "format": "50-minute sessions • Online (Google Meet) or In-person (Kothrud, Pune)",
+        "ctaText": "Book Emotional Wellbeing Session",
+        "whoItsFor": [
+          "Individuals experiencing persistent mental chatter, worry loops, or sleep-disrupting thoughts.",
+          "People dealing with chronic work/life stress, exhaustion, or nervous system burnout.",
+          "Anyone struggling with low self-worth, an unforgiving inner critic, or comparison fatigue.",
+          "Those trapped in paralysis by analysis and chronic avoidance/procrastination."
+        ],
+        "whatWeWorkOn": [
+          "Cognitive restructuring to identify and dismantle unhelpful thought distortions.",
+          "Somatic calming practices (vagal nerve stimulation, breathwork) to regulate physical anxiety.",
+          "Cultivating genuine self-compassion to soften the harsh inner critic.",
+          "Breaking tasks down to overcome emotional resistance and rebuild healthy action habits."
+        ]
+      },
+      "service2": {
+        "name": "Career Counselling & Guidance",
+        "tagline": "Vocational Clarity • Burnout Recovery • Transition Roadmapping",
+        "format": "60-minute structured sessions • Assessment batteries & personalized reports available",
+        "ctaText": "Book Career Consultation",
+        "whoItsFor": [
+          "Students and recent graduates unsure of which educational or vocational path to pursue.",
+          "Working professionals standing at a career crossroads, feeling unfulfilled or misaligned.",
+          "Individuals returning to the workforce after a gap or navigating industry shifts.",
+          "Professionals grappling with workplace imposter phenomenon and boundary fatigue."
+        ],
+        "whatWeWorkOn": [
+          "In-depth exploration of core personality traits, natural aptitudes, and authentic values.",
+          "Untangling family or societal expectations from your intrinsic life goals.",
+          "Deconstructing fear of failure and decision paralysis around career choices.",
+          "Step-by-step psychological roadmap for transitions, interviews, and healthy workplace boundaries."
+        ]
+      },
+      "service3": {
+        "name": "Psychology Tuition & Mentorship",
+        "tagline": "Grade 11, Grade 12 (CBSE/ISC/State) & Graduate/Undergraduate Level",
+        "format": "Individual 1-on-1 coaching or small interactive batches • Online or in Kothrud, Pune",
+        "ctaText": "Enquire About Tuition Batches",
+        "whoItsFor": [
+          "Grade 11 & 12 high school students taking Psychology who want deep conceptual mastery.",
+          "Students preparing for Board examinations (CBSE, ISC, Maharashtra State Board).",
+          "Undergraduate and Graduate Psychology students seeking academic mentoring & case study clarity.",
+          "Learners who want to understand psychology deeply rather than memorizing dry textbook notes."
+        ],
+        "whatWeWorkOn": [
+          "Deconstructing complex theories (Cognitive, Psychodynamic, Biological, Social Psychology) into intuitive real-world examples.",
+          "Board examination question-answering strategies, rubric alignment, and diagrammatic explanations.",
+          "Understanding research methods, statistics, experimental design, and ethical guidelines.",
+          "Interactive discussions that build critical thinking and clinical curiosity."
+        ]
+      },
+      "steps": [
+        {
+          "step": "01",
+          "title": "Safe Intake & Grounding",
+          "desc": "A gentle first meeting to discuss your current challenges, understand your history, and set comfort boundaries with zero pressure."
+        },
+        {
+          "step": "02",
+          "title": "Pattern Mapping",
+          "desc": "We map out the thoughts, triggers, and bodily reactions that keep you stuck, viewing them with curiosity rather than self-blame."
+        },
+        {
+          "step": "03",
+          "title": "Toolkit Practice",
+          "desc": "You receive personalized psychological exercises (CBT reframes, somatic calming, boundary scripts) to experiment with in your daily life."
+        },
+        {
+          "step": "04",
+          "title": "Grounded Integration",
+          "desc": "As your nervous system settles and clarity grows, you transition to holding confidence and emotional resilience independently."
+        }
+      ],
+      "bottom": {
+        "title": "Unsure which service matches your current need?",
+        "subtitle": "Schedule a free 15-minute discovery call with Simran. We will openly discuss your situation and identify the ideal pathway forward.",
+        "ctaPrimary": "Book Free 15-Min Discovery Call",
+        "ctaSecondary": "Chat on WhatsApp"
+      }
+    },
+    "wellbeingGuidePage": {
+      "badge": "Comprehensive Resource Hub",
+      "title": "The Emotional Health & Wellbeing Guide",
+      "subtitle": "Curated by Simran Mistry, Psychologist. A grounded, self-paced roadmap with clinical exercises, somatic resets, and journaling prompts for curious minds.",
+      "pdfBadge": "Free PDF Resource",
+      "pdfTitle": "Get the Complete Printable Wellbeing Toolkit",
+      "pdfSubtitle": "Includes all 5 chapters, printable daily reflection logs, a somatic grounding wheel, and an emergency calm-down checklist.",
+      "downloadBtn": "Download Guide (PDF)",
+      "downloadSuccess": "Toolkit Dispatched! Enjoy your grounding journey.",
+      "practiceBadge": "Interactive Practice",
+      "practiceTitle": "Somatic Pause: Box Breathing",
+      "chaptersBadge": "Guide Outline",
+      "chaptersTitle": "Key Focus Chapters & Action Items",
+      "instantDownload": "Instant Download",
+      "freeEdu": "100% Free & Educational",
+      "zeroSpam": "Zero Spam",
+      "emailPlaceholder": "Enter your email for instant guide access...",
+      "toolkitDispatched": "Toolkit Dispatched!",
+      "toolkitSentTo": "We've simulated sending the toolkit to",
+      "enjoyJourney": "Enjoy your grounding journey!",
+      "chaptersSubtitle": "Each chapter is grounded in clinical psychology and paired with an actionable 5-minute somatic exercise.",
+      "actionItemLabel": "Action Item:",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "Calming the Physical Alarm: The Vagal Reset",
+          "focus": "Somatic Regulation",
+          "description": "Why you cannot think your way out of panic when your heart is racing. Learn physiological sighs and vagus nerve stimulation to down-regulate your fight-or-flight response within 90 seconds.",
+          "actionItem": "Practice the physiological sigh: Two rapid inhales through your nose followed by a prolonged, unhurried exhale through your mouth."
+        },
+        {
+          "number": "02",
+          "title": "Untangling the 3 AM Mind: Cognitive Reframing",
+          "focus": "Overthinking & Rumination",
+          "description": "Understanding the evolutionary purpose of night-time worry. How to distinguish between actionable problem solving and toxic self-referential rumination.",
+          "actionItem": "The Worry Postponement Protocol: Keep a dedicated bedside notepad. Write down your intrusive worry and schedule an explicit 15-minute review window for 4:00 PM tomorrow."
+        },
+        {
+          "number": "03",
+          "title": "Guilt-Free Boundaries: Where You Begin and End",
+          "focus": "Interpersonal Health",
+          "description": "Boundaries are not punitive barricades; they are love notes that preserve relationships. Overcome the primal fear of disappointing others without abandoning yourself.",
+          "actionItem": "The 24-Hour Buffer: When asked for a favor, practice saying: \"Thank you for thinking of me! Let me check my commitments and get back to you by tomorrow.\""
+        },
+        {
+          "number": "04",
+          "title": "Dissolving Emotional Procrastination",
+          "focus": "Habits & Executive Function",
+          "description": "Why task delay is an emotional self-preservation response, not laziness. Lowering the activation threshold and breaking tasks into 2-minute micro-steps.",
+          "actionItem": "The \"Terrible Draft\" Rule: Give yourself clinical permission to produce an imperfect first attempt to break momentum paralysis."
+        },
+        {
+          "number": "05",
+          "title": "Restorative Sleep & Digital Boundaries",
+          "focus": "Rhythm & Rejuvenation",
+          "description": "How blue light and late-night scrolling trigger hyperarousal. Setting compassionate digital boundaries that invite your nervous system to genuinely power down.",
+          "actionItem": "The 30-Minute Screen Wind-Down: Replace social media feeds with ambient audio, reading, or gentle somatic body stretching 30 minutes before sleep."
+        }
+      ],
+      "bottom": {
+        "title": "Need personalized guidance to put these into practice?",
+        "subtitle": "Self-help guides are powerful, but having a warm, trained psychologist walk alongside you makes all the difference.",
+        "cta": "Book a 1-on-1 Session with Simran"
+      }
+    },
+    "conceptsPage": {
+      "badge": "Interactive Psychology Dictionary",
+      "title": "Psychology Concepts Simplified",
+      "subtitle": "Human behavior can feel baffling until you have the vocabulary for it. Explore 8 essential psychology concepts, complete with everyday examples and practical takeaways.",
+      "searchPlaceholder": "Search by concept, definition, or tag...",
+      "viewBreakdown": "View Breakdown",
+      "coreDef": "Core Definition:",
+      "dailyEx": "Daily Life Example",
+      "roots": "Psychological Roots & Theory",
+      "inTherapy": "How We Address This in Counselling",
+      "takeaway": "Practical Everyday Takeaway",
+      "exploreInTherapy": "Explore This Pattern in Therapy",
+      "close": "Close"
+    },
+    "coursePage": {
+      "badge": "Interactive Cohort Masterclass",
+      "title": "From Overthinking to Grounded Action",
+      "subtitle": "A practical, psychology-grounded 4-week cohort led by Simran Mistry. Shift from feeling mentally scattered and self-critical to operating with calm clarity and self-trust.",
+      "waitlistBtn": "Join Upcoming Cohort Waitlist",
+      "askWhatsapp": "Ask a Question on WhatsApp",
+      "duration": "4 Weeks • 8 Live Hours",
+      "cohortSize": "Max 15 Seats",
+      "kit": "Printable Workbook & Tools",
+      "pricePlaceholder": "[Price: ₹X,XXX Placeholder]",
+      "priceNote": "[Client to input official cohort fee & early bird tier]",
+      "whoTitle": "Who is this course created for?",
+      "syllabusBadge": "Syllabus",
+      "syllabusTitle": "The 4-Week Journey",
+      "faqsTitle": "Course FAQs",
+      "highlights": [
+        {
+          "title": "4 Weeks",
+          "sub": "8 Live Hours • Weekly Cadence"
+        },
+        {
+          "title": "Max 15 Seats",
+          "sub": "High-Touch & Interactive"
+        },
+        {
+          "title": "Printable Kit",
+          "sub": "Worksheets & Reflection Tools"
+        },
+        {
+          "title": "[Price: ₹X,XXX]",
+          "sub": "[Early Bird Tier Available]"
+        }
+      ],
+      "audienceBadge": "Target Audience",
+      "audienceTitle": "Who is this course created for?",
+      "audienceSubtitle": "Designed for thoughtful individuals who feel held back by cognitive loops, perfectionistic freeze, or boundary fatigue.",
+      "audienceList": [
+        {
+          "title": "The Over-Analyzer",
+          "desc": "You spend hours ruminating over emails, past remarks, or future hypotheticals and struggle to quiet your mind."
+        },
+        {
+          "title": "The Perfectionistic Procrastinator",
+          "desc": "You delay starting tasks because your internal standards are impossibly high, leading to guilt and panic deadlines."
+        },
+        {
+          "title": "The Exhausted Giver",
+          "desc": "You struggle to say \"no\", routinely taking on emotional burdens until resentment and burnout set in."
+        },
+        {
+          "title": "The Mindful Seeker",
+          "desc": "You are curious about psychology and want structured, science-backed tools to foster lifelong self-trust."
+        }
+      ],
+      "syllabusSubtitle": "Each module includes live teaching, experiential practice exercises, and immediate homework implementation.",
+      "modules": [
+        {
+          "num": "Module 01",
+          "title": "Mapping Your Nervous System & Biological Calming",
+          "outcomes": [
+            "Understand the autonomic nervous system: Ventral Vagal, Sympathetic, and Dorsal Vagal states.",
+            "Identify your personal stress triggers and early somatic warning signals.",
+            "Master 3 rapid physiological down-regulation breathing protocols."
+          ]
+        },
+        {
+          "num": "Module 02",
+          "title": "Cognitive Restructuring & Unhooking from Thought Loops",
+          "outcomes": [
+            "Dismantle the top 5 cognitive distortions fueling your overthinking.",
+            "Cognitive defusion techniques: learning to observe thoughts without getting swept up in them.",
+            "The \"Worry Protocol\" for undisturbed, restful sleep."
+          ]
+        },
+        {
+          "num": "Module 03",
+          "title": "Dissolving Procrastination & The Perfectionism Trap",
+          "outcomes": [
+            "Discover the neurobiological connection between fear of inadequacy and task delay.",
+            "Practical micro-activation steps to shatter task inertia within 2 minutes.",
+            "Iterative draft methods and forgiving previous delays to rebuild momentum."
+          ]
+        },
+        {
+          "num": "Module 04",
+          "title": "Compassionate Boundaries & Grounded Self-Worth",
+          "outcomes": [
+            "Deconstruct the habit of people-pleasing and guilt-ridden commitments.",
+            "Low-conflict communication scripts for saying \"No\" to colleagues, friends, and family.",
+            "Designing your sustainable personal mental health maintenance plan."
+          ]
+        }
+      ],
+      "faqsSubtitle": "Everything you need to know about the upcoming live masterclass.",
+      "faqs": [
+        {
+          "q": "Is this course equivalent to 1-on-1 psychotherapy?",
+          "a": "This masterclass is a psychoeducational cohort program designed to teach foundational emotional intelligence, nervous system regulation, and cognitive toolkits. While deeply therapeutic, it is educational in nature and does not replace individualized clinical psychiatric treatment."
+        },
+        {
+          "q": "What if I miss a live weekly session?",
+          "a": "All live cohort sessions are recorded and made available in the private participant portal for 6 months along with session presentation slides and printable worksheet packets."
+        },
+        {
+          "q": "How many participants are in each cohort?",
+          "a": "Cohorts are strictly limited to 15 participants to ensure intimate, high-touch discussion, personal Q&A, and comfortable psychological safety."
+        },
+        {
+          "q": "Can I participate if I live outside Pune or India?",
+          "a": "Absolutely! The masterclass is held live via Google Meet and welcomes participants across all cities and time zones."
+        }
+      ],
+      "bottom": {
+        "title": "Reserve Your Spot in the Next Cohort",
+        "subtitle": "Spaces are intentionally restricted to 15 participants to preserve depth, privacy, and personal attention.",
+        "waitlistBtn": "Join Upcoming Cohort Waitlist",
+        "whatsappBtn": "Ask a Question on WhatsApp"
+      }
+    },
+    "contactPage": {
+      "badge": "We Are Here To Listen",
+      "title": "Connect with Fruitful Mind",
+      "subtitle": "Reaching out is often the hardest part of the journey. Whether you prefer a message, an email, or a quick call, you will be met with warmth and zero judgment.",
+      "infoTitle": "Contact Information",
+      "phoneTitle": "Phone / Click-to-Call",
+      "phoneHours": "Mon - Sat, 9:00 AM - 7:00 PM IST",
+      "whatsappTitle": "WhatsApp Chat",
+      "whatsappNote": "Quickest response for enquiries & slot confirmations",
+      "emailTitle": "Direct Email",
+      "locationTitle": "Physical Practice Location",
+      "locationVal": "Kothrud, Pune, Maharashtra",
+      "locationNote": "In-person sessions by appointment • Near Paud Road / Karve Road",
+      "formTitle": "Send a Confidential Message",
+      "formSubtitle": "Fill in the details below. We typically reply within 24 business hours.",
+      "nameLabel": "Your Full Name *",
+      "phoneLabel": "Phone / WhatsApp *",
+      "emailLabel": "Email Address *",
+      "serviceLabel": "Area of Concern / Interest *",
+      "messageLabel": "Your Message or Questions *",
+      "submitBtn": "Send Message",
+      "submitting": "Sending Confidential Message...",
+      "successTitle": "Thank You for Reaching Out",
+      "successDesc": "Your message has been safely received. Simran will get in touch with you shortly.",
+      "sendAnother": "Send Another Note",
+      "mapBadge": "Practice Location",
+      "mapTitle": "Visiting Fruitful Mind in Kothrud, Pune",
+      "mapSubtitle": "Centrally situated in Kothrud, easily accessible via metro and major transit corridors.",
+      "emergencyTitle": "Crisis & Emergency Mental Health Helplines (India)",
+      "emergencyNotice": "Fruitful Mind provides scheduled psychological counselling and does not operate a 24/7 psychiatric emergency crisis service. If you or someone you know is in acute distress or danger, please immediately contact these 24/7 toll-free emergency helplines:",
+      "privacyGuaranteeTitle": "Strict Privacy Guarantee:",
+      "privacyGuaranteeDesc": "Your information is never sold or shared with any third party. Communications remain strictly between you and Simran.",
+      "noSpamNote": "🔒 No marketing spam. Direct response from Simran.",
+      "serviceOptions": [
+        {
+          "value": "Emotional Wellbeing Counselling",
+          "label": "Emotional Wellbeing Counselling"
+        },
+        {
+          "value": "Career Counselling",
+          "label": "Career Counselling"
+        },
+        {
+          "value": "Psychology Tuition (Grade 11/12)",
+          "label": "Psychology Tuition (Grade 11/12)"
+        },
+        {
+          "value": "Psychology Tuition (Graduate)",
+          "label": "Psychology Tuition (Graduate Level)"
+        },
+        {
+          "value": "Course Waitlist Enquiry",
+          "label": "Emotional Wellbeing Course"
+        },
+        {
+          "value": "General Question",
+          "label": "General Question"
+        }
+      ],
+      "namePlaceholder": "e.g. Aditi Joshi",
+      "phonePlaceholder": "e.g. 9820012345",
+      "emailPlaceholder": "you@example.com",
+      "messagePlaceholder": "Share a little context on what you are experiencing..."
+    },
+    "breathingWidget": {
+      "badge": "Mindful Grounding",
+      "cycles": "Cycles",
+      "title": "Take a 1-Minute Pause",
+      "subtitle": "Box breathing calms your sympathetic nervous system within 60 seconds.",
+      "inhale": "Inhale slowly through your nose...",
+      "hold": "Gently pause and hold your breath...",
+      "exhale": "Softly release all air through your mouth...",
+      "rest": "Rest comfortably in stillness...",
+      "ready": "Ready?",
+      "start": "Start 1-Min Pause",
+      "pause": "Pause",
+      "reset": "Reset Exercise"
+    },
+    "moodWidget": {
+      "badge": "Interactive Check-In",
+      "title": "How is your mind feeling today?",
+      "subtitle": "Tap a state below to receive a personalized, gentle psychology tool.",
+      "recommended": "Recommended For You",
+      "readReflection": "Read Reflection",
+      "moods": [
+        {
+          "id": "overwhelmed",
+          "label": "Overwhelmed",
+          "emoji": "🌊",
+          "feeling": "Thoughts racing in all directions",
+          "recommendation": {
+            "title": "Unraveling Overthinking: Break the 3 AM Thought Spiral",
+            "type": "Article",
+            "link": "/blogs/unraveling-overthinking",
+            "summary": "Explore why the brain loops endlessly when tired, and 3 gentle cognitive reframing anchors."
+          }
+        },
+        {
+          "id": "anxious",
+          "label": "Anxious / On Edge",
+          "emoji": "⚡",
+          "feeling": "Restless chest, physical tension",
+          "recommendation": {
+            "title": "Cognitive Behavioural Therapy (CBT) Basics",
+            "type": "Psychology Concept",
+            "link": "/psychology-concepts",
+            "summary": "Learn the foundational connection between thoughts, physical sensations, and actions."
+          }
+        },
+        {
+          "id": "stuck",
+          "label": "Stuck / Delaying",
+          "emoji": "⏳",
+          "feeling": "Putting off tasks despite wanting to start",
+          "recommendation": {
+            "title": "The Real Truth Behind Procrastination (It Is Not Laziness)",
+            "type": "Article",
+            "link": "/blogs/real-truth-procrastination",
+            "summary": "Procrastination is an emotional regulation strategy, not a character flaw. Here is how to dissolve it."
+          }
+        },
+        {
+          "id": "critical",
+          "label": "Self-Critical",
+          "emoji": "🪞",
+          "feeling": "Harsh inner dialogue and self-judgment",
+          "recommendation": {
+            "title": "Rebuilding Self-Esteem: Moving Beyond Conditional Worth",
+            "type": "Article",
+            "link": "/blogs/rebuilding-fragile-self-esteem",
+            "summary": "Learn how to soften the ruthless internal judge and anchor worth in your inherent humanity."
+          }
+        },
+        {
+          "id": "curious",
+          "label": "Curious & Reflective",
+          "emoji": "🌱",
+          "feeling": "Seeking personal growth and clarity",
+          "recommendation": {
+            "title": "Attachment Styles & Relational Blueprints",
+            "type": "Psychology Concept",
+            "link": "/psychology-concepts",
+            "summary": "Discover how early attachment bonds shape adult communication, trust, and intimacy."
+          }
+        }
+      ]
+    },
+    "quizWidget": {
+      "badge": "Self-Reflection Tool",
+      "title": "Wondering if counselling is the right step?",
+      "subtitle": "Take this brief, 3-question self-reflection. No scores, no clinical labels—just gentle clarity.",
+      "qPrefix": "Question",
+      "of": "of",
+      "resultTitle": "You Deserve an Empathetic, Structured Space",
+      "resultDesc": "Your responses reflect a common, very human experience: carrying mental loads alone without having the dedicated tools or space to unpack them. Seeking therapy or coaching is not an admission of weakness—it is a proactive commitment to understanding your curious mind.",
+      "suggestedAction": "Suggested Next Step: A gentle 15-minute introductory conversation with Simran to explore whether her eclectic counselling approach aligns with your goals.",
+      "bookDiscovery": "Book 15-Min Discovery Call",
+      "retake": "Retake Quiz",
+      "questions": [
+        {
+          "id": 1,
+          "question": "When a wave of stress or heavy emotion hits, what is your most frequent reaction?",
+          "options": [
+            {
+              "label": "I replay conversations and scenarios in my head over and over",
+              "tag": "overthinking"
+            },
+            {
+              "label": "I distract myself or scroll on my phone, only to feel drained later",
+              "tag": "avoidance"
+            },
+            {
+              "label": "I talk with friends, but I hesitate to burden them with my true depths",
+              "tag": "isolation"
+            },
+            {
+              "label": "I try to power through, but feel a quiet tension lingering inside",
+              "tag": "tension"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "How would you describe your day-to-day relationship with your thoughts?",
+          "options": [
+            {
+              "label": "My inner critic is loud and often questions my worth or decisions",
+              "tag": "inner_critic"
+            },
+            {
+              "label": "I know what I should do, but procrastination keeps freezing me",
+              "tag": "procrastination"
+            },
+            {
+              "label": "I am standing at a career or life crossroads feeling paralyzed by options",
+              "tag": "crossroads"
+            },
+            {
+              "label": "I am curious to deeply understand psychological patterns and grow",
+              "tag": "curiosity"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "What kind of support would feel most comforting to you right now?",
+          "options": [
+            {
+              "label": "A safe, 100% confidential space where no thought is judged as 'too much'",
+              "tag": "safe_space"
+            },
+            {
+              "label": "Concrete, science-backed tools for anxiety and cognitive reframing",
+              "tag": "practical_tools"
+            },
+            {
+              "label": "Clarifying my natural inclinations, vocational strengths, and career path",
+              "tag": "career_clarity"
+            },
+            {
+              "label": "Mastering psychology concepts and building deep emotional intelligence",
+              "tag": "education"
+            }
+          ]
+        }
+      ]
+    },
+    "faqSection": {
+      "badge": "Clarity & Reassurance",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Clear answers regarding our sessions, confidentiality, format, and fees."
+    },
+    "testimonialsSection": {
+      "badge": "Ethical Feedback Policy",
+      "title": "Client Reflections & Experiences",
+      "subtitle": "In accordance with clinical psychology ethics, all testimonials respect client privacy and consent. Real names and identifying clinical details are never published without informed authorization.",
+      "verified": "Verified Client",
+      "verifiedStudent": "Verified Student"
+    },
+    "footer": {
+      "newsletterBadge": "The Mindful Dispatch",
+      "newsletterTitle": "Gentle insights for curious, caring minds.",
+      "newsletterSubtitle": "Monthly bite-sized reflections, actionable psychology toolkits, and book recommendations by Simran. No spam, ever.",
+      "subscribeBtn": "Subscribe",
+      "subscribing": "Joining...",
+      "subscribed": "Welcome! You're subscribed to gentle mindfulness insights.",
+      "unsubNote": "Unsubscribe anytime with 1 click. Zero promotional clutter.",
+      "tagline": "Fruitful Mind — Rooted in empathy, growing toward clarity.",
+      "areasTitle": "Areas of Focus",
+      "exploreTitle": "Explore",
+      "contactTitle": "Get in Touch",
+      "disclaimer": "Disclaimer: All content and resources provided by Fruitful Mind are educational and supportive in nature and do not constitute emergency psychiatric intervention or formal medical diagnosis. If you are experiencing an acute mental health crisis, please reach out immediately to your nearest emergency room or call the Tele-MANAS national helpline at 14416 (India).",
+      "rights": "All rights reserved. Fruitful Mind by Simran Mistry.",
+      "socialTitle": "Connect With Us"
+    },
+    "blogsPage": {
+      "badge": "Reflections & Research",
+      "title": "Mindful Insights & Psychology Toolkits",
+      "subtitle": "Written by Simran Mistry, translating clinical psychology into compassionate, digestible essays for everyday living.",
+      "searchPlaceholder": "Search articles by title or keyword...",
+      "allCategory": "All",
+      "noArticles": "No articles match your search.",
+      "adjustKeyword": "Try adjusting your keyword or reset the category filter.",
+      "resetFilters": "Reset Filters",
+      "readTime": "min read",
+      "readArticle": "Read Article",
+      "backToArticles": "Back to All Articles",
+      "tableOfContents": "Table of Contents",
+      "shareArticle": "Share this article",
+      "shareWhatsApp": "WhatsApp",
+      "shareTwitter": "X / Twitter",
+      "copyLink": "Copy Link",
+      "linkCopied": "Link copied!",
+      "authorRole": "Psychologist, Fruitful Mind",
+      "relatedArticles": "Related Articles for Curious Minds",
+      "readMore": "Read More"
+    },
+    "bookingModal": {
+      "title": "Book a Session with Simran",
+      "subtitle": "Take the first gentle step toward emotional clarity. Select your preferred service and schedule.",
+      "nameLabel": "Your Full Name *",
+      "namePlaceholder": "e.g. Aditi Joshi",
+      "phoneLabel": "Phone / WhatsApp *",
+      "phonePlaceholder": "e.g. +91 9820012345",
+      "emailLabel": "Email Address *",
+      "emailPlaceholder": "you@example.com",
+      "serviceLabel": "Select Service / Focus *",
+      "modeLabel": "Consultation Mode *",
+      "modeOnline": "Online (Video - Google Meet)",
+      "modeInPerson": "In-Person (Kothrud, Pune)",
+      "dayLabel": "Preferred Day *",
+      "dayWeekdays": "Weekdays (Mon - Fri)",
+      "dayWeekends": "Weekends (Sat)",
+      "timeLabel": "Preferred Time *",
+      "timeMorning": "Morning (9 AM - 12 PM)",
+      "timeAfternoon": "Afternoon (1 PM - 4 PM)",
+      "timeEvening": "Evening (5 PM - 8 PM)",
+      "noteLabel": "Optional Note for Simran",
+      "notePlaceholder": "Briefly share what you would like support with...",
+      "submitBtn": "Proceed to WhatsApp Booking",
+      "initiating": "Connecting...",
+      "successTitle": "Request Initiated!",
+      "successDesc": "Connecting you directly with Simran on WhatsApp to confirm your preferred session slot.",
+      "manualNote": "If WhatsApp didn't open automatically, you can message directly at",
+      "close": "Close"
+    },
+    "conceptsData": {
+      "cognitive-dissonance": {
+        "title": "Cognitive Dissonance",
+        "category": "Cognitive Psychology",
+        "shortDefinition": "The mental discomfort experienced when your actions, beliefs, or values clash with one another.",
+        "dailyExample": "Knowing staying up until 2 AM is bad for your health, but telling yourself 'I had a stressful day, so I deserve this' to reduce internal tension.",
+        "psychologyTheory": "First coined by Leon Festinger in 1957. The human brain cannot tolerate contradictory beliefs without distress, so it instinctively invents rationalizations to restore harmony.",
+        "inTherapy": "In counselling, identifying dissonance helps clients recognize when excuses are covering up grief, fear of failure, or unresolved conflict.",
+        "practicalTakeaway": "When you catch yourself offering ten elaborate justifications for a simple habit, pause and ask: What uncomfortable feeling am I trying to avoid facing?"
+      },
+      "attachment-styles": {
+        "title": "Attachment Styles",
+        "category": "Developmental & Relational",
+        "shortDefinition": "The subconscious emotional blueprint formed in infancy that governs how you bond, trust, and handle vulnerability in adult relationships.",
+        "dailyExample": "Feeling an immediate surge of panic when a partner takes three hours to reply, versus feeling comfortable and assuming they are simply busy.",
+        "psychologyTheory": "Pioneered by John Bowlby and Mary Ainsworth. Four distinct patterns: Secure, Anxious-Preoccupied, Dismissive-Avoidant, and Fearful-Avoidant (Disorganized).",
+        "inTherapy": "Mapping attachment patterns helps clients understand their emotional triggers, de-escalate reactivity, and build 'earned security' through self-soothing and boundary setting.",
+        "practicalTakeaway": "Your attachment style is an adaptive survival adaptation from childhood—not an unchangeable life sentence. Security can be consciously learned and practiced."
+      },
+      "cbt-basics": {
+        "title": "Cognitive Behavioural Therapy (CBT) Triangle",
+        "category": "Therapeutic Modalities",
+        "shortDefinition": "The foundational psychological model showing that Thoughts, Feelings, and Behaviours constantly trigger and amplify each other.",
+        "dailyExample": "Thought: 'They didn’t smile at me, they must dislike me' -> Feeling: Insecurity & sadness -> Behaviour: Withdrawing and avoiding conversation -> reinforcing the original distorted thought.",
+        "psychologyTheory": "Developed by Aaron Beck in the 1960s. Demonstrates that psychological suffering is frequently maintained not by external events themselves, but by our cognitive interpretations of those events.",
+        "inTherapy": "We use thought records, behavioral experiments, and cognitive reframing to interrupt self-reinforcing spirals and restore realistic equilibrium.",
+        "practicalTakeaway": "You cannot control your first spontaneous automatic thought, but you can choose your second reflective thought and your physical response."
+      },
+      "imposter-phenomenon": {
+        "title": "Imposter Phenomenon",
+        "category": "Self-Esteem & Career",
+        "shortDefinition": "The persistent internal belief that your successes are due to luck or deception, coupled with a chronic fear of being 'exposed' as inadequate.",
+        "dailyExample": "Receiving a prestigious promotion and immediately thinking: 'The interview panel made a mistake; soon everyone will realize I know nothing.'",
+        "psychologyTheory": "First identified by clinical psychologists Dr. Pauline Clance and Dr. Suzanne Imes in 1978. It disproportionately impacts high-achieving individuals, students, and minorities.",
+        "inTherapy": "Therapy uncovers the underlying perfectionism and conditional self-worth that fuels imposter feelings, anchoring self-esteem in inherent value rather than external validation.",
+        "practicalTakeaway": "Feelings of fraudulence are usually evidence of high conscientiousness and entering unfamiliar growth zones—not evidence of incompetence."
+      },
+      "boundary-setting": {
+        "title": "Psychological Boundaries",
+        "category": "Interpersonal & Relational",
+        "shortDefinition": "The emotional, mental, and physical limits you set to protect your wellbeing and distinguish where your responsibilities end and others' begin.",
+        "dailyExample": "Saying: 'I care about you, but I cannot answer work calls after 7 PM because I need family time' without over-explaining or apologizing profusely.",
+        "psychologyTheory": "Rooted in Family Systems Theory and Gestalt Therapy. Healthy boundaries exist on a continuum between porous (over-accommodating) and rigid (isolated/walled-off).",
+        "inTherapy": "Clients practice unpacking the guilt associated with disappointing others, reframing boundaries as acts of preservation rather than hostility.",
+        "practicalTakeaway": "A boundary without consequences is merely a wish. You teach people how to treat you by what you consistently permit and reinforce."
+      },
+      "emotional-regulation": {
+        "title": "Emotional Regulation & The Window of Tolerance",
+        "category": "Somatic & Neuroscience",
+        "shortDefinition": "The optimal zone of autonomic nervous system arousal where a person can process distress, think clearly, and respond adaptively without becoming overwhelmed.",
+        "dailyExample": "Receiving unexpected critical feedback: staying grounded and reflective (in the window) vs. screaming/panicking (hyperarousal) vs. going numb and dissociating (hypoarousal).",
+        "psychologyTheory": "Formulated by Dr. Dan Siegel and expanded through Stephen Porges' Polyvagal Theory. Trauma, chronic stress, and exhaustion narrow this tolerance window.",
+        "inTherapy": "We utilize somatic grounding (box breathing, bilateral stimulation) and cognitive anchors to widen the window and prevent nervous system shutdown.",
+        "practicalTakeaway": "When you are outside your Window of Tolerance, stop trying to 'solve' the intellectual problem. First regulate your nervous system; then resume thinking."
+      },
+      "active-listening": {
+        "title": "Active Listening & Empathic Attunement",
+        "category": "Interpersonal & Humanistic",
+        "shortDefinition": "A communication practice involving complete, non-judgmental presence, reflecting both literal words and emotional undertones without rushing to offer advice.",
+        "dailyExample": "Listening to a friend vent about grief and saying: 'It sounds like you are carrying so much invisible heaviness right now,' instead of replying 'At least you still have your job.'",
+        "psychologyTheory": "Originated by Carl Rogers as part of Person-Centered Therapy. True attunement creates psychological safety that allows the speaker to access self-resolution.",
+        "inTherapy": "The therapeutic alliance is built on empathic attunement. Experiencing someone genuinely listening without judgment directly calms the amygdala.",
+        "practicalTakeaway": "Before responding in a difficult conversation, ask yourself: 'Does this person need comfort, a sounding board, or advice right now?'"
+      },
+      "confirmation-bias": {
+        "title": "Confirmation Bias",
+        "category": "Cognitive Psychology",
+        "shortDefinition": "The cognitive tendency to seek out, interpret, and remember information that verifies our pre-existing beliefs while ignoring contrary evidence.",
+        "dailyExample": "Believing 'Everyone at my workplace thinks I’m unapproachable,' and noticing every time someone doesn't say hello in the hallway while ignoring five friendly interactions.",
+        "psychologyTheory": "A universal cognitive heuristic that minimizes cognitive effort. If our underlying belief is 'I am unlovable,' our brain filters reality to confirm that premise.",
+        "inTherapy": "In therapy, we act like detectives of the mind: actively testing automatic beliefs and deliberately hunting for counter-evidence.",
+        "practicalTakeaway": "Whenever you feel 100% certain about an emotionally charged negative belief, deliberately ask: 'What is one piece of evidence that contradicts this conclusion?'"
+      }
+    },
+    "blogsData": {
+      "unraveling-overthinking": {
+        "title": "Unraveling Overthinking: How to Break the 3 AM Thought Spiral",
+        "category": "Emotional Wellbeing",
+        "readTime": "5 min read",
+        "excerpt": "When night falls and distractions fade, why does the brain suddenly replay conversations from three years ago? Understanding rumination through a compassionate psychological lens."
+      },
+      "real-truth-procrastination": {
+        "title": "The Real Truth Behind Procrastination (It Is Not Laziness)",
+        "category": "Emotional Wellbeing",
+        "readTime": "6 min read",
+        "excerpt": "Why task avoidance is actually an involuntary emotional self-protection strategy. How to move from paralysis to gentle, sustainable action without self-loathing."
+      },
+      "rebuilding-fragile-self-esteem": {
+        "title": "Rebuilding Self-Esteem: Moving Beyond Conditional Worth",
+        "category": "Emotional Wellbeing",
+        "readTime": "5 min read",
+        "excerpt": "When self-esteem is tethered solely to achievement, exhaustion follows. How to nurture unconditional human dignity and quiet the ruthless inner judge."
+      }
+    },
+    "affirmationsList": [
+      {
+        "id": 1,
+        "theme": "Self-Compassion",
+        "quote": "You do not have to conquer every uncertainty today. Healing happens in quiet, consistent steps.",
+        "prompt": "What is one small pressure you can release this afternoon?"
+      },
+      {
+        "id": 2,
+        "theme": "Anxiety & Safety",
+        "quote": "Overthinking is rarely about finding answers; it is often a nervous system seeking safety.",
+        "prompt": "Take one deep breath and notice: in this exact room, at this exact moment, you are safe."
+      },
+      {
+        "id": 3,
+        "theme": "Healthy Boundaries",
+        "quote": "Boundaries are not walls to keep others out. They are bridges that show others where you begin and end.",
+        "prompt": "Where is a gentle 'no' needed to protect your energy today?"
+      },
+      {
+        "id": 4,
+        "theme": "Self-Worth",
+        "quote": "Your worth is inherent. It was never something you had to earn through endless productivity.",
+        "prompt": "Can you allow yourself to rest without qualifying it with fatigue?"
+      },
+      {
+        "id": 5,
+        "theme": "Emotional Curiosity",
+        "quote": "Curiosity dissolves shame. When you look at your emotions with curiosity instead of judgment, clarity arrives.",
+        "prompt": "What feeling is knocking at your door right now? Can you greet it like an unexpected guest?"
+      },
+      {
+        "id": 6,
+        "theme": "Patience & Growth",
+        "quote": "Progress is not always linear. Some days are for surging forward; other days are for anchoring your roots.",
+        "prompt": "Acknowledge how far you have already walked through seasons you once thought you could not survive."
+      }
+    ],
+    "welcomeBio": {
+      "badge": "About Your Psychologist",
+      "quote": "“Hello, I am a psychologist with 3+ years of experience. I hold a Master's Degree in Counselling Psychology and follow an eclectic approach. Areas I work in: Emotional Wellbeing Counselling, Career Counselling, and Psychology Tuition. Emotional Wellbeing Services include Anxiety, Stress Management, Overthinking, Self-Esteem, and Procrastination. Psychology Tuitions are offered for Grade 11, 12, and Graduate level.”",
+      "author": "Simran Mistry",
+      "authorRole": "Psychologist & Founder, Fruitful Mind",
+      "credentials": "Master's in Counselling Psychology • 3+ Years Clinical Practice",
+      "location": "Kothrud, Pune & Online Worldwide",
+      "ctaAbout": "Read Full Philosophy & Background",
+      "ctaDiscovery": "Book Free 15-Min Discovery Call"
+    },
+    "homeNewsletter": {
+      "badge": "Monthly Insights",
+      "title": "Join The Mindful Dispatch",
+      "subtitle": "Subscribe to receive thoughtful monthly reflections, practical psychological frameworks, and book recommendations written directly by Simran Mistry. No spam, ever.",
+      "namePlaceholder": "Your First Name",
+      "emailPlaceholder": "Your Email Address",
+      "subscribeBtn": "Subscribe to Newsletter",
+      "subscribing": "Subscribing...",
+      "success": "Thank you for joining! Your monthly dose of mindfulness and mental clarity is on its way.",
+      "guarantee": "🔒 Strictly confidential. 1-click unsubscribe anytime."
+    }
+  },
+  "mr": {
+    "nav": {
+      "home": "होम",
+      "about": "परिचय",
+      "services": "सेवा",
+      "blogs": "लेख",
+      "wellbeingGuide": "मार्गदर्शिका",
+      "concepts": "संकल्पना",
+      "course": "कोर्स",
+      "contact": "संपर्क",
+      "bookSession": "सत्र बुक करा"
+    },
+    "common": {
+      "confidential": "१००% पूर्णतः गोपनीय",
+      "puneOnline": "कोथरूड, पुणे आणि ऑनलाईन",
+      "stigmaFree": "आत्मीय आणि सुरक्षित",
+      "bookNow": "सत्र निश्चित करा",
+      "learnMore": "अधिक जाणून घ्या",
+      "exploreServices": "सेवा जाणून घ्या",
+      "readArticle": "लेख वाचा",
+      "viewAll": "सर्व पहा",
+      "whatsapp": "व्हॉट्सॲपवर संपर्क साधा",
+      "call": "थेट फोन करा",
+      "email": "ईमेल पाठवा",
+      "submit": "संदेश पाठवा",
+      "takePause": "१ मिनिट शांत श्वास घ्या",
+      "freeDiscovery": "मोफत १५-मिनिट संवादाची वेळ घ्या",
+      "bySimran": "सिमरन मिस्त्री, मानसशास्त्रज्ञ"
+    },
+    "hero": {
+      "badge": "मानसशास्त्रज्ञ • पुणे आणि ऑनलाईन",
+      "tagline": "स्वतःतील जिज्ञासू मन ओळखा",
+      "headline": "मनातील गुंतागुंत सोडवण्यासाठी एक",
+      "headlineHighlight": "सुरक्षित आणि विश्वासू जागा.",
+      "subheading": "चिंता, अतिविचार, करिअरचे निर्णय किंवा मानसशास्त्राचा अभ्यास — तुम्हाला हे एकट्याने सोसण्याची मुळीच गरज नाही. तुमच्या व्यक्तिमत्त्वानुसार समग्र आणि वैयक्तिक समुपदेशन.",
+      "ctaPrimary": "मोफत समुपदेशन संवाद साधा",
+      "ctaSecondary": "सेवा जाणून घ्या",
+      "stats": {
+        "exp": "३+ वर्षे",
+        "expLabel": "अनुभव व सराव",
+        "approach": "समग्र दृष्टीकोन",
+        "approachLabel": "तुमच्या गरजेनुसार",
+        "confidential": "१००%",
+        "confidentialLabel": "पूर्णतः सुरक्षित"
+      },
+      "pillarsTitle": "समुपदेशनाचे मुख्य विभाग",
+      "pillar1Title": "भावनिक आरोग्य समुपदेशन",
+      "pillar1Desc": "चिंता • अतिविचार • तणाव • आत्मविश्वास",
+      "pillar2Title": "करिअर मार्गदर्शन व दिशादर्शन",
+      "pillar2Desc": "सामर्थ्य शोध • करिअरचे महत्त्वाचे वळण",
+      "pillar3Title": "मानसशास्त्र ट्युशन व कोचिंग",
+      "pillar3Desc": "११वी, १२वी आणि पदवीधर मानसशास्त्र"
+    },
+    "marquee": [
+      "चिंता आणि भीती",
+      "अतिविचार चक्र",
+      "तणाव व्यवस्थापन",
+      "आत्मविश्वास आणि स्व-सन्मान",
+      "टाळाटाळ / प्रोक्रॅस्टिनेशन",
+      "करिअर दिशादर्शन",
+      "११वी व १२वी मानसशास्त्र ट्युशन",
+      "पदवीधर मानसशास्त्र मार्गदर्शन",
+      "भावनिक संतुलन"
+    ],
+    "aboutSection": {
+      "badge": "समुपदेशन तत्त्वज्ञान",
+      "headline": "\"स्वतःतील जिज्ञासू मन ओळखा\" — हे केवळ घोषवाक्य नसून स्वास्थ्याचा पाया आहे.",
+      "p1": "जेव्हा मनात विचारांचा गोंधळ उडतो, तेव्हा आपण नकळत स्वतःलाच दोष देऊ लागतो: 'मीच का इतका विचार करतो? मी कामे पुढे का ढकलतो? मला इतकी भीती का वाटते?'",
+      "p2": "माझ्या समुपदेशनात आपण स्वतःवर टीका करण्याऐवजी प्रेमळ जिज्ञासेने पाहतो. तुमचे मन बिघडलेले नाही; ते केवळ संरक्षणासाठी काही सवयींमध्ये अडकले आहे. कॉग्निटिव्ह बिहेव्हिरल थेरपी (CBT), करुणा-आधारित विचार आणि श्वासाच्या सरावाद्वारे आपण कोणताही पूर्वग्रह न ठेवता हा गुंता सोडवतो.",
+      "readStory": "सिमरन यांची संपूर्ण कहाणी व दृष्टीकोन वाचा"
+    },
+    "aboutPage": {
+      "badge": "समुपदेशक परिचय",
+      "heroTitle": "\"थेरपी म्हणजे स्वतःला बदलणे नव्हे, तर चिंतांच्या मागे दडलेल्या जिज्ञासू मनाचा शोध घेणे होय.\"",
+      "heroSubtitle": "फ्रूटफुल माइंडमध्ये आपले स्वागत आहे. मी सिमरन मिस्त्री, ३+ वर्षांचा प्रत्यक्ष अनुभव असलेली मानसशास्त्रज्ञ (Master's in Counselling Psychology). कोथरूड, पुणे येथे आणि जगभरात ऑनलाईन समुपदेशन सेवा पुरवते.",
+      "journeyTitle": "माझा प्रवास आणि दृष्टीकोन",
+      "journeyP1": "लहानपणापासून मी पाहिले की लोक मानसिक त्रासाला वैयक्तिक कमकुवतपणा समजतात. सतत चिंता करणाऱ्याला 'विचार कमी कर' म्हटले जाते, कामात अडकणाऱ्याला 'आळशी' म्हटले जाते आणि न्यूनगंड असलेल्याला 'फक्त आत्मविश्वास ठेव' असा उथळ सल्ला मिळतो.",
+      "journeyP2": "मास्टर्स इन समुपदेशन मानसशास्त्र पूर्ण करताना आणि ३ वर्षांच्या प्रत्यक्ष सरावात मला जाणीव झाली की — मानसिक अस्वस्थता ही इच्छाशक्तीचा अभाव नसून, संरक्षणाचा शोध घेणारी थकलेली मज्जासंस्था असते.",
+      "journeyP3": "मी फ्रूटफुल माइंडची स्थापना एका दृढ विश्वासाने केली: खरे मानसिक स्वास्थ्य खोट्या सकारात्मकतेने येत नाही, तर स्वतःच्या भावनांना कोणत्याही न्यायाधीशाविना जिज्ञासेने स्वीकारल्याने येते.",
+      "qualTitle": "व्यावसायिक शिक्षण व नैतिक मूल्ये",
+      "qual1": "एम.ए. समुपदेशन मानसशास्त्र (Master's in Counselling Psychology)",
+      "qual2": "३+ वर्षांचा प्रत्यक्ष क्लिनिकल व समुपदेशन सराव",
+      "qual3": "समग्र थेरपी पद्धती (CBT, ह्यूमॅनिस्टिक, कम्पाशन-फोकस्ड, सोमाटिक)",
+      "qual4": "१००% गोपनीयता व उच्च व्यावसायिक नैतिकता",
+      "eclecticBadge": "आपण एकत्र कसे काम करतो?",
+      "eclecticTitle": "\"समग्र दृष्टीकोन\" (Eclectic Approach) म्हणजे काय?",
+      "eclecticSubtitle": "प्रत्येक व्यक्तीचे मन वेगळे असते. तुम्हाला एकाच ठोकळेबाज थेरपीत बांधण्याऐवजी, तुमच्या गरजेनुसार मी विविध प्रभावी मानसशास्त्रीय पद्धती एकत्र वापरते.",
+      "cbtTitle": "कॉग्निटिव्ह बिहेव्हिरल थेरपी (CBT)",
+      "cbtSub": "विचारांना योग्य दिशा देणे",
+      "cbtDesc": "मनातील नकारात्मक विचारांचे चक्र ओळखून त्याला वास्तववादी व संतुलित आधार देण्यास आपण शिकतो.",
+      "humanisticTitle": "ह्यूमॅनिस्टिक / व्यक्ती-केंद्रित",
+      "humanisticSub": "बिनशर्त आदर व स्वीकार",
+      "humanisticDesc": "तुमच्या आयुष्याचे खरे तज्ज्ञ तुम्हीच आहात. मी केवळ एक सुरक्षित आरसा धरते, ज्यातून तुम्हाला तुमचा खरा मार्ग दिसतो.",
+      "cftTitle": "कम्पाशन-फोकस्ड थेरपी (CFT)",
+      "cftSub": "स्वतःवरील टीका कमी करणे",
+      "cftDesc": "चूक झाल्यावर स्वतःला शिक्षा देण्याऐवजी स्वतःशी समजुतदारपणे आणि मायेने वागण्याची कला आपण शिकतो.",
+      "somaticTitle": "सोमाटिक व माइंडफुलनेस",
+      "somaticSub": "शरीर व मज्जासंस्थेला शांत करणे",
+      "somaticDesc": "चिंतेचा परिणाम शरीरावर होतो. श्वास आणि शरीराच्या सरावाने मन आणि शरीर दोन्ही एकाच वेळी शांत होतात.",
+      "valuesTitle": "आमची न ढळणारी तत्त्वे",
+      "val1Title": "१. संपूर्ण गोपनीयता",
+      "val1Desc": "तुमची ओळख आणि सत्रातील सर्व चर्चा पूर्णतः खाजगी राहतात. जे सत्रात बोलले जाते, ते बाहेर कधीही जात नाही.",
+      "val2Title": "२. पूर्वग्रहमुक्त संवेदनशीलता",
+      "val2Desc": "येथे कोणताही विचार निषिद्ध नाही, कोणतीही भावना मूर्खपणाची नाही. तुम्हाला पूर्ण आदराने ऐकले जाते.",
+      "val3Title": "३. स्वावलंबी सक्षमीकरण",
+      "val3Desc": "थेरपीवर सतत अवलंबून राहण्याऐवजी, आयुष्यातील आव्हाने स्वतः पेलण्याची ताकद आणि साधने तुम्हाला मिळतात."
+    },
+    "servicesPage": {
+      "badge": "आमच्या प्रमुख सेवा",
+      "title": "मार्गदर्शनाचे तीन मार्ग",
+      "subtitle": "भावनिक स्वास्थ्य असो, करिअरचा गोंधळ असो किंवा मानसशास्त्राचा अभ्यास — प्रत्येक सेवा शास्त्रीय आधार आणि आत्मीयतेने दिली जाते.",
+      "service1Name": "भावनिक आरोग्य समुपदेशन",
+      "service1Tagline": "चिंता • अतिविचार • तणाव व्यवस्थापन • आत्मविश्वास • टाळाटाळ",
+      "service1Cta": "समुपदेशन सत्र बुक करा",
+      "service2Name": "करिअर मार्गदर्शन व दिशादर्शन",
+      "service2Tagline": "उद्दिष्ट स्पष्टता • तणावातून मुक्ती • करिअरचा नवा मार्ग",
+      "service2Cta": "करिअर समुपदेशन सत्र घ्या",
+      "service3Name": "मानसशास्त्र ट्युशन व कोचिंग",
+      "service3Tagline": "११वी, १२वी (CBSE/ISC/State) आणि पदवीधर मानसशास्त्र",
+      "service3Cta": "ट्युशन बॅचेसबद्दल चौकशी करा",
+      "whoTitle": "हे कोणासाठी आहे?",
+      "outcomesTitle": "सत्रांमधून काय साध्य होते?",
+      "formatLabel": "५० मिनिटांचे सत्र • ऑनलाईन (Google Meet) किंवा प्रत्यक्ष (कोथरूड, पुणे)",
+      "journeyBadge": "पद्धत",
+      "journeyTitle": "समुपदेशनाचा प्रवास: काय अपेक्षा ठेवावी?",
+      "journeySubtitle": "थेरपी ही कोणतीही चौकशी किंवा परीक्षा नाही. पहिल्या दिवसापासून आपण अत्यंत सहजपणे एकत्र पुढे जातो.",
+      "step1Title": "१. सुरक्षित परिचय व संवाद",
+      "step1Desc": "सुरुवातीला कोणतीही घाई न करता, तुमचे सध्याचे ताणतणाव आणि अपेक्षा समजून घेण्यासाठी एक शांत बैठक.",
+      "step2Title": "२. विचारांच्या सवयी समजणे",
+      "step2Desc": "कोणत्या विचारांमुळे मन अडकून पडते ते स्वतःला दोष न देता कुतूहलाने समजून घेणे.",
+      "step3Title": "३. प्रत्यक्ष उपायांचा सराव",
+      "step3Desc": "दररोजच्या जगण्यात वापरता येणारे सोपे मानसशास्त्रीय व्यायाम (श्वास, विचारांची मांडणी, मर्यादा आखणे).",
+      "step4Title": "४. स्थिर व आनंदी जगणे",
+      "step4Desc": "मनाची शांतता वाढल्यावर स्वतंत्रपणे आत्मविश्वासाने आणि समतोलपणे जीवन जगणे.",
+      "headerBadge": "आमच्या प्रमुख सेवा",
+      "headerTitle": "शास्त्रीय आधार आणि शैक्षणिक मार्गदर्शन",
+      "headerSubtitle": "फ्रूटफुल माइंडमधील प्रत्येक सेवा वैयक्तिक लक्ष, व्यावसायिक नैतिकता आणि तुमच्या वेगाचा आदर राखून दिली जाते.",
+      "locationPuneOnline": "कोथरूड, पुणे आणि ऑनलाईन जगभरात",
+      "service1": {
+        "name": "भावनिक आरोग्य समुपदेशन",
+        "tagline": "चिंता • अतिविचार • तणाव व्यवस्थापन • आत्मविश्वास • टाळाटाळ",
+        "format": "५० मिनिटांचे सत्र • ऑनलाईन (Google Meet) किंवा प्रत्यक्ष (कोथरूड, पुणे)",
+        "ctaText": "भावनिक आरोग्य सत्र बुक करा",
+        "whoItsFor": [
+          "सतत डोक्यात विचार चालू असणे, रात्री झोप न येणे किंवा चिंतेचे विचारचक्र असणे.",
+          "ऑफिस किंवा वैयक्तिक आयुष्यातील तणाव, सतत थकवा आणि मानसिक बर्नआऊट.",
+          "कमी आत्मविश्वास, स्वतःवर सतत टीका करण्याची सवय किंवा इतरांशी तुलना.",
+          "अतिविचारामुळे कामे पुढे ढकलणे आणि भीतीमुळे निर्णय न घेता येणे."
+        ],
+        "whatWeWorkOn": [
+          "CBT थेरपीद्वारे मनातील चुकीचे नकारात्मक विचार ओळखून त्यांना वास्तववादी दिशा देणे.",
+          "शरीराची घबराट शांत करण्यासाठी श्वासाचे तंत्र आणि सोमाटिक व्यायाम.",
+          "स्वतःवर टीका करण्याऐवजी स्वतःशी समजुतदारपणे आणि मायेने वागण्याची सवय लावणे.",
+          "भीतीवर मात करून दैनंदिन कामे सहजतेने पूर्ण करण्याची नवी पद्धत शिकणे."
+        ]
+      },
+      "service2": {
+        "name": "करिअर मार्गदर्शन व दिशादर्शन",
+        "tagline": "उद्दिष्ट स्पष्टता • तणावातून मुक्ती • करिअरचा नवा मार्ग",
+        "format": "६० मिनिटांचे संरचित सत्र • क्षमता चाचणी आणि वैयक्तिक अहवाल उपलब्ध",
+        "ctaText": "करिअर समुपदेशन सत्र बुक करा",
+        "whoItsFor": [
+          "विद्यार्थी आणि नुकतेच पदवीधर झालेले तरुण ज्यांना करिअरच्या योग्य मार्गाची निवड करायची आहे.",
+          "नोकरीत अडकलेले किंवा कामात समाधान न मिळणारे नोकरदार व्यावसायिक.",
+          "करिअरमध्ये गॅप पडल्यानंतर पुन्हा कामात सुरुवात करू पाहणारे किंवा क्षेत्र बदलू पाहणारे.",
+          "ऑफिसमध्ये न्यूनगंड (Imposter Syndrome) आणि कामाच्या अतिताणाने थकलेले लोक."
+        ],
+        "whatWeWorkOn": [
+          "तुमचे नैसर्गिक गुण, क्षमता, आवडी आणि मूल्यांचा सखोल मानसशास्त्रीय अभ्यास.",
+          "कुटुंब किंवा समाजाच्या दबावापासून तुमच्या खऱ्या इच्छा आणि उद्दिष्टे वेगळी करणे.",
+          "अपयशाची भीती आणि निर्णय घेण्यातील संभ्रम दूर करणे.",
+          "नोकरी बदल, मुलाखती आणि कामाच्या ठिकाणी निरोगी मर्यादा आखण्यासाठी कृती आराखडा."
+        ]
+      },
+      "service3": {
+        "name": "मानसशास्त्र ट्युशन व कोचिंग",
+        "tagline": "११वी, १२वी (CBSE/ISC/State) आणि पदवीधर मानसशास्त्र",
+        "format": "वैयक्तिक १-ऑन-१ कोचिंग किंवा लहान इंटरॅक्टिव्ह बॅचेस • ऑनलाईन किंवा कोथरूड, पुणे",
+        "ctaText": "ट्युशन बॅचेसबद्दल चौकशी करा",
+        "whoItsFor": [
+          "११वी आणि १२वीचे विद्यार्थी ज्यांना मानसशास्त्र केवळ घोकंपट्टी न करता मुळापासून समजून घ्यायचे आहे.",
+          "बोर्ड परीक्षांची (CBSE, ISC, महाराष्ट्र स्टेट बोर्ड) परिपूर्ण तयारी करू इच्छिणारे विद्यार्थी.",
+          "बी.ए., बी.एस्सी. किंवा एम.ए. मानसशास्त्राचे पदवीधर ज्यांना केस स्टडीज आणि संकल्पनांमध्ये मार्गदर्शन हवे आहे.",
+          "ज्यांना मानसशास्त्र विषयाची आवड आहे आणि क्लिनिकल उत्सुकता वाढवायची आहे."
+        ],
+        "whatWeWorkOn": [
+          "कठीण सिद्धांत (Cognitive, Biological, Social Psychology) दैनंदिन जीवनातील सोप्या उदाहरणांनी समजवणे.",
+          "बोर्ड परीक्षेतील प्रश्नोत्तरांचे तंत्र, गुण मिळवण्याची पद्धत आणि आकृत्यांचे सादरीकरण.",
+          "संशोधन पद्धती (Research Methods), सांख्यिकी (Statistics) आणि प्रायोगिक मानसशास्त्र.",
+          "विद्यार्थ्यांमध्ये वैचारिक दृष्टी आणि संशोधक वृत्ती वाढवणारी संवादात्मक चर्चा."
+        ]
+      },
+      "steps": [
+        {
+          "step": "०१",
+          "title": "सुरक्षित परिचय व संवाद",
+          "desc": "सुरुवातीला कोणतीही घाई न करता, तुमचे सध्याचे ताणतणाव आणि अपेक्षा समजून घेण्यासाठी एक शांत बैठक."
+        },
+        {
+          "step": "०२",
+          "title": "विचारांच्या सवयी समजणे",
+          "desc": "कोणत्या विचारांमुळे मन अडकून पडते ते स्वतःला दोष न देता कुतूहलाने समजून घेणे."
+        },
+        {
+          "step": "०३",
+          "title": "प्रत्यक्ष उपायांचा सराव",
+          "desc": "दररोजच्या जगण्यात वापरता येणारे सोपे मानसशास्त्रीय व्यायाम (श्वास, विचारांची मांडणी, मर्यादा आखणे)."
+        },
+        {
+          "step": "०४",
+          "title": "स्थिर व आनंदी जगणे",
+          "desc": "मनाची शांतता वाढल्यावर स्वतंत्रपणे आत्मविश्वासाने आणि समतोलपणे जीवन जगणे."
+        }
+      ],
+      "bottom": {
+        "title": "तुमच्यासाठी कोणती सेवा योग्य आहे याबद्दल साशंक आहात?",
+        "subtitle": "सिमरन यांच्यासोबत १५ मिनिटांचे मोफत प्राथमिक सत्र शेड्यूल करा. आम्ही मोकळेपणाने चर्चा करून योग्य मार्ग निवडू.",
+        "ctaPrimary": "मोफत १५-मिनिट प्राथमिक कॉल बुक करा",
+        "ctaSecondary": "व्हॉट्सॲपवर चॅट करा"
+      }
+    },
+    "wellbeingGuidePage": {
+      "badge": "आरोग्य मार्गदर्शिका केंद्र",
+      "title": "भावनिक स्वास्थ्य आणि मनःशांती गाईड",
+      "subtitle": "मानसशास्त्रज्ञ सिमरन मिस्त्री यांनी संकलित केलेली उपयुक्त मार्गदर्शिका — सोपे व्यायाम, श्वासाचे तंत्र आणि चिंतन सराव.",
+      "pdfBadge": "मोफत PDF साधन",
+      "pdfTitle": "संपूर्ण प्रिंट करण्यायोग्य वेलबीइंग टूलकिट मिळवा",
+      "pdfSubtitle": "पाचही प्रकरणांचे सारांश, दैनंदिन डायरीची पाने आणि तातडीने शांत होण्यासाठी चेकलिस्ट समाविष्ट आहे.",
+      "downloadBtn": "गाईड डाऊनलोड करा (PDF)",
+      "downloadSuccess": "टूलकिट पाठवले आहे! आपल्या मनःशांतीच्या प्रवासासाठी शुभेच्छा.",
+      "practiceBadge": "सराव",
+      "practiceTitle": "शांततेचा क्षण: बॉक्स ब्रीदिंग (श्वास सराव)",
+      "chaptersBadge": "प्रकरणे",
+      "chaptersTitle": "मार्गदर्शिकेतील ५ मुख्य प्रकरणे व सराव",
+      "instantDownload": "तात्काळ डाऊनलोड",
+      "freeEdu": "१००% मोफत व शैक्षणिक",
+      "zeroSpam": "कोणताही स्पॅम नाही",
+      "emailPlaceholder": "टूलकिट मिळवण्यासाठी ईमेल टाका...",
+      "toolkitDispatched": "टूलकिट पाठवले आहे!",
+      "toolkitSentTo": "आम्ही टूलकिट या ईमेलवर पाठवले आहे:",
+      "enjoyJourney": "आपल्या मनःशांतीच्या प्रवासासाठी शुभेच्छा!",
+      "chaptersSubtitle": "प्रत्येक प्रकरण मानसशास्त्रीय सिद्धांतांवर आधारित असून दररोज ५ मिनिटांचा सोपा सराव समाविष्ट आहे.",
+      "actionItemLabel": "दैनंदिन सराव:",
+      "chapters": [
+        {
+          "number": "०१",
+          "title": "शारीरिक घबराट शांत करणे: व्हेगल रिसेट",
+          "focus": "सोमाटिक नियंत्रण",
+          "description": "हृदयाचे ठोके वाढलेले असताना केवळ विचारांनी भीती दूर का होत नाही? ९० सेकंदांत शांत होण्यासाठी फिजियोलॉजिकल साय आणि व्हेगस नर्व्हचे तंत्र शिका.",
+          "actionItem": "फिजियोलॉजिकल साय सराव: नाकाने सलग दोन जलद श्वास आत घ्या आणि तोंडाने हळूच सर्व हवा बाहेर सोडा."
+        },
+        {
+          "number": "०२",
+          "title": "रात्री ३ वाजता उडणारा गोंधळ: विचारांना योग्य वळण",
+          "focus": "अतिविचार व चिंता",
+          "description": "रात्रीच्या वेळी मन जास्त विचार का करते? समस्या सोडवणे आणि निरर्थक विचारात अडकणे यातील फरक ओळखा.",
+          "actionItem": "चिंता पुढे ढकलण्याची सवय: रात्री मनात विचार आल्यास बाजूच्या वहीत लिहून ठेवा आणि उद्या दुपारी ४ वाजता त्यावर विचार करण्याचे ठरवा."
+        },
+        {
+          "number": "०३",
+          "title": "अपराधीपणाविना मर्यादा आखणे (Boundaries)",
+          "focus": "नातेसंबंधांचे आरोग्य",
+          "description": "मर्यादा म्हणजे भिंती नव्हेत, तर नातेसंबंध टिकवणारे पूल आहेत. स्वतःचा बळी न देता दुसऱ्यांना नम्रपणे नकार द्यायला शिका.",
+          "actionItem": "२४ तासांचा नियम: कोणाचेही काम स्वीकारण्यापूर्वी म्हणा: 'लक्षात आणून दिल्याबद्दल धन्यवाद! मी माझे वेळापत्रक तपासून उद्या सांगतो.'"
+        },
+        {
+          "number": "०४",
+          "title": "कामे पुढे ढकलण्याची सवय (Procrastination) थांबवणे",
+          "focus": "सवयी आणि कार्यक्षमता",
+          "description": "काम पुढे ढकलणे हा आळस नसून ताण टाळण्याचा भावनिक प्रयत्न असतो. कामाची पायरी २ मिनिटांच्या अगदी लहान तुकड्यात विभागा.",
+          "actionItem": "'कच्चा मसुदा' नियम: काम सुरू करताना ते परिपूर्ण असण्याची गरज नाही, पहिल्या प्रयत्नात केवळ सुरुवात करा."
+        },
+        {
+          "number": "०५",
+          "title": "शांत झोप आणि मोबाईलच्या मर्यादा",
+          "focus": "विश्रांती व ताजेतवाने होणे",
+          "description": "रात्री उशिरापर्यंत मोबाईल बघितल्याने मेंदू सतत जागा राहतो. झोपेच्या ३० मिनिटे आधी स्क्रीन बंद करून मज्जासंस्थेला शांत करा.",
+          "actionItem": "३० मिनिटांचा स्क्रीन ब्रेक: झोपण्यापूर्वी अर्धा तास सोशल मीडियाऐवजी पुस्तक वाचन, शांत संगीत किंवा स्ट्रेचिंग करा."
+        }
+      ],
+      "bottom": {
+        "title": "हे उपाय प्रत्यक्ष आचरणात आणण्यासाठी वैयक्तिक मार्गदर्शन हवे आहे?",
+        "subtitle": "मार्गदर्शिका उपयुक्त असतात, पण एका संवेदनशील मानसशास्त्रज्ञाची सोबत तुम्हाला अधिक लवकर यश मिळवून देते.",
+        "cta": "सिमरन यांच्यासोबत १-ऑन-१ सत्र बुक करा"
+      }
+    },
+    "conceptsPage": {
+      "badge": "मानसशास्त्र शब्दकोश",
+      "title": "मानसशास्त्र सोप्या भाषेत",
+      "subtitle": "मानवी वर्तन गुंतागुंतीचे वाटू शकते, जोवर ते समजून घेण्याचे शब्द आपल्याला सापडत नाहीत. दैनंदिन उदाहरणांसह ८ महत्त्वाची तत्त्वे जाणून घ्या.",
+      "searchPlaceholder": "संकल्पना किंवा टॅगनुसार शोधा...",
+      "viewBreakdown": "विस्तारित माहिती पहा",
+      "coreDef": "मुख्य व्याख्या:",
+      "dailyEx": "दैनंदिन जीवनातील उदाहरण",
+      "roots": "शास्त्रीय सिद्धांत व उगम",
+      "inTherapy": "थेरपीमध्ये याचा उपयोग कसा होतो?",
+      "takeaway": "दैनंदिन जगण्यासाठी महत्त्वाचा धडा",
+      "exploreInTherapy": "या विषयावर समुपदेशनात बोला",
+      "close": "बंद करा"
+    },
+    "coursePage": {
+      "badge": "इंटरॅक्टिव्ह मास्टरक्लास",
+      "title": "अतिविचारांकडून सकारात्मक कृतीकडे",
+      "subtitle": "सिमरन मिस्त्री यांच्या मार्गदर्शनाखाली ४ आठवड्यांचा प्रत्यक्ष गट-अभ्यासक्रम. मानसिक गोंधळातून स्पष्टतेकडे आणि आत्मविश्वासाकडे जाणारा प्रवास.",
+      "waitlistBtn": "पुढील बॅचच्या वेटलिस्टमध्ये सामील व्हा",
+      "askWhatsapp": "व्हॉट्सॲपवर प्रश्न विचारा",
+      "duration": "४ आठवडे • ८ थेट तास",
+      "cohortSize": "फक्त १५ जागा",
+      "kit": "वर्कबुक व मार्गदर्शिका समाविष्ट",
+      "pricePlaceholder": "[किंमत: ₹X,XXX लवकरच घोषित]",
+      "priceNote": "[अधिकृत शुल्काची माहिती मिळवण्यासाठी संपर्क साधा]",
+      "whoTitle": "हा कोर्स कोणासाठी उपयुक्त आहे?",
+      "syllabusBadge": "अभ्यासक्रम",
+      "syllabusTitle": "४ आठवड्यांचा प्रवास",
+      "faqsTitle": "कोर्सबद्दल वारंवार विचारले जाणारे प्रश्न",
+      "highlights": [
+        {
+          "title": "४ आठवडे",
+          "sub": "८ थेट तास • दर आठवड्याला वर्ग"
+        },
+        {
+          "title": "फक्त १५ जागा",
+          "sub": "वैयक्तिक लक्ष व संवाद"
+        },
+        {
+          "title": "वर्कबुक व किट",
+          "sub": "सराव पत्रके आणि चिंतन साधने"
+        },
+        {
+          "title": "[किंमत: ₹X,XXX]",
+          "sub": "[अर्ली बर्ड ऑफर उपलब्ध]"
+        }
+      ],
+      "audienceBadge": "सहभागी वर्ग",
+      "audienceTitle": "हा कोर्स कोणासाठी उपयुक्त आहे?",
+      "audienceSubtitle": "ज्यांना सततच्या विचारांमुळे, कामातील टाळाटाळीमुळे किंवा स्वतःवरील अवाजवी दबावामुळे पुढे जाता येत नाही त्यांच्यासाठी तयार केलेला कोर्स.",
+      "audienceList": [
+        {
+          "title": "सतत विचार करणारे (Over-Analyzer)",
+          "desc": "तुम्ही जुन्या घटनांवर, बोलण्यावर किंवा भविष्यावर तासन्तास विचार करता आणि मन शांत ठेवणे कठीण जाते."
+        },
+        {
+          "title": "परफेक्शनिस्ट टाळाटाळ करणारे",
+          "desc": "काम अगदी परिपूर्ण व्हावे या अट्टहासामुळे काम सुरू करायलाच उशीर होतो आणि नंतर धावपळ व अपराधीपणा वाटतो."
+        },
+        {
+          "title": "सर्वांना खूश ठेवणारे (People Pleaser)",
+          "desc": "दुसऱ्यांना 'नाही' म्हणायला भीती वाटते, ज्यामुळे स्वतःवर प्रचंड ताण येऊन अखेर थकवा जाणवतो."
+        },
+        {
+          "title": "जिज्ञासू साधक",
+          "desc": "तुम्हाला मानसशास्त्राची आवड आहे आणि स्वतःच्या मनाला समजून घेण्यासाठी शास्त्रीय साधने शिकायची आहेत."
+        }
+      ],
+      "syllabusSubtitle": "प्रत्येक मोड्यूलमध्ये प्रत्यक्ष शिकवणे, प्रत्यक्ष सरावाचे व्यायाम आणि दैनंदिन जीवनात वापरण्यासाठी गृहपाठ समाविष्ट आहे.",
+      "modules": [
+        {
+          "num": "मोड्यूल ०१",
+          "title": "मज्जासंस्था समजून घेणे आणि शरीराला शांत करणे",
+          "outcomes": [
+            "ऑटोनॉमिक मज्जासंस्था: व्हेंट्रल व्हेगल, सिम्पॅथेटिक आणि डॉर्सल व्हेगल अवस्थांची ओळख.",
+            "तुमच्या तणावाचे मुख्य ट्रिगर्स आणि शरीरातील सुरुवातीचे धोक्याचे संकेत ओळखणे.",
+            "तणाव तात्काळ कमी करणारी ३ जलद श्वास तंत्रे शिकणे."
+          ]
+        },
+        {
+          "num": "मोड्यूल ०२",
+          "title": "नकारात्मक विचारचक्रातून मुक्त होणे (CBT Reframe)",
+          "outcomes": [
+            "अतिविचार वाढवणाऱ्या प्रमुख ५ मानसिक चुका (Cognitive Distortions) ओळखून संपवणे.",
+            "कॉग्निटिव्ह डिफ्यूजन: विचारांमध्ये न वाहून जाता त्यांना त्रयस्थपणे पाहण्याची कला.",
+            "शांत आणि गाढ झोपेसाठी 'चिंता नियोजन' (Worry Protocol)."
+          ]
+        },
+        {
+          "num": "मोड्यूल ०३",
+          "title": "टाळाटाळ (Procrastination) थांबवणे व कृती करणे",
+          "outcomes": [
+            "काम पुढे ढकलणे हा आळस नसून भीती आहे हे शास्त्रीयदृष्ट्या समजून घेणे.",
+            "२ मिनिटांत कामाची सुरुवात करण्याचे मायक्रो-अ‍ॅक्टिव्हेशन तंत्र.",
+            "अपराधीपणा सोडून कामाचा वेग पुन्हा कसा वाढवायचा याचे नियम."
+          ]
+        },
+        {
+          "num": "मोड्यूल ०४",
+          "title": "आरोग्यदायी मर्यादा आणि स्वतःचा आदर करणे",
+          "outcomes": [
+            "अपराधीपणा न वाटता इतरांना सहजपणे 'नाही' म्हणण्याची योग्य भाषा शिकणे.",
+            "मित्र, कुटुंब आणि ऑफिसच्या ठिकाणी योग्य मानसिक मर्यादा आखणे.",
+            "दीर्घकालीन मानसिक स्वास्थ्यासाठी स्वतःचा खाजगी मेंटल हेल्थ प्लॅन तयार करणे."
+          ]
+        }
+      ],
+      "faqsSubtitle": "लाईव्ह मास्टरक्लासबद्दल तुमच्या सर्व शंकांचे निरसन.",
+      "faqs": [
+        {
+          "q": "हा कोर्स वैयक्तिक थेरपीसारखाच आहे का?",
+          "a": "हा एक शैक्षणिक गट-कार्यक्रम आहे जो भावनिक बुद्धिमत्ता आणि मानसशास्त्रीय साधने शिकवतो. हा अत्यंत उपयुक्त असला तरी गंभीर मानसिक आजारांवरील वैयक्तिक उपचारांचा पर्याय नाही."
+        },
+        {
+          "q": "एखादे लाईव्ह सत्र चुकले तर काय होईल?",
+          "a": "सर्व सत्रांचे रेकॉर्डिंग आणि सादरीकरणाच्या स्लाइड्स सहभागींच्या खास पोर्टलवर ६ महिन्यांसाठी उपलब्ध करून दिल्या जातात."
+        },
+        {
+          "q": "एका बॅचमध्ये किती विद्यार्थी असतील?",
+          "a": "सखोल चर्चा, वैयक्तिक शंकांचे निरसन आणि सुरक्षित वातावरण राखण्यासाठी प्रत्येक बॅचमध्ये जास्तीत जास्त १५ सहभागी असतात."
+        },
+        {
+          "q": "मी पुण्याच्या बाहेर किंवा भारताबाहेर असल्यास सहभागी होऊ शकतो का?",
+          "a": "नक्कीच! हा क्लास Google Meet द्वारे ऑनलाईन होतो, त्यामुळे जगातील कोणत्याही ठिकाणाहून तुम्ही सहभागी होऊ शकता."
+        }
+      ],
+      "bottom": {
+        "title": "पुढील बॅचमध्ये आपली जागा निश्चित करा",
+        "subtitle": "वैयक्तिक लक्ष आणि गोपनीयता राखण्यासाठी जागा केवळ १५ लोकांपुरतीच मर्यादित ठेवल्या जातात.",
+        "waitlistBtn": "वेटलिस्टमध्ये नाव नोंदवा",
+        "whatsappBtn": "व्हॉट्सॲपवर माहिती विचारा"
+      }
+    },
+    "contactPage": {
+      "badge": "आम्ही ऐकण्यासाठी तयार आहोत",
+      "title": "फ्रूटफुल माइंडशी संपर्क साधा",
+      "subtitle": "मदत मागणे हे नेहमीच धाडसाचे काम असते. मेसेज, ईमेल किंवा फोन — तुम्ही ज्या प्रकारे संपर्क साधाल, त्याचे स्वागतच होईल.",
+      "infoTitle": "संपर्क माहिती",
+      "phoneTitle": "थेट फोन करा",
+      "phoneHours": "सोम ते शनि, सकाळी ९ ते संध्याकाळी ७",
+      "whatsappTitle": "व्हॉट्सॲप संवाद",
+      "whatsappNote": "चौकशी आणि वेळ निश्चित करण्यासाठी सर्वात जलद मार्ग",
+      "emailTitle": "थेट ईमेल",
+      "locationTitle": "क्लिनिक पत्ता",
+      "locationVal": "कोथरूड, पुणे, महाराष्ट्र",
+      "locationNote": "पूर्वपरवानगीने प्रत्यक्ष सत्रे • पौड रोड / कर्वे रोड जवळ",
+      "formTitle": "गोपनीय संदेश पाठवा",
+      "formSubtitle": "खालील माहिती भरा. आम्ही २४ तासांत उत्तर देतो.",
+      "nameLabel": "तुमचे पूर्ण नाव *",
+      "phoneLabel": "फोन / व्हॉट्सॲप नंबर *",
+      "emailLabel": "ईमेल पत्ता *",
+      "serviceLabel": "कोणत्या सेवेबद्दल बोलायचे आहे? *",
+      "messageLabel": "तुमचा संदेश किंवा प्रश्न *",
+      "submitBtn": "संदेश पाठवा",
+      "submitting": "गोपनीय संदेश पाठवत आहे...",
+      "successTitle": "संपर्क केल्याबद्दल धन्यवाद",
+      "successDesc": "तुमचा संदेश सुरक्षितपणे पोहोचला आहे. सिमरन लवकरच तुमच्याशी संपर्क साधतील.",
+      "sendAnother": "दुसरा संदेश पाठवा",
+      "mapBadge": "क्लिनिक स्थान",
+      "mapTitle": "कोथरूड, पुणे क्लिनिक",
+      "mapSubtitle": "कोथरूडच्या मध्यवर्ती भागात, मेट्रो व सार्वजनिक वाहतुकीने सहज पोहोचता येण्याजोगे स्थान.",
+      "emergencyTitle": "तातडीच्या मदतीसाठी २४/७ राष्ट्रीय हेल्पलाईन (भारत)",
+      "emergencyNotice": "फ्रूटफुल माइंड हे पूर्वपरवानगीने समुपदेशन देते आणि येथे २४/७ आपत्कालीन मानसोपचार कक्ष नाही. जर तुम्ही किंवा तुमच्या ओळखीची व्यक्ती गंभीर मानसिक संकटात असेल, तर कृपया त्वरित या मोफत राष्ट्रीय क्रमांकांवर संपर्क साधा:",
+      "privacyGuaranteeTitle": "१००% पूर्ण गोपनीयतेची हमी:",
+      "privacyGuaranteeDesc": "तुमची कोणतीही माहिती कधीही इतर कोणाशीही शेअर केली जात नाही. सर्व संवाद केवळ तुमच्या आणि सिमरन यांच्यातच मर्यादित राहतात.",
+      "noSpamNote": "🔒 कोणताही स्पॅम नाही. सिमरन यांच्याकडून थेट प्रतिसाद.",
+      "serviceOptions": [
+        {
+          "value": "Emotional Wellbeing Counselling",
+          "label": "भावनिक आरोग्य समुपदेशन"
+        },
+        {
+          "value": "Career Counselling",
+          "label": "करिअर समुपदेशन व मार्गदर्शन"
+        },
+        {
+          "value": "Psychology Tuition (Grade 11/12)",
+          "label": "मानसशास्त्र ट्युशन (११वी/१२वी)"
+        },
+        {
+          "value": "Psychology Tuition (Graduate)",
+          "label": "मानसशास्त्र ट्युशन (पदवीधर)"
+        },
+        {
+          "value": "Course Waitlist Enquiry",
+          "label": "भावनिक स्वास्थ्य कोर्स"
+        },
+        {
+          "value": "General Question",
+          "label": "इतर सामान्य प्रश्न"
+        }
+      ],
+      "namePlaceholder": "उदा. अदिती जोशी",
+      "phonePlaceholder": "उदा. ९८२००१२३४५",
+      "emailPlaceholder": "you@example.com",
+      "messagePlaceholder": "तुम्हाला सध्या काय अनुभव येत आहे ते थोडे सांगा..."
+    },
+    "breathingWidget": {
+      "badge": "मनःशांती सराव",
+      "cycles": "चक्रे",
+      "title": "१ मिनिट शांत श्वास घ्या",
+      "subtitle": "बॉक्स ब्रीदिंगमुळे मज्जासंस्था अवघ्या ६० सेकंदांत शांत होते.",
+      "inhale": "नाकाने सावकाश दीर्घ श्वास आत घ्या...",
+      "hold": "श्वास अलगद रोखून धरा...",
+      "exhale": "तोंडाने सर्व हवा हळूच बाहेर सोडा...",
+      "rest": "शांततेत विश्रांती घ्या...",
+      "ready": "तयार आहात?",
+      "start": "१ मिनिट सराव सुरू करा",
+      "pause": "थांबवा",
+      "reset": "पुन्हा सुरू करा"
+    },
+    "moodWidget": {
+      "badge": "मनाचा कानोसा",
+      "title": "आज तुमचे मन कसे अनुभवत आहे?",
+      "subtitle": "खालील भावना निवडून त्यानुसार सुचवलेले सोपे मानसशास्त्रीय साधन पहा.",
+      "recommended": "तुमच्यासाठी सुचवलेले साधन",
+      "readReflection": "विचार वाचा",
+      "moods": [
+        {
+          "id": "overwhelmed",
+          "label": "अतिविचार / गोंधळ",
+          "emoji": "🌊",
+          "feeling": "डोक्यात सर्व बाजूंनी विचारांची गर्दी",
+          "recommendation": {
+            "title": "अतिविचारांचे चक्र: रात्री ३ वाजता सुरू होणारा गोंधळ कसा थांबवायचा?",
+            "type": "मार्गदर्शक लेख",
+            "link": "/blogs/unraveling-overthinking",
+            "summary": "थकल्यावर मन सतत का विचार करते आणि विचारांना शांत करण्याचे ३ सोपे उपाय जाणून घ्या."
+          }
+        },
+        {
+          "id": "anxious",
+          "label": "चिंता / अस्वस्थता",
+          "emoji": "⚡",
+          "feeling": "छातीत धडधडणे आणि शारीरिक ताण",
+          "recommendation": {
+            "title": "कॉग्निटिव्ह बिहेव्हिरल थेरपी (CBT) त्रिकोण",
+            "type": "मानसशास्त्रीय संकल्पना",
+            "link": "/psychology-concepts",
+            "summary": "विचार, शारीरिक संवेदना आणि कृती यांच्यातील मूलभूत संबंध समजून घ्या."
+          }
+        },
+        {
+          "id": "stuck",
+          "label": "अडकलेले / टाळाटाळ",
+          "emoji": "⏳",
+          "feeling": "इच्छा असूनही काम सुरू न करता पुढे ढकलणे",
+          "recommendation": {
+            "title": "कामे पुढे ढकलण्यामागील खरे सत्य (हा मुळीच आळस नाही)",
+            "type": "मार्गदर्शक लेख",
+            "link": "/blogs/real-truth-procrastination",
+            "summary": "काम पुढे ढकलणे हा आळस नसून भावनिक संरक्षणाचा प्रयत्न असतो. यावर मात कशी करावी ते पहा."
+          }
+        },
+        {
+          "id": "critical",
+          "label": "स्वतःवर टीका",
+          "emoji": "🪞",
+          "feeling": "स्वतःलाच सतत दोष देणे आणि कमी समजणे",
+          "recommendation": {
+            "title": "आत्मसन्मान पुन्हा मिळवणे: स्वतःवरील अटी दूर करणे",
+            "type": "मार्गदर्शक लेख",
+            "link": "/blogs/rebuilding-fragile-self-esteem",
+            "summary": "स्वतःवरील टीका कमी करून स्वतःच्या अस्तित्वाचा आदर कसा करावा ते शिका."
+          }
+        },
+        {
+          "id": "curious",
+          "label": "जिज्ञासू व समाधानी",
+          "emoji": "🌱",
+          "feeling": "मनाला समजून घेण्याची आणि वाढीची इच्छा",
+          "recommendation": {
+            "title": "अ‍ॅटॅचमेंट स्टाईल्स आणि नातेसंबंधांचे साचे",
+            "type": "मानसशास्त्रीय संकल्पना",
+            "link": "/psychology-concepts",
+            "summary": "लहानपणाचे अनुभव मोठेपणीच्या नात्यांवर आणि विश्वासावर कसा प्रभाव पाडतात ते जाणून घ्या."
+          }
+        }
+      ]
+    },
+    "quizWidget": {
+      "badge": "स्वयं-चिंतन चाचणी",
+      "title": "समुपदेशन तुमच्यासाठी योग्य पाऊल आहे का?",
+      "subtitle": "ही ३ सोप्या प्रश्नांची चाचणी घ्या. कोणतेही गुण नाहीत, कोणताही शिक्का नाही — फक्त सहज स्पष्टता.",
+      "qPrefix": "प्रश्न",
+      "of": "पैकी",
+      "resultTitle": "तुम्हाला एक आदरयुक्त आणि मोकळी जागा मिळण्याचा पूर्ण अधिकार आहे",
+      "resultDesc": "तुमची उत्तरे एका अतिशय मानवी अनुभवाकडे बोट दाखवतात: मानसिक ओझे एकट्याने वाहणे. थेरपी घेणे म्हणजे कमकुवतपणा नसून, स्वतःच्या मनाला समजून घेण्याची सुंदर सुरुवात आहे.",
+      "suggestedAction": "पुढील पाऊल: सिमरन यांच्याशी १५ मिनिटांचा मोफत परिचय संवाद साधून समुपदेशन कसे उपयुक्त ठरेल हे जाणून घ्या.",
+      "bookDiscovery": "१५-मिनिट मोफत कॉल बुक करा",
+      "retake": "चाचणी पुन्हा द्या",
+      "questions": [
+        {
+          "id": 1,
+          "question": "जेव्हा तणाव किंवा तीव्र भावनांची लाट येते, तेव्हा तुमची सर्वात सामान्य प्रतिक्रिया काय असते?",
+          "options": [
+            {
+              "label": "मी डोक्यात जुन्या संभाषणांचा आणि प्रसंगांचा सतत पुन्हा पुन्हा विचार करतो/करते",
+              "tag": "overthinking"
+            },
+            {
+              "label": "मी मोबाईल स्क्रोल करून किंवा इतर गोष्टींमध्ये लक्ष विचलित करतो, नंतर अधिक थकवा येतो",
+              "tag": "avoidance"
+            },
+            {
+              "label": "मी मित्रांशी बोलतो, पण माझे खरे दुःख सांगून त्यांना ओझे वाटू नये म्हणून थांबतो",
+              "tag": "isolation"
+            },
+            {
+              "label": "मी काम चालू ठेवण्याचा प्रयत्न करतो, पण आतमध्ये एक शांत अस्वस्थता कायम राहते",
+              "tag": "tension"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "दैनंदिन जीवनात तुमच्या मनातील विचारांशी तुमचे नाते कसे आहे?",
+          "options": [
+            {
+              "label": "माझा भीतरी टीकाकार खूप मोठा आहे आणि तो सतत माझ्या निर्णयांवर प्रश्न उपस्थित करतो",
+              "tag": "inner_critic"
+            },
+            {
+              "label": "मला काय करायचे आहे हे माहीत असते, पण कामातील टाळाटाळ मला अडकवून ठेवते",
+              "tag": "procrastination"
+            },
+            {
+              "label": "मी करिअर किंवा आयुष्याच्या महत्त्वाच्या वळणावर उभा आहे आणि निर्णयाचा संभ्रम आहे",
+              "tag": "crossroads"
+            },
+            {
+              "label": "मला स्वतःच्या मानसशास्त्रीय सवयी समजून घेऊन अधिक परिपक्व व्हायचे आहे",
+              "tag": "curiosity"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "सध्याच्या क्षणी कोणत्या प्रकारची मदत तुम्हाला सर्वात सुरक्षित वाटेल?",
+          "options": [
+            {
+              "label": "एक १००% पूर्णतः खाजगी जागा जिथे कोणत्याही विचाराला 'अति' समजले जाणार नाही",
+              "tag": "safe_space"
+            },
+            {
+              "label": "चिंता आणि अतिविचार कमी करण्यासाठी शास्त्रीय व सोपी मानसशास्त्रीय साधने",
+              "tag": "practical_tools"
+            },
+            {
+              "label": "माझे खरे गुण ओळखून करिअरची योग्य दिशा शोधण्यासाठी मार्गदर्शन",
+              "tag": "career_clarity"
+            },
+            {
+              "label": "मानसशास्त्राच्या संकल्पना समजून घेऊन भावनिक बुद्धिमत्ता वाढवणे",
+              "tag": "education"
+            }
+          ]
+        }
+      ]
+    },
+    "faqSection": {
+      "badge": "स्पष्टता आणि विश्वास",
+      "title": "वारंवार विचारले जाणारे प्रश्न",
+      "subtitle": "सत्रांचे स्वरूप, गोपनीयता, कालावधी आणि शुल्काविषयी स्पष्ट माहिती."
+    },
+    "testimonialsSection": {
+      "badge": "नैतिक गोपनीयता धोरण",
+      "title": "समुपदेशन घेतलेल्यांचे अनुभव",
+      "subtitle": "मानसशास्त्र आचारसंहितेनुसार सर्व अनुभव गोपनीयतेचा आदर राखून मांडले आहेत. पूर्वसंमतीशिवाय खरी नावे किंवा ओळख कधीही प्रसिद्ध केली जात नाही.",
+      "verified": "सत्यापित क्लायंट",
+      "verifiedStudent": "सत्यापित विद्यार्थी"
+    },
+    "footer": {
+      "newsletterBadge": "द माइंडफुल डिस्पॅच",
+      "newsletterTitle": "जिज्ञासू मनासाठी मासिक प्रेरणादायी विचार.",
+      "newsletterSubtitle": "सिमरन यांनी निवडलेले मानसशास्त्रीय लेख, पुस्तकांची शिफारस आणि सोपे उपाय. कोणताही स्पॅम नाही.",
+      "subscribeBtn": "सदस्य व्हा",
+      "subscribing": "नोंदणी होत आहे...",
+      "subscribed": "स्वागत! आपले नाव यशस्वीरित्या नोंदवले गेले आहे.",
+      "unsubNote": "कधीही एका क्लिकवर सदस्यत्व रद्द करू शकता. कोणताही जाहिरातबाजीचा त्रास नाही.",
+      "tagline": "फ्रूटफुल माइंड — आत्मीयतेतून स्पष्टतेकडे जाणारा प्रवास.",
+      "areasTitle": "समुपदेशनाचे विषय",
+      "exploreTitle": "अधिक जाणून घ्या",
+      "contactTitle": "संपर्क साधा",
+      "disclaimer": "सूचना: फ्रूटफुल माइंडद्वारे दिलेली सर्व माहिती व सामग्री शैक्षणिक उद्देशासाठी आहे, हे वैद्यकीय उपचारांचा पर्याय नाही. आणीबाणीच्या मानसिक संकटात कृपया जवळच्या रुग्णालयात संपर्क साधा किंवा Tele-MANAS हेल्पलाइन १४४१६ वर संपर्क साधा.",
+      "rights": "सर्व हक्क राखीव. फ्रूटफुल माइंड — सिमरन मिस्त्री.",
+      "socialTitle": "सोशल मीडियावर भेटा"
+    },
+    "blogsPage": {
+      "badge": "चिंतन आणि संशोधन",
+      "title": "मानसशास्त्रीय विचार व मनःशांती लेख",
+      "subtitle": "मानसशास्त्रज्ञ सिमरन मिस्त्री यांनी लिहिलेले, दररोजच्या जगण्यात उपयुक्त पडणारे संवेदनशील आणि सोपे लेख.",
+      "searchPlaceholder": "लेखाचे शीर्षक किंवा विषयानुसार शोधा...",
+      "allCategory": "सर्व",
+      "noArticles": "कोणतेही लेख सापडले नाहीत.",
+      "adjustKeyword": "कृपया दुसरा शब्द शोधून पहा किंवा फिल्टर बदला.",
+      "resetFilters": "फिल्टर रीसेट करा",
+      "readTime": "मिनिट वाचन",
+      "readArticle": "संपूर्ण लेख वाचा",
+      "backToArticles": "सर्व लेखांकडे परत जा",
+      "tableOfContents": "अनुक्रमणिका",
+      "shareArticle": "हा लेख शेअर करा",
+      "shareWhatsApp": "व्हॉट्सॲप",
+      "shareTwitter": "X / ट्विटर",
+      "copyLink": "लिंक कॉपी करा",
+      "linkCopied": "लिंक कॉपी झाली!",
+      "authorRole": "मानसशास्त्रज्ञ, फ्रूटफुल माइंड",
+      "relatedArticles": "जिज्ञासू मनासाठी संबंधित लेख",
+      "readMore": "अधिक वाचा"
+    },
+    "bookingModal": {
+      "title": "सिमरन यांच्यासोबत सत्र निश्चित करा",
+      "subtitle": "भावनिक स्पष्टतेच्या दिशेने पहिले शांत पाऊल टाका. तुमची सेवा आणि सोयीची वेळ निवडा.",
+      "nameLabel": "तुमचे पूर्ण नाव *",
+      "namePlaceholder": "उदा. अदिती जोशी",
+      "phoneLabel": "फोन / व्हॉट्सॲप नंबर *",
+      "phonePlaceholder": "उदा. +९१ ९८२००१२३४५",
+      "emailLabel": "ईमेल पत्ता *",
+      "emailPlaceholder": "you@example.com",
+      "serviceLabel": "कोणत्या विषयावर बोलायचे आहे? *",
+      "modeLabel": "सत्राचे स्वरूप *",
+      "modeOnline": "ऑनलाईन (व्हिडिओ कॉल - Google Meet)",
+      "modeInPerson": "प्रत्यक्ष (कोथरूड, पुणे क्लिनिक)",
+      "dayLabel": "सोयीचा वार *",
+      "dayWeekdays": "सोमवार ते शुक्रवार",
+      "dayWeekends": "शनिवार",
+      "timeLabel": "सोयीची वेळ *",
+      "timeMorning": "सकाळी (९ ते १२)",
+      "timeAfternoon": "दुपारी (१ ते ४)",
+      "timeEvening": "संध्याकाळी (५ ते ८)",
+      "noteLabel": "सिमरन यांच्यासाठी काही नोंद (ऐच्छिक)",
+      "notePlaceholder": "तुम्हाला कोणत्या गोष्टीसाठी मार्गदर्शन हवे आहे ते थोडक्यात सांगा...",
+      "submitBtn": "व्हॉट्सॲपवर बुकिंगसाठी पुढे जा",
+      "initiating": "जोडत आहे...",
+      "successTitle": "विनंती नोंदवली गेली आहे!",
+      "successDesc": "तुमच्या पसंतीची वेळ निश्चित करण्यासाठी आम्ही थेट व्हॉट्सॲपवर सिमरन यांच्याशी जोडत आहोत.",
+      "manualNote": "जर व्हॉट्सॲप आपोआप उघडले नाही, तर तुम्ही थेट संपर्क करू शकता:",
+      "close": "बंद करा"
+    },
+    "conceptsData": {
+      "cognitive-dissonance": {
+        "title": "कॉग्निटिव्ह डिसोनन्स (Cognitive Dissonance)",
+        "category": "संज्ञानात्मक मानसशास्त्र",
+        "shortDefinition": "आपले विचार, विश्वास आणि कृती यामध्ये जेव्हा विसंगती निर्माण होते, तेव्हा मनात जाणवणारी अस्वस्थता.",
+        "dailyExample": "रात्री उशिरापर्यंत जागी राहणे आरोग्यासाठी वाईट आहे हे माहीत असूनही, 'आज दिवसभर खूप ताण होता, म्हणून मी हकदार आहे' असे सांगून स्वतःचे समाधान करणे.",
+        "psychologyTheory": "१९५७ मध्ये लिऑन फेस्टिंगर यांनी मांडलेला सिद्धांत. मानवी मेंदू विसंगत विचार सहन करू शकत नाही, त्यामुळे तो मनाचे समर्थन करण्यासाठी कारणे शोधतो.",
+        "inTherapy": "समुपदेशनात ही विसंगती ओळखून आपण समजून घेतो की ही कारणे प्रत्यक्षात अपयशाची भीती किंवा चिंता लपवण्यासाठी आहेत का.",
+        "practicalTakeaway": "जेव्हा तुम्ही एखाद्या चुकीच्या सवयीचे १० वेगवेगळ्या प्रकारे समर्थन करू लागता, तेव्हा थांबा आणि स्वतःला विचारा: मी कोणती अस्वस्थ भावना टाळण्याचा प्रयत्न करत आहे?"
+      },
+      "attachment-styles": {
+        "title": "अ‍ॅटॅचमेंट स्टाईल्स (Attachment Styles)",
+        "category": "नातेसंबंध व बालमानसशास्त्र",
+        "shortDefinition": "लहानपणीच्या अनुभवांमधून तयार झालेला एक मानसिक साचा, जो मोठेपणीच्या नात्यांमधील विश्वास आणि जवळिक ठरवतो.",
+        "dailyExample": "जोडीदाराने मेसेजला उत्तर द्यायला उशीर केल्यावर मनात प्रचंड भीती आणि घबराट निर्माण होणे, किंवा नात्यात जास्त जवळ येण्याची भीती वाटणे.",
+        "psychologyTheory": "जॉन बॉल्बी आणि मेरी एन्सवर्थ यांनी मांडलेला सिद्धांत. मुख्य ४ प्रकार: सुरक्षित (Secure), चिंतातुर (Anxious), दुरावा ठेवणारे (Avoidant) आणि गोंधळलेले (Disorganized).",
+        "inTherapy": "स्वतःची अ‍ॅटॅचमेंट पद्धत समजल्याने व्यक्तीला नात्यातील भीतीवर नियंत्रण मिळवणे आणि सुरक्षित नाते अनुभवणे सोपे जाते.",
+        "practicalTakeaway": "तुमची अ‍ॅटॅचमेंट स्टाईल हा बालपणातील संरक्षणाचा भाग होता—हा जन्मठेपेचा शिक्का नाही. सराव आणि समुपदेशनाने तुम्ही सुरक्षित नाते अनुभवू शकता."
+      },
+      "cbt-basics": {
+        "title": "CBT त्रिकोण (Thoughts, Feelings, Actions)",
+        "category": "थेरपी पद्धती",
+        "shortDefinition": "विचार, भावना आणि वर्तन या तिन्हींचा एकमेकांवर सतत प्रभाव पडतो हे दाखवणारे मूलभूत मानसशास्त्रीय मॉडेल.",
+        "dailyExample": "विचार: 'त्यांनी माझ्याकडे बघून हसले नाही, त्यांना मी आवडत नाही' -> भावना: वाईट वाटणे आणि न्यूनगंड -> वर्तन: स्वतःला बाजूला करून न बोलणे.",
+        "psychologyTheory": "१९६० च्या दशकात अ‍ॅरॉन बेक यांनी विकसित केले. मानवी दुःखाचे मूळ बाह्य घटनांमध्ये नसून, त्या घटनांकडे आपण कसे पाहतो यामध्ये असते.",
+        "inTherapy": "आपण नकारात्मक विचारांचे चक्र ओळखून त्याला वास्तववादी आणि सकारात्मक वळण देण्याचा सराव करतो.",
+        "practicalTakeaway": "मनात येणारा पहिला विचार तुमच्या हातात नसतो, पण त्या विचाराला प्रतिसाद कसा द्यायचा हा दुसरा विचार तुमच्या हातात नक्कीच असतो."
+      },
+      "imposter-phenomenon": {
+        "title": "इम्पोस्टर सिंड्रोम (Imposter Phenomenon)",
+        "category": "आत्मविश्वास व करिअर",
+        "shortDefinition": "स्वतःचे यश हे केवळ नशिबामुळे मिळाले आहे आणि आपण प्रत्यक्षात अपात्र आहोत अशी सतत वाटत राहणारी भीती.",
+        "dailyExample": "मोठ्या पदावर बढती मिळाल्यावर वाटणे: 'कदाचित त्यांची निवड चुकली आहे, मी खरोखर एवढा हुशार नाही आणि लवकरच सर्वांना हे समजेल.'",
+        "psychologyTheory": "डॉ. पॉलिन क्लेन्स आणि डॉ. सुझॅन आईम्स यांनी १९७८ मध्ये शोधून काढले. हुशार आणि मेहनती लोकांमध्ये हा प्रकार जास्त प्रमाणात दिसून येतो.",
+        "inTherapy": "थेरपीमध्ये आपण परिपूर्णतेचा अट्टाहास सोडून स्वतःच्या खऱ्या क्षमता आणि यशाचा स्वीकार करायला शिकतो.",
+        "practicalTakeaway": "स्वतःला अपात्र वाटणे हे तुम्ही अकार्यक्षम असल्याचा पुरावा नाही, तर तुम्ही काहीतरी नवीन शिकण्याच्या आणि वाढीच्या क्षेत्रात पाऊल टाकल्याचा पुरावा आहे."
+      },
+      "boundary-setting": {
+        "title": "मानसिक व वैयक्तिक मर्यादा (Boundaries)",
+        "category": "नातेसंबंध व भावनिक स्वास्थ्य",
+        "shortDefinition": "स्वतःचे मानसिक आणि शारीरिक स्वास्थ्य जपण्यासाठी आणि स्वतःची जबाबदारी निश्चित करण्यासाठी आखलेली निरोगी सीमा.",
+        "dailyExample": "ऑफिसचे फोन संध्याकाळी ७ नंतर न उचलणे आणि अपराधीपणा न वाटता 'मी आता कुटुंबासोबत वेळ घालवत आहे' असे स्पष्ट सांगणे.",
+        "psychologyTheory": "कौटुंबिक प्रणाली सिद्धांतावर आधारित. मर्यादा या दोन टोकांमधील संतुलन असतात — जास्त सैल (सर्वांना हो म्हणणे) किंवा जास्त कडक (सर्वांपासून दूर राहणे).",
+        "inTherapy": "दुसऱ्यांना 'नाही' म्हणताना वाटणारा अपराधीपणा कसा कमी करायचा आणि स्वतःचा आदर कसा ठेवायचा याचा सराव आपण करतो.",
+        "practicalTakeaway": "मर्यादा म्हणजे दुसऱ्यांना दुखावणारी भिंत नव्हे, तर नात्यांना दीर्घकाळ टिकवणारा एक प्रेमळ पूल आहे."
+      },
+      "emotional-regulation": {
+        "title": "विंडो ऑफ टॉलरन्स (Window of Tolerance)",
+        "category": "मज्जासंस्था व भावनिक नियंत्रण",
+        "shortDefinition": "मनाची अशी अवस्था जिथे व्यक्ती तणाव किंवा भीती आल्यावरही शांतपणे विचार करून योग्य निर्णय घेऊ शकते.",
+        "dailyExample": "अचानक कामात चूक झाल्यावर: शांत राहून विचार करणे (विंडोमध्ये) वि. प्रचंड चिडचिड किंवा घाबरून पळून जाणे (विंडोच्या बाहेर).",
+        "psychologyTheory": "डॉ. डॅन सीगल यांनी विकसित केलेले मॉडेल. अतिताण आणि थकव्यामुळे ही सहनशीलता कमी होते आणि माणूस आक्रमक किंवा सुन्न होतो.",
+        "inTherapy": "श्वास आणि शरीराच्या व्यायामाने आपण मज्जासंस्थेला शांत करून या मानसिक संतुलन कक्षेत राहण्याचा सराव करतो.",
+        "practicalTakeaway": "जेव्हा मन प्रचंड अस्वस्थ असते, तेव्हा समस्या सोडवण्याचा प्रयत्न करू नका. आधी श्वास घेऊन शरीराला शांत करा, नंतर विचार करा."
+      },
+      "active-listening": {
+        "title": "सहानुभूतीपूर्वक ऐकणे (Active Listening)",
+        "category": "संवाद व ह्यूमॅनिस्टिक मानसशास्त्र",
+        "shortDefinition": "घाईघाईने सल्ला न देता, समोरच्या व्यक्तीचे शब्द आणि भावना पूर्वग्रह न ठेवता पूर्ण लक्ष देऊन ऐकणे.",
+        "dailyExample": "मित्राचे दुःख ऐकून 'अरे काही होत नाही' असा उथळ सल्ला देण्याऐवजी, 'तुझ्यावर सध्या खूप मोठा ताण आहे हे मी समजू शकतो' असे म्हणणे.",
+        "psychologyTheory": "कार्ल रॉजर्स यांच्या क्लायंट-सेंटर्ड थेरपीतून उगम. जेव्हा समोरचा आपल्याला खरोखर समजून घेत आहे असे वाटते, तेव्हा मेंदूतील भीती शांत होते.",
+        "inTherapy": "समुपदेशनात क्लायंटला कोणत्याही न्यायाधीशाविना पूर्ण आदराने ऐकले जाते, ज्यामुळे स्वतःचे प्रश्न स्वतः सोडवण्याची ताकद निर्माण होते.",
+        "practicalTakeaway": "कठीण संवादात उत्तर देण्यापूर्वी स्वतःला विचारा: समोरच्या व्यक्तीला आता माझ्या सल्ल्याची गरज आहे की केवळ समजुतदार सोबतीची?"
+      },
+      "confirmation-bias": {
+        "title": "कन्फर्मेशन बायस (Confirmation Bias)",
+        "category": "संज्ञानात्मक मानसशास्त्र",
+        "shortDefinition": "आपल्या जुन्या विश्वासांना पुष्टी देणारी माहितीच शोधणे आणि त्याविरोधातील पुरावे सोयीस्करपणे दुर्लक्षित करणे.",
+        "dailyExample": "'ऑफिसमध्ये मला कोणी पसंत करत नाही' असा समज करून घेणे आणि ५ लोकांनी प्रेमाने विचारपूस केली तरी एका व्यक्तीने दुर्लक्ष केले तर त्याच गोष्टीवर लक्ष केंद्रित करणे.",
+        "psychologyTheory": "मेंदूची ऊर्जा वाचवण्यासाठी वापरली जाणारी मानसिक सवय. जर आपला विश्वास 'मी अपयशी आहे' असा असेल, तर मेंदू तसेच पुरावे गोळा करत राहतो.",
+        "inTherapy": "थेरपीमध्ये आपण एका गुप्तहेराप्रमाणे स्वतःच्या विचारांची तपासणी करतो आणि उलट पुरावे शोधण्याचा सराव करतो.",
+        "practicalTakeaway": "जेव्हा तुम्हाला एखाद्या नकारात्मक विचाराबद्दल १००% खात्री वाटू लागते, तेव्हा स्वतःला विचारा: या विचाराला खोटे ठरवणारा एखादा तरी पुरावा आज माझ्याकडे आहे का?"
+      }
+    },
+    "blogsData": {
+      "unraveling-overthinking": {
+        "title": "अतिविचारांचे चक्र: रात्री ३ वाजता सुरू होणारा गोंधळ कसा थांबवायचा?",
+        "category": "भावनिक आरोग्य",
+        "readTime": "५ मिनिटे वाचन",
+        "excerpt": "रात्र झाल्यावर आणि कामे संपल्यावर मेंदू अचानक जुन्या आठवणी आणि चिंतांमध्ये का अडकतो? एका संवेदनशील मानसशास्त्रीय दृष्टीकोनातून अतिविचारांची उकल."
+      },
+      "real-truth-procrastination": {
+        "title": "कामे पुढे ढकलण्यामागील खरे सत्य (हा मुळीच आळस नाही)",
+        "category": "भावनिक आरोग्य",
+        "readTime": "६ मिनिटे वाचन",
+        "excerpt": "कामे टाळणे ही प्रत्यक्षात ताण आणि भीतीपासून मनाचे रक्षण करण्याची एक सवय असते. स्वतःला दोष न देता शांततेने कृती कशी सुरू करावी हे जाणून घ्या."
+      },
+      "rebuilding-fragile-self-esteem": {
+        "title": "आत्मसन्मान पुन्हा मिळवणे: स्वतःवरील अटी आणि बंधने दूर करणे",
+        "category": "भावनिक आरोग्य",
+        "readTime": "५ मिनिटे वाचन",
+        "excerpt": "जेव्हा आपला आत्मविश्वास केवळ यशावर अवलंबून असतो, तेव्हा शेवटी थकवा येतो. स्वतःच्या अस्तित्वाचा आदर कसा करावा आणि मनातील टीकाकार कसा शांत करावा."
+      }
+    },
+    "affirmationsList": [
+      {
+        "id": 1,
+        "theme": "आत्म-करुणा",
+        "quote": "आजच्या आज सर्व अनिश्चितता संपवण्याची मुळीच गरज नाही. मनाची शांती ही छोट्या, सातत्यपूर्ण पावलांनी येते.",
+        "prompt": "आज दुपारी तुम्ही स्वतःवरील कोणता एक छोटा ताण दूर करू शकता?"
+      },
+      {
+        "id": 2,
+        "theme": "चिंता व सुरक्षितता",
+        "quote": "अतिविचार म्हणजे उत्तरांचा शोध नव्हे; तर ती संरक्षणाचा शोध घेणारी थकलेली मज्जासंस्था असते.",
+        "prompt": "एक दीर्घ श्वास घ्या आणि जाणीव ठेवा: या क्षणी, या जागेवर तुम्ही पूर्णतः सुरक्षित आहात."
+      },
+      {
+        "id": 3,
+        "theme": "आरोग्यदायी मर्यादा",
+        "quote": "मर्यादा म्हणजे दुसऱ्यांना अडवणारी भिंत नव्हे, तर तुमची सीमा कुठपर्यंत आहे हे दाखवणारा एक पूल आहे.",
+        "prompt": "स्वतःची ऊर्जा वाचवण्यासाठी आज कोणाला तरी प्रेमाने 'नाही' म्हणण्याची गरज आहे का?"
+      },
+      {
+        "id": 4,
+        "theme": "आत्म-सन्मान",
+        "quote": "तुमचे मूल्य तुमच्या अस्तित्वात आहे. ते सतत काम करून किंवा सिद्ध करून मिळवण्याची गरज नाही.",
+        "prompt": "स्वतःला अतिशय थकल्याशिवायही शांतपणे विश्रांती घेण्याची परवानगी देऊ शकता का?"
+      },
+      {
+        "id": 5,
+        "theme": "भावनिक जिज्ञासा",
+        "quote": "जिज्ञासा ही अपराधाची भावना नष्ट करते. जेव्हा तुम्ही स्वतःच्या भावनांकडे पूर्वग्रहाशिवाय पाहता, तेव्हा स्पष्टता येते.",
+        "prompt": "सध्या तुमच्या मनात कोणती भावना येत आहे? एका अनपेक्षित पाहुण्यासारखे तिचे स्वागत करू शकाल का?"
+      },
+      {
+        "id": 6,
+        "theme": "संयम आणि प्रगती",
+        "quote": "प्रगती नेहमी सरळ नसते. काही दिवस पुढे झेपावण्यासाठी असतात, तर काही दिवस मुळे खोलवर रुजवण्यासाठी असतात.",
+        "prompt": "तुम्ही किती कठीण प्रसंगांवर मात करून इथपर्यंत आला आहात याचे स्वतःला कौतुक द्या."
+      }
+    ],
+    "welcomeBio": {
+      "badge": "मानसशास्त्रज्ञ परिचय",
+      "quote": "“नमस्कार, मी ३+ वर्षांचा प्रत्यक्ष अनुभव असलेली मानसशास्त्रज्ञ आहे. माझ्याकडे समुपदेशन मानसशास्त्राची पदव्युत्तर पदवी (Master's in Counselling Psychology) असून मी समग्र (Eclectic) दृष्टीकोनाचा अवलंब करते. माझी मुख्य कार्यक्षेत्रे: भावनिक आरोग्य समुपदेशन, करिअर समुपदेशन आणि मानसशास्त्र ट्युशन. भावनिक स्वास्थ्य सेवांमध्ये: चिंता, तणाव व्यवस्थापन, अतिविचार, आत्मविश्वास आणि टाळाटाळ. तसेच ११वी, १२वी आणि पदवीधर स्तरासाठी मानसशास्त्र ट्युशन उपलब्ध आहेत.”",
+      "author": "सिमरन मिस्त्री",
+      "authorRole": "मानसशास्त्रज्ञ व संस्थापिका, फ्रूटफुल माइंड",
+      "credentials": "एम.ए. समुपदेशन मानसशास्त्र • ३+ वर्षे प्रत्यक्ष सराव",
+      "location": "कोथरूड, पुणे आणि ऑनलाईन जगभरात",
+      "ctaAbout": "माझा प्रवास आणि दृष्टीकोन वाचा",
+      "ctaDiscovery": "१५-मिनिट मोफत प्राथमिक कॉल बुक करा"
+    },
+    "homeNewsletter": {
+      "badge": "मासिक प्रेरणादायी विचार",
+      "title": "द माइंडफुल डिस्पॅचचे सदस्य व्हा",
+      "subtitle": "सिमरन मिस्त्री यांनी लिहिलेले उपयुक्त मानसशास्त्रीय लेख, पुस्तकांची शिफारस आणि सोपे मानसिक स्वास्थ्याचे उपाय दरमहा थेट इनबॉक्समध्ये मिळवा. कोणताही स्पॅम नाही.",
+      "namePlaceholder": "तुमचे नाव",
+      "emailPlaceholder": "तुमचा ईमेल पत्ता",
+      "subscribeBtn": "न्यूजलेटरचे सदस्य व्हा",
+      "subscribing": "नोंदणी होत आहे...",
+      "success": "सदस्य झाल्याबद्दल मनापासून धन्यवाद! आमचे विचार लवकरच आपल्यापर्यंत पोहोचतील.",
+      "guarantee": "🔒 १००% गोपनीयता. कधीही एका क्लिकवर अनसबस्क्राइब करू शकता."
+    }
+  },
+  "hi": {
+    "nav": {
+      "home": "होम",
+      "about": "परिचय",
+      "services": "सेवाएं",
+      "blogs": "लेख",
+      "wellbeingGuide": "मार्गदर्शिका",
+      "concepts": "संकल्पनाएं",
+      "course": "कोर्स",
+      "contact": "संपर्क",
+      "bookSession": "सत्र बुक करें"
+    },
+    "common": {
+      "confidential": "100% पूर्णतः गोपनीय",
+      "puneOnline": "कोथरूड, पुणे एवं ऑनलाइन",
+      "stigmaFree": "सहज और सुरक्षित",
+      "bookNow": "सत्र बुक करें",
+      "learnMore": "और जानें",
+      "exploreServices": "सेवाएं देखें",
+      "readArticle": "लेख पढ़ें",
+      "viewAll": "सभी देखें",
+      "whatsapp": "व्हाट्सएप पर बात करें",
+      "call": "कॉल करें",
+      "email": "ईमेल भेजें",
+      "submit": "संदेश भेजें",
+      "takePause": "1 मिनट का ठहराव लें",
+      "freeDiscovery": "15-मिनट मुफ्त परिचयात्मक बातचीत",
+      "bySimran": "सिमरन मिस्त्री, मनोवैज्ञानिक"
+    },
+    "hero": {
+      "badge": "मनोवैज्ञानिक • पुणे एवं ऑनलाइन",
+      "tagline": "अपने भीतर के जिज्ञासु मन को पहचानें",
+      "headline": "मन की उलझनों को सुलझाने के लिए एक",
+      "headlineHighlight": "सुरक्षित, सहज और खुला स्थान।",
+      "subheading": "चिंता, अनवरत सोच, करियर के बदलाव या मनोविज्ञान की पढ़ाई — इस सफर में आप अकेले नहीं हैं। आपकी जरूरत के अनुसार लचीली एवं संवेदनशील थेरेपी।",
+      "ctaPrimary": "मुफ्त परिचयात्मक बातचीत शेड्यूल करें",
+      "ctaSecondary": "सेवाएं देखें",
+      "stats": {
+        "exp": "3+ वर्ष",
+        "expLabel": "अनुभव व अभ्यास",
+        "approach": "एक्लेक्टिक पद्धति",
+        "approachLabel": "आपकी जरूरत अनुसार",
+        "confidential": "100%",
+        "confidentialLabel": "पूर्णतः गोपनीय"
+      },
+      "pillarsTitle": "मार्गदर्शन के प्रमुख क्षेत्र",
+      "pillar1Title": "भावनात्मक स्वास्थ्य काउंसलिंग",
+      "pillar1Desc": "चिंता • ओवरथिंकिंग • तनाव • आत्मसम्मान",
+      "pillar2Title": "करियर काउंसलिंग एवं मार्गदर्शन",
+      "pillar2Desc": "क्षमता पहचान • करियर के नए मोड़",
+      "pillar3Title": "मनोविज्ञान ट्यूशन एवं कोचिंग",
+      "pillar3Desc": "कक्षा 11, 12 एवं ग्रेजुएट मनोविज्ञान"
+    },
+    "marquee": [
+      "चिंता और घबराहट",
+      "ओवरथिंकिंग का चक्र",
+      "तनाव प्रबंधन",
+      "आत्मविश्वास और आत्म-मूल्य",
+      "काम टालने की आदत",
+      "करियर मार्गदर्शन",
+      "कक्षा 11-12 मनोविज्ञान ट्यूशन",
+      "ग्रेजुएट मनोविज्ञान कोचिंग",
+      "भावनात्मक संतुलन"
+    ],
+    "aboutSection": {
+      "badge": "काउंसलिंग दर्शन",
+      "headline": "\"अपने भीतर के जिज्ञासु मन को पहचानें\" — यह सिर्फ एक पंक्ति नहीं, समाधान की नींव है।",
+      "p1": "जब मन में विचारों की आंधी उठती है, तो हम खुद पर ही सवाल उठाने लगते हैं: 'मैं इतना ज्यादा क्यों सोचता हूं? मैं काम क्यों टालता हूं? मुझे इतनी घबराहट क्यों होती है?'",
+      "p2": "मेरी थेरेपी में हम आत्म-आलोचना की जगह सहज जिज्ञासा रखते हैं। आपका दिमाग खराब नहीं है; वह केवल खुद को सुरक्षित रखने के कुछ पैटर्न्स में बंध गया है। कॉग्निटिव बिहेवियरल थेरेपी (CBT), करुणा-आधारित समझ और श्वास के अभ्यास से हम बिना किसी पूर्वाग्रह के मन की उलझनों को सुलझाते हैं।",
+      "readStory": "सिमरन की पूरी कहानी और पद्धति जानें"
+    },
+    "aboutPage": {
+      "badge": "काउंसलर से मिलें",
+      "heroTitle": "\"थेरेपी खुद को बदलने के लिए नहीं, बल्कि चिंताओं के पीछे छुपे अपने जिज्ञासु स्वरूप को पहचानने का जरिया है।\"",
+      "heroSubtitle": "फ्रूटफुल माइंड में आपका स्वागत है। मैं सिमरन मिस्त्री, 3+ वर्षों के अभ्यास वाली मनोवैज्ञानिक (Master's in Counselling Psychology)। कोथरूड, पुणे और ऑनलाइन दुनिया भर में सेवाएं उपलब्ध।",
+      "journeyTitle": "मेरी यात्रा और दृष्टिकोण",
+      "journeyP1": "बचपन से मैंने देखा कि लोग मानसिक परेशानी को चरित्र की कमजोरी मान लेते हैं। ज्यादा सोचने वाले को 'कम सोचो' कह दिया जाता है, काम टालने वाले को 'आलसी' और आत्मविश्वास खोए व्यक्ति को 'पॉजिटिव रहो' जैसी सतही सलाह दी जाती है।",
+      "journeyP2": "काउंसलिंग साइकोलॉजी में मास्टर्स और 3 वर्षों के नैदानिक अनुभव ने मुझे सिखाया कि मानसिक परेशानी इच्छाशक्ति की कमी नहीं, बल्कि सुरक्षा तलाशती हुई एक थकी हुई तंत्रिका प्रणाली (nervous system) है।",
+      "journeyP3": "मैंने फ्रूटफुल माइंड की शुरुआत इस विश्वास के साथ की: सच्चा मानसिक स्वास्थ्य थोपी गई सकारात्मकता से नहीं, बल्कि अपनी भावनाओं को बिना किसी फैसले के स्वीकार करने से आता है।",
+      "qualTitle": "शैक्षणिक योग्यता एवं नैतिक सिद्धांत",
+      "qual1": "काउंसलिंग साइकोलॉजी में मास्टर डिग्री (Master's in Counselling Psychology)",
+      "qual2": "चिंता, करियर बदलाव एवं छात्र कोचिंग में 3+ वर्ष का अभ्यास",
+      "qual3": "समग्र थेरेपी पद्धति (CBT, ह्यूमनिस्टिक, कम्पैशन-फोकस्ड, सोमैटिक)",
+      "qual4": "100% गोपनीयता एवं पेशेवर नैतिकता का कड़ाई से पालन",
+      "eclecticBadge": "हम साथ कैसे काम करते हैं?",
+      "eclecticTitle": "\"एक्लेक्टिक पद्धति\" (Eclectic Approach) का आपके लिए क्या अर्थ है?",
+      "eclecticSubtitle": "कोई भी दो इंसान एक जैसे नहीं होते। आपको किसी एक तयशुदा ढांचे में बांधने के बजाय, मैं आपकी प्रकृति के अनुसार सर्वश्रेष्ठ मनोवैज्ञानिक पद्धतियों का समन्वय करती हूं।",
+      "cbtTitle": "कॉग्निटिव बिहेवियरल थेरेपी (CBT)",
+      "cbtSub": "विचारों को संतुलित करना",
+      "cbtDesc": "मन में उठने वाले नकारात्मक विचारों को पहचानकर उन्हें वास्तविक और मददगार नजरिए में बदलना सीखते हैं।",
+      "humanisticTitle": "ह्यूमनिस्टिक / व्यक्ति-केंद्रित",
+      "humanisticSub": "बिना शर्त आदर और स्वीकार",
+      "humanisticDesc": "आप अपने जीवन के सबसे बड़े विशेषज्ञ हैं। मेरा काम एक सुरक्षित आईना बनना है जिससे आप अपनी अंतर्निहित शक्ति देख सकें।",
+      "cftTitle": "कम्पैशन-फोकस्ड थेरेपी (CFT)",
+      "cftSub": "भीतरी आलोचक को शांत करना",
+      "cftDesc": "गलती होने पर खुद को कोसने के बजाय खुद के प्रति दया और समझदारी से पेश आना सीखते हैं।",
+      "somaticTitle": "सोमैटिक एवं माइंडफुलनेस",
+      "somaticSub": "शरीर और तंत्रिका तंत्र को शांत करना",
+      "somaticDesc": "चिंता का असर शरीर पर पड़ता है। श्वास और शारीरिक अभ्यास से दिमाग और शरीर दोनों शांत होते हैं।",
+      "valuesTitle": "हमारे अटूट सिद्धांत",
+      "val1Title": "1. पूर्ण गोपनीयता",
+      "val1Desc": "आपकी पहचान और सत्र की सभी बातें पूरी तरह गोपनीय रहती हैं। सत्र में कही बात कभी बाहर नहीं जाती।",
+      "val2Title": "2. पूर्वग्रहमुक्त संवेदनशीलता",
+      "val2Desc": "यहाँ कोई विचार वर्जित नहीं, कोई भावना तुच्छ नहीं। आपका स्वागत पूरी मानवीय गरिमा के साथ होता है।",
+      "val3Title": "3. व्यावहारिक आत्मनिर्भरता",
+      "val3Desc": "थेरेपी का उद्देश्य आपको हमेशा निर्भर रखना नहीं, बल्कि जीवन की चुनौतियों से खुद निपटने के साधन देना है।"
+    },
+    "servicesPage": {
+      "badge": "हमारी मुख्य सेवाएं",
+      "title": "मार्गदर्शन के तीन रास्ते",
+      "subtitle": "भावनात्मक संतुलन हो, करियर का असमंजस हो या मनोविज्ञान की पढ़ाई — हर सेवा वैज्ञानिक आधार और संवेदनशीलता के साथ दी जाती है।",
+      "service1Name": "भावनात्मक स्वास्थ्य काउंसलिंग",
+      "service1Tagline": "चिंता • ओवरथिंकिंग • तनाव प्रबंधन • आत्मविश्वास • टालमटोल",
+      "service1Cta": "काउंसलिंग सत्र बुक करें",
+      "service2Name": "करियर काउंसलिंग एवं मार्गदर्शन",
+      "service2Tagline": "उद्देश्य स्पष्टता • तनाव से मुक्ति • नए करियर की रूपरेखा",
+      "service2Cta": "करियर परामर्श बुक करें",
+      "service3Name": "मनोविज्ञान ट्यूशन एवं कोचिंग",
+      "service3Tagline": "कक्षा 11, 12 (CBSE/ISC/State) एवं ग्रेजुएट मनोविज्ञान",
+      "service3Cta": "ट्यूशन बैच के लिए पूछताछ करें",
+      "whoTitle": "यह किसके लिए उपयोगी है?",
+      "outcomesTitle": "सत्रों से क्या हासिल होगा?",
+      "formatLabel": "50 मिनट का सत्र • ऑनलाइन (Google Meet) या प्रत्यक्ष (कोथरूड, पुणे)",
+      "journeyBadge": "प्रक्रिया",
+      "journeyTitle": "काउंसलिंग का सफर: क्या उम्मीद रखें?",
+      "journeySubtitle": "थेरेपी कोई पूछताछ नहीं है। पहले दिन से ही हम बहुत सहजता से एक टीम की तरह आगे बढ़ते हैं।",
+      "step1Title": "1. सुरक्षित परिचय और समझ",
+      "step1Desc": "बिना किसी दबाव के आपकी मौजूदा चुनौतियों और प्राथमिकताओं को समझने के लिए एक शांत बैठक।",
+      "step2Title": "2. विचारों की समझ",
+      "step2Desc": "किन सोच और आदतों की वजह से मन अटक रहा है, उन्हें बिना आत्म-आलोचना के जिज्ञासा से समझना।",
+      "step3Title": "3. व्यावहारिक उपायों का अभ्यास",
+      "step3Desc": "दैनिक जीवन में इस्तेमाल होने वाले मनोवैज्ञानिक टूल्स (ब्रीदिंग, सोच का संतुलन, सीमाओं का निर्धारण)।",
+      "step4Title": "4. आत्मनिर्भर एवं शांत जीवन",
+      "step4Desc": "मानसिक शांति स्थापित होने के बाद स्वतंत्र रूप से विश्वास और संतुलन के साथ जीवन जीना।",
+      "headerBadge": "हमारी मुख्य सेवाएं",
+      "headerTitle": "वैज्ञानिक दृष्टिकोण एवं शैक्षणिक मार्गदर्शन",
+      "headerSubtitle": "फ्रूटफुल माइंड में प्रत्येक सेवा व्यक्तिगत संवेदनशीलता, क्लिनिकल नैतिकता और आपकी गति का सम्मान करते हुए दी जाती है।",
+      "locationPuneOnline": "कोथरूड, पुणे एवं ऑनलाइन दुनिया भर में",
+      "service1": {
+        "name": "भावनात्मक स्वास्थ्य काउंसलिंग",
+        "tagline": "चिंता • ओवरथिंकिंग • तनाव प्रबंधन • आत्मविश्वास • टालमटोल",
+        "format": "50 मिनट का सत्र • ऑनलाइन (Google Meet) या प्रत्यक्ष (कोथरूड, पुणे)",
+        "ctaText": "भावनात्मक स्वास्थ्य सत्र बुक करें",
+        "whoItsFor": [
+          "लगातार दिमाग में चलने वाले अनचाहे विचार, रात को नींद न आना या चिंता का चक्र।",
+          "ऑफिस या व्यक्तिगत जीवन का तनाव, अत्यधिक मानसिक थकान और बर्नआउट।",
+          "आत्मसम्मान की कमी, खुद पर लगातार आलोचना करने की आदत या दूसरों से तुलना।",
+          "ओवरथिंकिंग के कारण काम टालने की आदत और अनिर्णय की स्थिति।"
+        ],
+        "whatWeWorkOn": [
+          "CBT पद्धति द्वारा नकारात्मक विचारों की पहचान कर उन्हें वास्तविक रूप देना।",
+          "शारीरिक घबराहट शांत करने के लिए सांस की तकनीकें और सोमैटिक अभ्यास।",
+          "खुद को कोसने की जगह खुद के प्रति दया और समझदारी विकसित करना।",
+          "डर पर काबू पाकर रोजमर्रा के काम समय पर पूरे करने की स्वस्थ आदतें बनाना।"
+        ]
+      },
+      "service2": {
+        "name": "करियर काउंसलिंग एवं मार्गदर्शन",
+        "tagline": "उद्देश्य स्पष्टता • तनाव से मुक्ति • नए करियर की रूपरेखा",
+        "format": "60 मिनट का संरचित सत्र • योग्यता परीक्षण और व्यक्तिगत रिपोर्ट उपलब्ध",
+        "ctaText": "करियर परामर्श बुक करें",
+        "whoItsFor": [
+          "छात्र और नए ग्रेजुएट्स जो अपनी पढ़ाई या करियर की सही दिशा को लेकर असमंजस में हैं।",
+          "नौकरीपेशा लोग जो करियर के दोराहे पर खड़े हैं और संतुष्ट महसूस नहीं कर रहे हैं।",
+          "करियर में ब्रेक के बाद दोबारा शुरुआत करने वाले या नया क्षेत्र चुनने वाले लोग।",
+          "कार्यस्थल पर इंपोस्टर सिंड्रोम और जिम्मेदारियों के भारी बोझ से परेशान लोग।"
+        ],
+        "whatWeWorkOn": [
+          "आपके व्यक्तित्व, स्वाभाविक क्षमताओं और प्राथमिकताओं का वैज्ञानिक विश्लेषण।",
+          "पारिवारिक या सामाजिक अपेक्षाओं से अलग अपने वास्तविक लक्ष्यों को पहचानना।",
+          "असफलता का डर और फैसले लेने की झिझक को दूर करना।",
+          "नौकरी बदलाव, इंटरव्यू और कार्यस्थल पर स्वस्थ सीमाओं के निर्धारण का मनोवैज्ञानिक रोडमैप।"
+        ]
+      },
+      "service3": {
+        "name": "मनोविज्ञान ट्यूशन एवं कोचिंग",
+        "tagline": "कक्षा 11, 12 (CBSE/ISC/State) एवं ग्रेजुएट मनोविज्ञान",
+        "format": "व्यक्तिगत 1-ऑन-1 कोचिंग या छोटे इंटरैक्टिव बैच • ऑनलाइन या कोथरूड, पुणे",
+        "ctaText": "ट्यूशन बैच के लिए पूछताछ करें",
+        "whoItsFor": [
+          "कक्षा 11 और 12 के मनोविज्ञान के छात्र जो सिद्धांतों को गहराई से समझना चाहते हैं।",
+          "बोर्ड परीक्षाओं (CBSE, ISC, राज्य बोर्ड) की व्यवस्थित तैयारी करने वाले छात्र।",
+          "ग्रेजुएट एवं पोस्ट-ग्रेजुएट मनोविज्ञान के छात्र जिन्हें केस स्टडीज में मार्गदर्शन चाहिए।",
+          "जिन्हें रटने के बजाय मनोविज्ञान को रोजमर्रा की जिंदगी से जोड़कर सीखना पसंद है।"
+        ],
+        "whatWeWorkOn": [
+          "जटिल सिद्धांतों (Cognitive, Biological, Social Psychology) को आसान उदाहरणों से समझाना।",
+          "बोर्ड परीक्षा में उत्तर लिखने की कला, अंक प्राप्त करने की रणनीति और आरेख।",
+          "अनुसंधान पद्धति (Research Methods), सांख्यिकी (Statistics) और प्रयोग।",
+          "विचारशीलता और वैज्ञानिक जिज्ञासा बढ़ाने वाली संवादात्मक कक्षाएं।"
+        ]
+      },
+      "steps": [
+        {
+          "step": "01",
+          "title": "सुरक्षित परिचय और समझ",
+          "desc": "बिना किसी दबाव के आपकी मौजूदा चुनौतियों और प्राथमिकताओं को समझने के लिए एक शांत बैठक।"
+        },
+        {
+          "step": "02",
+          "title": "विचारों की समझ",
+          "desc": "किन सोच और आदतों की वजह से मन अटक रहा है, उन्हें बिना आत्म-आलोचना के जिज्ञासा से समझना।"
+        },
+        {
+          "step": "03",
+          "title": "व्यावहारिक उपायों का अभ्यास",
+          "desc": "दैनिक जीवन में इस्तेमाल होने वाले मनोवैज्ञानिक टूल्स (ब्रीदिंग, सोच का संतुलन, सीमाओं का निर्धारण)।"
+        },
+        {
+          "step": "04",
+          "title": "आत्मनिर्भर एवं शांत जीवन",
+          "desc": "मानसिक शांति स्थापित होने के बाद स्वतंत्र रूप से विश्वास और संतुलन के साथ जीवन जीना।"
+        }
+      ],
+      "bottom": {
+        "title": "क्या आप संशय में हैं कि आपके लिए कौन सी सेवा सही है?",
+        "subtitle": "सिमरन के साथ 15 मिनट की मुफ्त परिचयात्मक बातचीत शेड्यूल करें। हम खुलकर चर्चा करेंगे और सबसे अच्छा रास्ता तय करेंगे।",
+        "ctaPrimary": "15-मिनट मुफ्त कॉल बुक करें",
+        "ctaSecondary": "व्हाट्सएप पर बात करें"
+      }
+    },
+    "wellbeingGuidePage": {
+      "badge": "स्वास्थ्य संसाधन केंद्र",
+      "title": "भावनात्मक स्वास्थ्य एवं संतुलन गाइड",
+      "subtitle": "मनोवैज्ञानिक सिमरन मिस्त्री द्वारा संकलित एक उपयोगी मार्गदर्शिका — व्यावहारिक अभ्यास, श्वास तकनीक और आत्म-चिंतन टूल्स।",
+      "pdfBadge": "मुफ्त PDF संसाधन",
+      "pdfTitle": "संपूर्ण प्रिंट योग्य वेलबीइंग टूलकिट प्राप्त करें",
+      "pdfSubtitle": "सभी 5 अध्यायों के सार, दैनिक डायरी के पन्ने और तात्कालिक शांति की चेकलिस्ट शामिल है।",
+      "downloadBtn": "गाइड डाउनलोड करें (PDF)",
+      "downloadSuccess": "टूलकिट भेज दिया गया है! आपकी मानसिक शांति की यात्रा के लिए शुभकामनाएं।",
+      "practiceBadge": "अभ्यास",
+      "practiceTitle": "शांति का क्षण: बॉक्स ब्रीदिंग (श्वास अभ्यास)",
+      "chaptersBadge": "अध्याय",
+      "chaptersTitle": "गाइड के 5 मुख्य अध्याय एवं अभ्यास",
+      "instantDownload": "तत्काल डाउनलोड",
+      "freeEdu": "100% मुफ्त एवं शैक्षिक",
+      "zeroSpam": "कोई स्पैम नहीं",
+      "emailPlaceholder": "टूलकिट प्राप्त करने के लिए ईमेल दर्ज करें...",
+      "toolkitDispatched": "टूलकिट भेज दिया गया है!",
+      "toolkitSentTo": "हमने टूलकिट इस ईमेल पर भेजा है:",
+      "enjoyJourney": "आपकी मानसिक शांति की यात्रा मंगलमय हो!",
+      "chaptersSubtitle": "प्रत्येक अध्याय मनोवैज्ञानिक सिद्धांतों पर आधारित है और इसमें 5 मिनट का आसान व्यावहारिक अभ्यास दिया गया है।",
+      "actionItemLabel": "दैनिक अभ्यास:",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "शारीरिक घबराहट को शांत करना: वेगल रीसेट",
+          "focus": "सोमैटिक संतुलन",
+          "description": "दिल की धड़कनें तेज होने पर केवल सोचने से घबराहट क्यों नहीं रुकती? 90 सेकंड में शांति पाने के लिए फिजियोलॉजिकल साई और वेगस नर्व की तकनीक सीखें।",
+          "actionItem": "फिजियोलॉजिकल साई अभ्यास: नाक से लगातार दो तेज सांसें अंदर खींचें और मुंह से धीरे-धीरे सारी हवा बाहर छोड़ें।"
+        },
+        {
+          "number": "02",
+          "title": "रात 3 बजे की उलझनें: विचारों को सही दिशा देना",
+          "focus": "ओवरथिंकिंग एवं चिंता",
+          "description": "रात के समय दिमाग ज्यादा परेशान क्यों करता है? वास्तविक समाधान और बेकार की चिंताओं में फर्क पहचानें।",
+          "actionItem": "चिंता टालने का नियम: रात में परेशान करने वाले विचारों को तुरंत डायरी में लिख लें और तय करें कि कल दोपहर 4 बजे इस पर सोचेंगे।"
+        },
+        {
+          "number": "03",
+          "title": "अपराधबोध के बिना सीमाएं तय करना (Boundaries)",
+          "focus": "संबंधों का स्वास्थ्य",
+          "description": "सीमाएं दीवारें नहीं हैं, बल्कि रिश्तों को मजबूत बनाने वाले पुल हैं। खुद को कष्ट दिए बिना दूसरों को विनम्रता से ना कहना सीखें।",
+          "actionItem": "24 घंटे का नियम: किसी काम की हामी भरने से पहले कहें: 'मुझसे पूछने के लिए धन्यवाद! मैं अपना समय देखकर कल बताता हूँ।'"
+        },
+        {
+          "number": "04",
+          "title": "काम टालने की आदत (Procrastination) को तोड़ना",
+          "focus": "आदतें और कार्यक्षमता",
+          "description": "काम टालना आलस नहीं बल्कि तनाव से बचने की कोशिश है। काम को 2 मिनट के छोटे-छोटे चरणों में बांटें।",
+          "actionItem": "'कच्चा मसौदा' नियम: शुरुआत में सब कुछ सही होना जरूरी नहीं है, बस पहला कदम उठाएं और आगे बढ़ें।"
+        },
+        {
+          "number": "05",
+          "title": "गहरी नींद और डिजिटल अनुशासन",
+          "focus": "विश्राम और ताजगी",
+          "description": "रात को देर तक मोबाइल देखने से दिमाग उत्तेजित रहता है। सोने से 30 मिनट पहले स्क्रीन बंद करके तंत्रिका तंत्र को आराम दें।",
+          "actionItem": "30 मिनट का स्क्रीन ब्रेक: सोने से आधा घंटा पहले सोशल मीडिया की जगह पुस्तक पढ़ना, शांत संगीत या हल्का स्ट्रेचिंग करें।"
+        }
+      ],
+      "bottom": {
+        "title": "इन उपायों को अपने जीवन में उतारने के लिए व्यक्तिगत मार्गदर्शन चाहिए?",
+        "subtitle": "गाइड बहुत उपयोगी हैं, लेकिन एक कुशल और संवेदनशील मनोवैज्ञानिक का साथ आपकी यात्रा को आसान बना देता है।",
+        "cta": "सिमरन के साथ 1-ऑन-1 सत्र बुक करें"
+      }
+    },
+    "conceptsPage": {
+      "badge": "मनोविज्ञान शब्दकोश",
+      "title": "मनोविज्ञान की बातें सरल शब्दों में",
+      "subtitle": "मानव व्यवहार जटिल लग सकता है जब तक उसे समझने के सही शब्द न मिलें। रोजमर्रा के उदाहरणों के साथ 8 प्रमुख सिद्धांतों को समझें।",
+      "searchPlaceholder": "सिद्धांत या टैग से खोजें...",
+      "viewBreakdown": "विस्तार से देखें",
+      "coreDef": "मूल परिभाषा:",
+      "dailyEx": "दैनिक जीवन का उदाहरण",
+      "roots": "वैज्ञानिक सिद्धांत एवं इतिहास",
+      "inTherapy": "थेरेपी में इसका कैसे उपयोग होता है?",
+      "takeaway": "दैनिक जीवन के लिए महत्वपूर्ण सीख",
+      "exploreInTherapy": "इस विषय पर काउंसलिंग में चर्चा करें",
+      "close": "बंद करें"
+    },
+    "coursePage": {
+      "badge": "इंटरैक्टिव मास्टरक्लास",
+      "title": "ओवरथिंकिंग से सकारात्मक कर्म की ओर",
+      "subtitle": "सिमरन मिस्त्री के सान्निध्य में 4 सप्ताह का लाइव समूह-कार्यक्रम। मानसिक भटकाव से स्पष्टता और आत्म-विश्वास की ओर बढ़ें।",
+      "waitlistBtn": "आगामी बैच की वेटलिस्ट में शामिल हों",
+      "askWhatsapp": "व्हाट्सएप पर प्रश्न पूछें",
+      "duration": "4 सप्ताह • 8 लाइव घंटे",
+      "cohortSize": "अधिकतम 15 सीटें",
+      "kit": "वर्कबुक एवं टूलकिट शामिल",
+      "pricePlaceholder": "[शुल्क: ₹X,XXX शीघ्र घोषित]",
+      "priceNote": "[आधिकारिक शुल्क की जानकारी के लिए संपर्क करें]",
+      "whoTitle": "यह कोर्स किसके लिए बनाया गया है?",
+      "syllabusBadge": "पाठ्यक्रम",
+      "syllabusTitle": "4 सप्ताह का सफर",
+      "faqsTitle": "कोर्स से जुड़े सामान्य प्रश्न",
+      "highlights": [
+        {
+          "title": "4 सप्ताह",
+          "sub": "8 लाइव घंटे • साप्ताहिक कक्षाएं"
+        },
+        {
+          "title": "अधिकतम 15 सीटें",
+          "sub": "व्यक्तिगत ध्यान एवं संवाद"
+        },
+        {
+          "title": "वर्कबुक एवं किट",
+          "sub": "अभ्यास पत्रक एवं चिंतन टूल्स"
+        },
+        {
+          "title": "[शुल्क: ₹X,XXX]",
+          "sub": "[अर्ली बर्ड ऑफर उपलब्ध]"
+        }
+      ],
+      "audienceBadge": "लक्षित प्रतिभागी",
+      "audienceTitle": "यह कोर्स किसके लिए बनाया गया है?",
+      "audienceSubtitle": "जो लोग लगातार विचारों के भंवर, काम टालने की आदत या खुद पर अत्यधिक दबाव की वजह से आगे नहीं बढ़ पा रहे हैं।",
+      "audienceList": [
+        {
+          "title": "ज्यादा सोचने वाले (The Over-Analyzer)",
+          "desc": "आप पुरानी बातों, ईमेल या भविष्य की संभावनाओं पर घंटों सोचते रहते हैं और दिमाग शांत करना मुश्किल लगता है।"
+        },
+        {
+          "title": "परफेक्शनिस्ट काम टालने वाले",
+          "desc": "काम एकदम सही होना चाहिए, इस डर से आप शुरुआत ही नहीं करते और बाद में घबराहट व पछतावा होता है।"
+        },
+        {
+          "title": "सबको खुश रखने वाले (People Pleaser)",
+          "desc": "दूसरों को 'ना' कहने में झिझक होती है, जिससे खुद पर काम का भारी बोझ बढ़ जाता है और थकान होती है।"
+        },
+        {
+          "title": "जिज्ञासु साधक",
+          "desc": "आपको मनोविज्ञान में रुचि है और आप अपने मन को समझने के लिए वैज्ञानिक एवं व्यावहारिक तरीके सीखना चाहते हैं।"
+        }
+      ],
+      "syllabusSubtitle": "प्रत्येक मॉड्यूल में लाइव शिक्षण, व्यावहारिक अभ्यास और रोजमर्रा की जिंदगी में अपनाने के तरीके शामिल हैं।",
+      "modules": [
+        {
+          "num": "मॉड्यूल 01",
+          "title": "तंत्रिका तंत्र की समझ और शरीर को शांत करना",
+          "outcomes": [
+            "ऑटोनोमिक नर्वस सिस्टम: वेंट्रल वेगल, सिम्पैथेटिक और डोर्सल वेगल अवस्थाओं की समझ।",
+            "अपने तनाव के ट्रिगर्स और शरीर के शुरुआती संकेतों को पहचानना।",
+            "घबराहट को तुरंत कम करने वाली 3 आसान ब्रीदिंग तकनीकें।"
+          ]
+        },
+        {
+          "num": "मॉड्यूल 02",
+          "title": "नकारात्मक विचारों के चक्र को तोड़ना (CBT Reframe)",
+          "outcomes": [
+            "ओवरथिंकिंग बढ़ाने वाले 5 मुख्य दिमागी भ्रमों (Cognitive Distortions) को समाप्त करना।",
+            "कॉग्निटिव डिफ्यूजन: विचारों में उलझे बिना उन्हें एक शांत दर्शक की तरह देखना।",
+            "शांत और गहरी नींद के लिए 'चिंता प्रबंधन' (Worry Protocol)।"
+          ]
+        },
+        {
+          "num": "मॉड्यूल 03",
+          "title": "टालमटोल (Procrastination) को रोकना और काम शुरू करना",
+          "outcomes": [
+            "काम टालना आलस नहीं बल्कि डर है, इसे वैज्ञानिक रूप से समझना।",
+            "2 मिनट में किसी भी काम की शुरुआत करने की आसान तकनीक।",
+            "खुद को दोषी ठहराए बिना काम में दोबारा निरंतरता लाना।"
+          ]
+        },
+        {
+          "num": "मॉड्यूल 04",
+          "title": "स्वस्थ सीमाएं (Boundaries) और आत्मसम्मान",
+          "outcomes": [
+            "बिना अपराधबोध के शालीनता से 'ना' कहने का सही तरीका।",
+            "परिवार, मित्रों और कार्यस्थल पर अपनी ऊर्जा को सुरक्षित रखने वाली सीमाएं।",
+            "लंबे समय तक मानसिक शांति बनाए रखने के लिए अपना व्यक्तिगत मेंटल हेल्थ प्लान बनाना।"
+          ]
+        }
+      ],
+      "faqsSubtitle": "लाइव मास्टरक्लास के संबंध में आपकी सभी शंकाओं का समाधान।",
+      "faqs": [
+        {
+          "q": "क्या यह कोर्स व्यक्तिगत थेरेपी जैसा ही है?",
+          "a": "यह एक समूह-आधारित शैक्षिक कार्यक्रम है जो भावनात्मक समझ और मानसिक संतुलन के टूल्स सिखाता है। यह बहुत उपयोगी है लेकिन गंभीर मानसिक समस्याओं के व्यक्तिगत इलाज का विकल्प नहीं है।"
+        },
+        {
+          "q": "यदि मेरा कोई लाइव सत्र छूट जाए तो क्या होगा?",
+          "a": "सभी सत्रों की रिकॉर्डिंग और स्लाइड्स प्रतिभागियों के विशेष पोर्टल पर 6 महीने तक उपलब्ध रहती हैं।"
+        },
+        {
+          "q": "एक बैच में कितने प्रतिभागी होंगे?",
+          "a": "गहन चर्चा, व्यक्तिगत प्रश्नों के उत्तर और सहज वातावरण बनाए रखने के लिए प्रत्येक बैच में अधिकतम 15 सीटें ही होती हैं।"
+        },
+        {
+          "q": "यदि मैं पुणे या भारत से बाहर रहता हूँ तो क्या शामिल हो सकता हूँ?",
+          "a": "बिल्कुल! यह कार्यक्रम Google Meet के जरिए ऑनलाइन आयोजित होता है, इसलिए आप दुनिया में कहीं से भी जुड़ सकते हैं।"
+        }
+      ],
+      "bottom": {
+        "title": "आगामी बैच में अपना स्थान सुरक्षित करें",
+        "subtitle": "व्यक्तिगत मार्गदर्शन और गोपनीयता बनाए रखने के लिए सीटें केवल 15 प्रतिभागियों तक सीमित हैं।",
+        "waitlistBtn": "वेटलिस्ट में नाम जोड़ें",
+        "whatsappBtn": "व्हाट्सएप पर जानकारी लें"
+      }
+    },
+    "contactPage": {
+      "badge": "हम सुनने के लिए तैयार हैं",
+      "title": "फ्रूटफुल माइंड से संपर्क करें",
+      "subtitle": "मदद मांगना हमेशा एक साहसी कदम होता है। संदेश, ईमेल या फोन — आप जिस भी माध्यम से जुड़ेंगे, आपका सम्मान होगा।",
+      "infoTitle": "संपर्क विवरण",
+      "phoneTitle": "फोन करें",
+      "phoneHours": "सोम से शनि, सुबह 9 से शाम 7 बजे",
+      "whatsappTitle": "व्हाट्सएप संवाद",
+      "whatsappNote": "पूछताछ और समय तय करने का सबसे तेज माध्यम",
+      "emailTitle": "सीधा ईमेल",
+      "locationTitle": "क्लिनिक का पता",
+      "locationVal": "कोथरूड, पुणे, महाराष्ट्र",
+      "locationNote": "पूर्व अनुमति से सत्र • पौड रोड / कर्वे रोड के पास",
+      "formTitle": "गोपनीय संदेश भेजें",
+      "formSubtitle": "नीचे दिया गया फॉर्म भरें। हम 24 घंटों में उत्तर देते हैं।",
+      "nameLabel": "आपका पूरा नाम *",
+      "phoneLabel": "फोन / व्हाट्सएप नंबर *",
+      "emailLabel": "ईमेल पता *",
+      "serviceLabel": "किस विषय में बात करनी है? *",
+      "messageLabel": "आपका संदेश या प्रश्न *",
+      "submitBtn": "संदेश भेजें",
+      "submitting": "गोपनीय संदेश भेजा जा रहा है...",
+      "successTitle": "संपर्क करने के लिए धन्यवाद",
+      "successDesc": "आपका संदेश सुरक्षित रूप से मिल गया है। सिमरन शीघ्र ही आपसे संपर्क करेंगी।",
+      "sendAnother": "दूसरा संदेश भेजें",
+      "mapBadge": "क्लिनिक स्थान",
+      "mapTitle": "कोथरूड, पुणे क्लिनिक",
+      "mapSubtitle": "कोथरूड के केंद्र में, मेट्रो और सार्वजनिक परिवहन से आसानी से पहुंचने योग्य।",
+      "emergencyTitle": "आपातकालीन मानसिक स्वास्थ्य हेल्पलाइन (भारत)",
+      "emergencyNotice": "फ्रूटफुल माइंड पूर्व-निर्धारित काउंसलिंग प्रदान करता है और यहाँ 24/7 आपातकालीन मनोचिकित्सा कक्ष नहीं है। यदि आप या आपके परिचित किसी गंभीर संकट में हैं, तो कृपया तुरंत इन 24/7 टोल-फ्री राष्ट्रीय नंबरों पर संपर्क करें:",
+      "privacyGuaranteeTitle": "100% पूर्ण गोपनीयता की गारंटी:",
+      "privacyGuaranteeDesc": "आपकी कोई भी जानकारी किसी तीसरे पक्ष के साथ कभी साझा नहीं की जाती। सभी बातचीत केवल आपके और सिमरन के बीच ही रहती है।",
+      "noSpamNote": "🔒 कोई स्पैम नहीं। सिमरन की ओर से सीधा उत्तर।",
+      "serviceOptions": [
+        {
+          "value": "Emotional Wellbeing Counselling",
+          "label": "भावनात्मक स्वास्थ्य काउंसलिंग"
+        },
+        {
+          "value": "Career Counselling",
+          "label": "करियर काउंसलिंग एवं मार्गदर्शन"
+        },
+        {
+          "value": "Psychology Tuition (Grade 11/12)",
+          "label": "मनोविज्ञान ट्यूशन (कक्षा 11/12)"
+        },
+        {
+          "value": "Psychology Tuition (Graduate)",
+          "label": "मनोविज्ञान ट्यूशन (ग्रेजुएट स्तर)"
+        },
+        {
+          "value": "Course Waitlist Enquiry",
+          "label": "भावनात्मक स्वास्थ्य कोर्स"
+        },
+        {
+          "value": "General Question",
+          "label": "सामान्य प्रश्न"
+        }
+      ],
+      "namePlaceholder": "उदा. अदिति जोशी",
+      "phonePlaceholder": "उदा. 9820012345",
+      "emailPlaceholder": "you@example.com",
+      "messagePlaceholder": "आप इस समय क्या महसूस कर रहे हैं, थोड़ा साझा करें..."
+    },
+    "breathingWidget": {
+      "badge": "माइंडफुल ग्राउंडिंग",
+      "cycles": "चक्र",
+      "title": "1 मिनट का ठहराव लें",
+      "subtitle": "बॉक्स ब्रीदिंग से आपकी तंत्रिका प्रणाली 60 सेकंड में शांत हो जाती है।",
+      "inhale": "नाक से धीरे-धीरे गहरी सांस अंदर लें...",
+      "hold": "सांस को सहजता से रोकें...",
+      "exhale": "मुंह से सारी हवा धीरे-धीरे छोड़ें...",
+      "rest": "शांत भाव से विश्राम करें...",
+      "ready": "तैयार हैं?",
+      "start": "1 मिनट अभ्यास शुरू करें",
+      "pause": "रोकें",
+      "reset": "पुनः शुरू करें"
+    },
+    "moodWidget": {
+      "badge": "मन की जांच",
+      "title": "आज आपका मन कैसा महसूस कर रहा है?",
+      "subtitle": "अपनी भावना चुनें और उसके अनुसार सुझाई गई मनोवैज्ञानिक सीख देखें।",
+      "recommended": "आपके लिए सुझाई गई सीख",
+      "readReflection": "विचार पढ़ें",
+      "moods": [
+        {
+          "id": "overwhelmed",
+          "label": "उलझन / भारीपन",
+          "emoji": "🌊",
+          "feeling": "चारों तरफ से विचारों का दबाव",
+          "recommendation": {
+            "title": "ओवरथिंकिंग की उलझन: रात 3 बजे के विचारों का चक्र कैसे तोड़ें?",
+            "type": "लेख",
+            "link": "/blogs/unraveling-overthinking",
+            "summary": "थकने पर दिमाग लगातार क्यों सोचता है, और विचारों को शांत करने के 3 आसान उपाय।"
+          }
+        },
+        {
+          "id": "anxious",
+          "label": "चिंता / घबराहट",
+          "emoji": "⚡",
+          "feeling": "बेचैनी और शारीरिक तनाव",
+          "recommendation": {
+            "title": "कॉग्निटिव बिहेवियरल थेरेपी (CBT) त्रिकोण",
+            "type": "मनोवैज्ञानिक सिद्धांत",
+            "link": "/psychology-concepts",
+            "summary": "विचारों, शारीरिक संवेदनाओं और आचरण के बीच के गहरे संबंध को समझें।"
+          }
+        },
+        {
+          "id": "stuck",
+          "label": "अटकाव / टालमटोल",
+          "emoji": "⏳",
+          "feeling": "चाहते हुए भी काम शुरू न कर पाना",
+          "recommendation": {
+            "title": "काम टालने की आदत का असली सच (यह आलस नहीं है)",
+            "type": "लेख",
+            "link": "/blogs/real-truth-procrastination",
+            "summary": "काम टालना आलस नहीं बल्कि तनाव से बचने की कोशिश है। इसे दूर करने के व्यावहारिक तरीके।"
+          }
+        },
+        {
+          "id": "critical",
+          "label": "आत्म-आलोचना",
+          "emoji": "🪞",
+          "feeling": "खुद को ही लगातार कोसना और दोष देना",
+          "recommendation": {
+            "title": "आत्मसम्मान को मजबूत करना: अपने मूल्य को पहचानें",
+            "type": "लेख",
+            "link": "/blogs/rebuilding-fragile-self-esteem",
+            "summary": "भीतरी आलोचक को शांत करना और अपने मानवीय मूल्य का आदर करना सीखें।"
+          }
+        },
+        {
+          "id": "curious",
+          "label": "जिज्ञासु एवं शांत",
+          "emoji": "🌱",
+          "feeling": "मन को समझने और विकसित करने की चाह",
+          "recommendation": {
+            "title": "अटैचमेंट स्टाइल्स और रिश्तों का स्वभाव",
+            "type": "मनोवैज्ञानिक सिद्धांत",
+            "link": "/psychology-concepts",
+            "summary": "बचपन के अनुभव बड़े होने पर रिश्तों और विश्वास को कैसे प्रभावित करते हैं, जानें।"
+          }
+        }
+      ]
+    },
+    "quizWidget": {
+      "badge": "आत्म-चिंतन टूल",
+      "title": "क्या काउंसलिंग आपके लिए सही कदम है?",
+      "subtitle": "3 आसान सवालों का यह आत्म-चिंतन करें। कोई अंक नहीं, कोई लेबल नहीं — सिर्फ स्पष्टता।",
+      "qPrefix": "सवाल",
+      "of": "का",
+      "resultTitle": "आप एक संवेदनशील और सुरक्षित स्थान के पूरे हकदार हैं",
+      "resultDesc": "आपके उत्तर एक बहुत ही स्वाभाविक मानवीय अनुभव दिखाते हैं: मानसिक बोझ को अकेले ढोना। थेरेपी लेना कमजोरी नहीं, बल्कि अपनी मानसिक शांति की दिशा में एक सशक्त कदम है।",
+      "suggestedAction": "अगला कदम: सिमरन से 15 मिनट की मुफ्त परिचयात्मक बातचीत करके समझें कि काउंसलिंग आपके लिए कैसे मददगार हो सकती है।",
+      "bookDiscovery": "15-मिनट मुफ्त कॉल बुक करें",
+      "retake": "चाचणी दोबारा करें",
+      "questions": [
+        {
+          "id": 1,
+          "question": "जब तनाव या भारी भावनाओं का दौर आता है, तो आपकी सबसे सामान्य प्रतिक्रिया क्या होती है?",
+          "options": [
+            {
+              "label": "मैं पुरानी बातों और संभावनाओं को दिमाग में बार-बार दोहराता/दोहराती हूँ",
+              "tag": "overthinking"
+            },
+            {
+              "label": "मैं मोबाइल में खो जाता हूँ, लेकिन बाद में और ज्यादा मानसिक थकान महसूस होती है",
+              "tag": "avoidance"
+            },
+            {
+              "label": "मैं दोस्तों से मिलता हूँ, लेकिन उन पर अपने दर्द का बोझ डालने से झिझकता हूँ",
+              "tag": "isolation"
+            },
+            {
+              "label": "मैं सब कुछ सामान्य दिखाने की कोशिश करता हूँ, लेकिन भीतर एक तनाव बना रहता है",
+              "tag": "tension"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "रोजमर्रा के जीवन में अपने विचारों के साथ आपका रिश्ता कैसा है?",
+          "options": [
+            {
+              "label": "मेरा भीतरी आलोचक बहुत मुखर है और मेरे फैसलों पर बार-बार सवाल उठाता है",
+              "tag": "inner_critic"
+            },
+            {
+              "label": "मुझे पता होता है कि क्या करना है, लेकिन काम टालने की आदत मुझे रोक देती है",
+              "tag": "procrastination"
+            },
+            {
+              "label": "मैं करियर या जीवन के दोराहे पर खड़ा हूँ और विकल्पों को लेकर संशय में हूँ",
+              "tag": "crossroads"
+            },
+            {
+              "label": "मैं अपने मनोवैज्ञानिक पैटर्न्स को गहराई से समझकर आगे बढ़ना चाहता हूँ",
+              "tag": "curiosity"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "इस समय किस प्रकार की सहायता आपके लिए सबसे ज्यादा आरामदायक होगी?",
+          "options": [
+            {
+              "label": "एक 100% सुरक्षित और गोपनीय स्थान जहाँ किसी भी विचार को अजीब न समझा जाए",
+              "tag": "safe_space"
+            },
+            {
+              "label": "चिंता और नकारात्मक सोच से निपटने के वैज्ञानिक और व्यावहारिक टूल्स",
+              "tag": "practical_tools"
+            },
+            {
+              "label": "अपनी क्षमताओं को पहचानकर करियर की सही दिशा चुनने में मार्गदर्शन",
+              "tag": "career_clarity"
+            },
+            {
+              "label": "मनोविज्ञान के सिद्धांतों को समझकर भावनात्मक संतुलन बनाना",
+              "tag": "education"
+            }
+          ]
+        }
+      ]
+    },
+    "faqSection": {
+      "badge": "स्पष्टता और भरोसा",
+      "title": "अक्सर पूछे जाने वाले सवाल",
+      "subtitle": "सत्रों के तौर-तरीके, गोपनीयता, समय और शुल्क से जुड़ी साफ जानकारी।"
+    },
+    "testimonialsSection": {
+      "badge": "नैतिक गोपनीयता नीति",
+      "title": "परामर्श लेने वालों के अनुभव",
+      "subtitle": "मनोविज्ञान की आचारसंहिता के अनुसार सभी अनुभव गोपनीयता का पूरा सम्मान करते हुए प्रस्तुत किए गए हैं। बिना सहमति के किसी का भी नाम प्रकाशित नहीं किया जाता।",
+      "verified": "सत्यापित क्लाइंट",
+      "verifiedStudent": "सत्यापित छात्र"
+    },
+    "footer": {
+      "newsletterBadge": "द माइंडफुल डिस्पैच",
+      "newsletterTitle": "जिज्ञासु मन के लिए विचारशील मासिक चिंतन।",
+      "newsletterSubtitle": "सिमरन द्वारा चुने गए मनोवैज्ञानिक लेख, किताबों के सुझाव और सरल उपाय। कोई स्पैम नहीं।",
+      "subscribeBtn": "सदस्य बनें",
+      "subscribing": "जुड़ रहे हैं...",
+      "subscribed": "स्वागत है! आप हमारे माइंडफुलनेस विचारों से जुड़ चुके हैं।",
+      "unsubNote": "कभी भी एक क्लिक में सदस्यता रद्द कर सकते हैं। कोई व्यावसायिक दबाव नहीं।",
+      "tagline": "फ्रूटफुल माइंड — संवेदनशीलता से स्पष्टता की ओर।",
+      "areasTitle": "प्रमुख क्षेत्र",
+      "exploreTitle": "जानें",
+      "contactTitle": "संपर्क करें",
+      "disclaimer": "सूचना: फ्रूटफुल माइंड द्वारा प्रस्तुत सामग्री शैक्षिक और मार्गदर्शन के उद्देश्य से है और यह आपातकालीन चिकित्सा या औपचारिक निदान का विकल्प नहीं है। किसी भी मानसिक संकट की स्थिति में कृपया नजदीकी आपातकालीन सेवा या Tele-MANAS हेल्पलाइन 14416 पर तुरंत संपर्क करें।",
+      "rights": "सर्वाधिकार सुरक्षित। फ्रूटफुल माइंड — सिमरन मिस्त्री।",
+      "socialTitle": "सोशल मीडिया पर जुड़ें"
+    },
+    "blogsPage": {
+      "badge": "चिंतन एवं शोध",
+      "title": "मनोवैज्ञानिक विचार एवं मानसिक शांति लेख",
+      "subtitle": "मनोवैज्ञानिक सिमरन मिस्त्री द्वारा लिखित, रोजमर्रा की जिंदगी में मददगार संवेदनशील और सरल लेख।",
+      "searchPlaceholder": "लेख का शीर्षक या विषय खोजें...",
+      "allCategory": "सभी",
+      "noArticles": "कोई लेख नहीं मिला।",
+      "adjustKeyword": "कृपया दूसरा शब्द खोजें या श्रेणी बदलें।",
+      "resetFilters": "फ़िल्टर रीसेट करें",
+      "readTime": "मिनट पठन",
+      "readArticle": "पूरा लेख पढ़ें",
+      "backToArticles": "सभी लेखों पर वापस जाएं",
+      "tableOfContents": "विषय सूची",
+      "shareArticle": "यह लेख साझा करें",
+      "shareWhatsApp": "व्हाट्सएप",
+      "shareTwitter": "X / ट्विटर",
+      "copyLink": "लिंक कॉपी करें",
+      "linkCopied": "लिंक कॉपी हो गई!",
+      "authorRole": "मनोवैज्ञानिक, फ्रूटफुल माइंड",
+      "relatedArticles": "जिज्ञासु मन के लिए संबंधित लेख",
+      "readMore": "और पढ़ें"
+    },
+    "bookingModal": {
+      "title": "सिमरन के साथ सत्र बुक करें",
+      "subtitle": "भावनात्मक स्पष्टता की ओर पहला कदम उठाएं। अपनी सेवा और पसंदीदा समय चुनें।",
+      "nameLabel": "आपका पूरा नाम *",
+      "namePlaceholder": "उदा. अदिति जोशी",
+      "phoneLabel": "फोन / व्हाट्सएप नंबर *",
+      "phonePlaceholder": "उदा. +91 9820012345",
+      "emailLabel": "ईमेल पता *",
+      "emailPlaceholder": "you@example.com",
+      "serviceLabel": "किस विषय में बात करनी है? *",
+      "modeLabel": "परामर्श का माध्यम *",
+      "modeOnline": "ऑनलाइन (वीडियो कॉल - Google Meet)",
+      "modeInPerson": "प्रत्यक्ष (कोथरूड, पुणे क्लिनिक)",
+      "dayLabel": "सुविधाजनक दिन *",
+      "dayWeekdays": "सोमवार से शुक्रवार",
+      "dayWeekends": "शनिवार",
+      "timeLabel": "सुविधाजनक समय *",
+      "timeMorning": "सुबह (9 से 12)",
+      "timeAfternoon": "दोपहर (1 से 4)",
+      "timeEvening": "शाम (5 से 8)",
+      "noteLabel": "सिमरन के लिए कोई संदेश (वैकल्पिक)",
+      "notePlaceholder": "आप किस बारे में मार्गदर्शन चाहते हैं, संक्षेप में लिखें...",
+      "submitBtn": "व्हाट्सएप पर सत्र बुक करें",
+      "initiating": "जोड़ रहे हैं...",
+      "successTitle": "अनुरोध दर्ज हो गया है!",
+      "successDesc": "सत्र का समय तय करने के लिए हम सीधे व्हाट्सएप पर सिमरन से कनेक्ट कर रहे हैं।",
+      "manualNote": "यदि व्हाट्सएप अपने आप न खुले तो आप सीधे इस नंबर पर संदेश भेज सकते हैं:",
+      "close": "बंद करें"
+    },
+    "conceptsData": {
+      "cognitive-dissonance": {
+        "title": "कॉग्निटिव डिसोनेंस (Cognitive Dissonance)",
+        "category": "संज्ञानात्मक मनोविज्ञान",
+        "shortDefinition": "जब हमारे विचार, विश्वास और आचरण आपस में टकराते हैं, तो मन में जो असहजता पैदा होती है उसे कॉग्निटिव डिसोनेंस कहते हैं।",
+        "dailyExample": "यह जानते हुए भी कि देर रात तक जागना स्वास्थ्य के लिए हानिकारक है, खुद को यह समझाना कि 'आज तनाव ज्यादा था, इसलिए मैं इसका हकदार हूं' ताकि मन की बेचैनी कम हो सके।",
+        "psychologyTheory": "1957 में लियोन फेस्टिंगर द्वारा प्रतिपादित। मानव मस्तिष्क विरोधाभासी विचारों को बर्दाश्त नहीं कर सकता, इसलिए वह संतुलन बनाने के लिए तरह-तरह के बहाने गढ़ता है।",
+        "inTherapy": "काउंसलिंग में इस टकराहट को पहचानकर हम समझते हैं कि ये बहाने किस छिपे हुए डर या दुख को छुपाने के लिए बनाए जा रहे हैं।",
+        "practicalTakeaway": "जब आप किसी आदत के पक्ष में दस तरह की दलीलें देने लगें, तो रुकें और पूछें: मैं किस असहज भावना का सामना करने से बच रहा हूँ?"
+      },
+      "attachment-styles": {
+        "title": "अटैचमेंट स्टाइल्स (Attachment Styles)",
+        "category": "संबंध एवं बाल मनोविज्ञान",
+        "shortDefinition": "बचपन के अनुभवों से बना वह अवचेतन भावनात्मक खाका, जो तय करता है कि बड़े होकर हम रिश्तों में विश्वास, नजदीकी और असुरक्षा से कैसे निपटते हैं।",
+        "dailyExample": "पार्टनर द्वारा मैसेज का उत्तर देने में देर होने पर बहुत ज्यादा घबराहट और डर लगना, या रिश्ते में ज्यादा करीब आने से घबराना।",
+        "psychologyTheory": "जॉन बॉल्बी और मैरी एन्सवर्थ द्वारा विकसित। 4 मुख्य रूप: सुरक्षित (Secure), चिंतित (Anxious), दूरी बनाने वाले (Avoidant) और भयभीत (Disorganized)।",
+        "inTherapy": "अपनी अटैचमेंट स्टाइल को समझकर व्यक्ति रिश्तों में अपनी घबराहट को शांत करना और सुरक्षित संबंध बनाना सीखता है।",
+        "practicalTakeaway": "आपकी अटैचमेंट स्टाइल बचपन में खुद को सुरक्षित रखने का एक तरीका थी—यह कोई स्थायी लेबल नहीं है। समझ और अभ्यास से सुरक्षित रिश्ते बनाए जा सकते हैं।"
+      },
+      "cbt-basics": {
+        "title": "CBT त्रिकोण (Thoughts, Feelings, Actions)",
+        "category": "थेरेपी पद्धतियां",
+        "shortDefinition": "मनोविज्ञान का मूलभूत मॉडल जो दिखाता है कि हमारे विचार, भावनाएं और व्यवहार लगातार एक-दूसरे को प्रभावित करते हैं।",
+        "dailyExample": "विचार: 'उन्होंने मुझसे मुस्कुराकर बात नहीं की, वे मुझे नापसंद करते हैं' -> भावना: उदासी और असुरक्षा -> व्यवहार: खुद को अलग कर लेना और बातचीत बंद कर देना।",
+        "psychologyTheory": "1960 के दशक में आरोन बेक द्वारा विकसित। मानसिक कष्ट बाहरी घटनाओं से नहीं, बल्कि उन घटनाओं की हमारी सोच और व्याख्या से पैदा होता है।",
+        "inTherapy": "हम नकारात्मक विचारों के चक्र को पहचानकर उन्हें संतुलित और वास्तविक नजरिए में बदलने का अभ्यास करते हैं।",
+        "practicalTakeaway": "मन में आने वाला पहला विचार आपके नियंत्रण में नहीं होता, लेकिन उस पर कैसे प्रतिक्रिया देनी है यह दूसरा विचार पूरी तरह आपके वश में है।"
+      },
+      "imposter-phenomenon": {
+        "title": "इम्पोस्टर सिंड्रोम (Imposter Phenomenon)",
+        "category": "आत्मविश्वास एवं करियर",
+        "shortDefinition": "यह निरंतर डर बना रहना कि आपकी सफलता सिर्फ किस्मत की वजह से है और असल में आप अयोग्य हैं तथा जल्द ही पकड़े जाएंगे।",
+        "dailyExample": "पदोन्नति मिलने पर तुरंत सोचना: 'इंटरव्यू लेने वालों से गलती हो गई; जल्द ही सबको पता चल जाएगा कि मुझे कुछ नहीं आता।'",
+        "psychologyTheory": "1978 में डॉ. पॉलीन क्लेंस और डॉ. सुजैन आइम्स द्वारा पहचाना गया। यह मेहनती, सफल और ईमानदार लोगों में सबसे ज्यादा पाया जाता है।",
+        "inTherapy": "हम परफेक्शन के अनावश्यक दबाव को हटाकर अपनी वास्तविक क्षमताओं और मेहनत को स्वीकार करना सीखते हैं।",
+        "practicalTakeaway": "खुद को अयोग्य महसूस करना आपकी अक्षमता का सबूत नहीं है, बल्कि यह दर्शाता है कि आप किसी नई और बड़ी चुनौती का सामना कर रहे हैं।"
+      },
+      "boundary-setting": {
+        "title": "मानसिक सीमाएं (Psychological Boundaries)",
+        "category": "संबंध एवं भावनात्मक संतुलन",
+        "shortDefinition": "अपनी मानसिक शांति की रक्षा के लिए तय की गई सीमाएं, जो यह स्पष्ट करती हैं कि आपकी जिम्मेदारी कहाँ खत्म होती है और दूसरों की कहाँ शुरू होती है।",
+        "dailyExample": "शाम 7 बजे के बाद ऑफिस के फोन न उठाना और बिना अपराधबोध के शालीनता से कहना कि 'यह मेरा पारिवारिक समय है।' ",
+        "psychologyTheory": "पारिवारिक प्रणाली सिद्धांत पर आधारित। सीमाएं न तो बहुत ढीली होनी चाहिए और न ही इतनी कठोर कि आप सबसे कट जाएं।",
+        "inTherapy": "दूसरों को 'ना' कहने में होने वाली झिझक और अपराधबोध को दूर करना और अपने आत्मसम्मान की रक्षा करना सीखते हैं।",
+        "practicalTakeaway": "सीमाएं दूसरों को दूर करने वाली दीवारें नहीं हैं, बल्कि रिश्तों को लंबे समय तक मधुर बनाए रखने वाले पुल हैं।"
+      },
+      "emotional-regulation": {
+        "title": "विंडो ऑफ टॉलरेंस (Window of Tolerance)",
+        "category": "तंत्रिका तंत्र एवं भावनात्मक संतुलन",
+        "shortDefinition": "मन की वह संतुलित अवस्था जिसमें व्यक्ति तनाव या डर के बावजूद शांत रहकर सही निर्णय ले सकता है।",
+        "dailyExample": "अचानक आलोचना सुनने पर: शांत रहकर विचार करना (विंडो के अंदर) बनाम अत्यधिक गुस्सा करना या सुन्न पड़ जाना (विंडो के बाहर)।",
+        "psychologyTheory": "डॉ. डैन सीगल द्वारा प्रस्तुत सिद्धांत। अत्यधिक तनाव और थकान से यह सहनशीलता कम हो जाती है।",
+        "inTherapy": "श्वास और शारीरिक अभ्यास से हम तंत्रिका तंत्र को शांत करके इस संतुलित अवस्था में बने रहने का अभ्यास करते हैं।",
+        "practicalTakeaway": "जब मन अत्यधिक उद्वेलित हो, तो किसी समस्या को सुलझाने की कोशिश न करें। पहले सांस लेकर शरीर को शांत करें, फिर विचार करें।"
+      },
+      "active-listening": {
+        "title": "सहानुभूतिपूर्ण श्रवण (Active Listening)",
+        "category": "संवाद एवं मानवीय मनोविज्ञान",
+        "shortDefinition": "जल्दबाजी में सलाह दिए बिना, सामने वाले व्यक्ति के शब्दों और भावनाओं को बिना किसी पूर्वग्रह के पूरे ध्यान से सुनना।",
+        "dailyExample": "मित्र का दुख सुनकर 'अरे सब ठीक हो जाएगा' कहने के बजाय यह कहना: 'मैं समझ सकता हूँ कि तुम इस समय बहुत भारी मन से गुजर रहे हो।'",
+        "psychologyTheory": "कार्ल रोजर्स की क्लाइंट-केंद्रित थेरेपी से प्रेरित। जब किसी को लगता है कि उसे समझा जा रहा है, तो उसकी घबराहट अपने आप शांत होती है।",
+        "inTherapy": "काउंसलिंग में क्लाइंट को बिना किसी फैसले के आदर से सुना जाता है, जिससे वह अपने समाधान खुद ढूंढने में सक्षम बनता है।",
+        "practicalTakeaway": "कठिन बातचीत में बोलने से पहले खुद से पूछें: इस समय सामने वाले को मेरी सलाह चाहिए या सिर्फ एक संवेदनशील साथ?"
+      },
+      "confirmation-bias": {
+        "title": "कन्फर्मेशन बायस (Confirmation Bias)",
+        "category": "संज्ञानात्मक मनोविज्ञान",
+        "shortDefinition": "सिर्फ वही जानकारी ढूंढना और याद रखना जो हमारे पुराने विश्वासों से मेल खाती हो, और विपरीत सबूतों को अनदेखा कर देना।",
+        "dailyExample": "यह मान लेना कि 'ऑफिस में मुझे कोई पसंद नहीं करता' और जब 5 लोग प्यार से मिलें तो ध्यान न देना, लेकिन 1 व्यक्ति नजरअंदाज करे तो उसी को याद रखना।",
+        "psychologyTheory": "दिमाग की ऊर्जा बचाने का एक स्वाभाविक तरीका। यदि हमारा विश्वास है कि 'मैं कमजोर हूँ', तो दिमाग उसी के सबूत जुटाता रहता है।",
+        "inTherapy": "थेरेपी में हम एक जासूस की तरह अपने विचारों की पड़ताल करते हैं और विपरीत सबूतों को खोजना सीखते हैं।",
+        "practicalTakeaway": "जब भी आप किसी नकारात्मक सोच के प्रति 100% आश्वस्त हों, तो रुककर पूछें: क्या इस सोच को गलत साबित करने वाला कोई एक सबूत भी मेरे पास है?"
+      }
+    },
+    "blogsData": {
+      "unraveling-overthinking": {
+        "title": "ओवरथिंकिंग की उलझन: रात 3 बजे के विचारों का चक्र कैसे तोड़ें?",
+        "category": "भावनात्मक स्वास्थ्य",
+        "readTime": "5 मिनट पठन",
+        "excerpt": "रात के सन्नाटे में जब काम खत्म होते हैं, तो दिमाग पुरानी बातों और चिंताओं में क्यों उलझ जाता है? एक संवेदनशील मनोवैज्ञानिक नजरिए से ओवरथिंकिंग को समझें।"
+      },
+      "real-truth-procrastination": {
+        "title": "काम टालने की आदत का असली सच (यह आलस नहीं है)",
+        "category": "भावनात्मक स्वास्थ्य",
+        "readTime": "6 मिनट पठन",
+        "excerpt": "काम को टालना असल में तनाव और असफलता के डर से खुद को बचाने की एक दिमागी कोशिश है। खुद को कोसे बिना सहजता से काम शुरू करने के तरीके।"
+      },
+      "rebuilding-fragile-self-esteem": {
+        "title": "आत्मसम्मान को मजबूत करना: शर्तो से परे अपने मूल्य को पहचानें",
+        "category": "भावनात्मक स्वास्थ्य",
+        "readTime": "5 मिनट पठन",
+        "excerpt": "जब हमारा आत्मसम्मान केवल उपलब्धियों पर टिका होता है, तो मानसिक थकान स्वाभाविक है। अपने स्वाभाविक मानवीय मूल्य को पहचानें और भीतरी आलोचक को शांत करें।"
+      }
+    },
+    "affirmationsList": [
+      {
+        "id": 1,
+        "theme": "आत्म-करुणा",
+        "quote": "आज ही हर अनिश्चितता को जीतना जरूरी नहीं है। मानसिक शांति छोटे और निरंतर कदमों से आती है।",
+        "prompt": "आज दोपहर आप खुद पर से कौन सा एक छोटा दबाव हटा सकते हैं?"
+      },
+      {
+        "id": 2,
+        "theme": "चिंता एवं सुरक्षा",
+        "quote": "ओवरथिंकिंग जवाब ढूंढने की कोशिश नहीं, बल्कि सुरक्षा तलाशती हुई एक थकी हुई तंत्रिका प्रणाली है।",
+        "prompt": "एक गहरी सांस लें और महसूस करें: इस कमरे में, इस समय, आप पूरी तरह सुरक्षित हैं।"
+      },
+      {
+        "id": 3,
+        "theme": "स्वस्थ सीमाएं",
+        "quote": "सीमाएं दीवारें नहीं हैं, बल्कि वे दूसरों को यह दिखाने वाले पुल हैं कि आपकी शुरुआत और अंत कहाँ है।",
+        "prompt": "अपनी मानसिक ऊर्जा बचाने के लिए आज कहाँ एक विनम्र 'ना' कहने की जरूरत है?"
+      },
+      {
+        "id": 4,
+        "theme": "आत्म-मूल्य",
+        "quote": "आपका मूल्य आपके अस्तित्व में निहित है। इसे लगातार काम करके साबित करने की कोई आवश्यकता नहीं है।",
+        "prompt": "क्या आप अत्यधिक थके बिना भी खुद को आराम करने की इजाजत दे सकते हैं?"
+      },
+      {
+        "id": 5,
+        "theme": "भावनात्मक जिज्ञासा",
+        "quote": "जिज्ञासा अपराधबोध को मिटा देती है। जब आप अपनी भावनाओं को बिना किसी फैसले के देखते हैं, तो स्पष्टता आती है।",
+        "prompt": "इस समय आपके दिल पर कौन सी भावना दस्तक दे रही है? क्या आप एक मेहमान की तरह उसका स्वागत कर सकते हैं?"
+      },
+      {
+        "id": 6,
+        "theme": "धैर्य एवं विकास",
+        "quote": "प्रगति हमेशा सीधी रेखा में नहीं होती। कुछ दिन आगे बढ़ने के लिए होते हैं, और कुछ दिन अपनी जड़ों को मजबूत करने के लिए।",
+        "prompt": "याद करें कि आप कितने कठिन दौर से गुजरकर यहाँ तक पहुंचे हैं, और खुद को शाबाशी दें।"
+      }
+    ],
+    "welcomeBio": {
+      "badge": "मनोवैज्ञानिक परिचय",
+      "quote": "“नमस्ते, मैं 3+ वर्षों के नैदानिक अनुभव वाली मनोवैज्ञानिक हूँ। मैंने काउंसलिंग साइकोलॉजी में मास्टर्स डिग्री पूरी की है और एक्लेक्टिक पद्धति का पालन करती हूँ। मेरे मुख्य कार्यक्षेत्र: भावनात्मक स्वास्थ्य काउंसलिंग, करियर काउंसलिंग और मनोविज्ञान ट्यूशन। भावनात्मक स्वास्थ्य सेवाओं में: चिंता, तनाव प्रबंधन, ओवरथिंकिंग, आत्मसम्मान और काम टालने की आदत (Procrastination)। इसके अलावा कक्षा 11, 12 और ग्रेजुएट स्तर के लिए मनोविज्ञान ट्यूशन उपलब्ध हैं।”",
+      "author": "सिमरन मिस्त्री",
+      "authorRole": "मनोवैज्ञानिक एवं संस्थापिका, फ्रूटफुल माइंड",
+      "credentials": "काउंसलिंग साइकोलॉजी में मास्टर डिग्री • 3+ वर्ष का अभ्यास",
+      "location": "कोथरूड, पुणे एवं ऑनलाइन दुनिया भर में",
+      "ctaAbout": "पूरी यात्रा और दृष्टिकोण जानें",
+      "ctaDiscovery": "15-मिनट मुफ्त कॉल बुक करें"
+    },
+    "homeNewsletter": {
+      "badge": "मासिक विचार",
+      "title": "द माइंडफुल डिस्पैच से जुड़ें",
+      "subtitle": "सिमरन मिस्त्री द्वारा लिखित विचारशील मासिक लेख, उपयोगी मनोवैज्ञानिक टूल्स और किताबों के सुझाव सीधे अपने इनबॉक्स में पाएं। पूरी तरह स्पैम-मुक्त।",
+      "namePlaceholder": "आपका नाम",
+      "emailPlaceholder": "आपका ईमेल पता",
+      "subscribeBtn": "न्यूजलेटर से जुड़ें",
+      "subscribing": "जोड़ रहे हैं...",
+      "success": "जुड़ने के लिए बहुत-बहुत धन्यवाद! मासिक अंक शीघ्र ही आपके इनबॉक्स में पहुंचेगा।",
+      "guarantee": "🔒 पूर्ण गोपनीयता। कभी भी एक क्लिक में सदस्यता रद्द कर सकते हैं।"
+    }
+  }
+}

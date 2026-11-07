@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "quote": "You do not have to conquer every uncertainty today. Healing happens in quiet, consistent steps.",
+    "theme": "Self-Compassion",
+    "prompt": "What is one small pressure you can release this afternoon?"
+  },
+  {
+    "id": 2,
+    "quote": "Overthinking is rarely about finding answers; it is often a nervous system seeking safety.",
+    "theme": "Anxiety & Safety",
+    "prompt": "Take one deep breath and notice: in this exact room, at this exact moment, you are safe."
+  },
+  {
+    "id": 3,
+    "quote": "Boundaries are not walls to keep others out. They are bridges that show others where you begin and end.",
+    "theme": "Healthy Boundaries",
+    "prompt": "Where is a gentle 'no' needed to protect your energy today?"
+  },
+  {
+    "id": 4,
+    "quote": "Your worth is inherent. It was never something you had to earn through endless productivity.",
+    "theme": "Self-Worth",
+    "prompt": "Can you allow yourself to rest without qualifying it with fatigue?"
+  },
+  {
+    "id": 5,
+    "quote": "Curiosity dissolves shame. When you look at your emotions with curiosity instead of judgment, clarity arrives.",
+    "theme": "Emotional Curiosity",
+    "prompt": "What feeling is knocking at your door right now? Can you greet it like an unexpected guest?"
+  },
+  {
+    "id": 6,
+    "quote": "Progress is not always linear. Some days are for surging forward; other days are for anchoring your roots.",
+    "theme": "Patience & Growth",
+    "prompt": "Acknowledge how far you have already walked through seasons you once thought you could not survive."
+  }
+]

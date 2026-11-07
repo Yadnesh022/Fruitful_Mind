@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-plum: #592d6c;
+    --color-primary-plum-rgb: 89, 45, 108;
+    --color-peach: #f7b87d;
+    --color-peach-light: #fbdccd;
+    --color-sage: #78946e;
+    --color-canvas-light: #fdfbf7;
+    --color-canvas-dark: #140b19;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Lenis smooth scrolling styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(253, 220, 205, 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(89, 45, 108, 0.25);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(89, 45, 108, 0.45);
+  background-clip: content-box;
+}
+
+/* Liquid Glass Core Classes */
+.glass-surface {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -5px rgba(89, 45, 108, 0.07),
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.8),
+              inset 0 -1px 2px 0 rgba(89, 45, 108, 0.05);
+}
+
+.dark .glass-surface {
+  background: rgba(29, 16, 36, 0.65);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.45),
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.15),
+              inset 0 -1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Specular top-left highlight and inner chromatic refraction glow */
+.liquid-specular {
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-specular::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.05) 60%,
+    transparent 100%
+  );
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.dark .liquid-specular::before {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.02) 60%,
+    transparent 100%
+  );
+}
+
+/* Subtle chromatic dispersion edge */
+.chromatic-border {
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+/* Ambient animated blur blobs */
+.ambient-blob-plum {
+  background: radial-gradient(circle, rgba(144, 93, 158, 0.35) 0%, rgba(89, 45, 108, 0.08) 60%, transparent 80%);
+  filter: blur(60px);
+}
+.ambient-blob-peach {
+  background: radial-gradient(circle, rgba(247, 184, 125, 0.45) 0%, rgba(251, 220, 205, 0.12) 60%, transparent 80%);
+  filter: blur(65px);
+}
+.ambient-blob-sage {
+  background: radial-gradient(circle, rgba(120, 148, 110, 0.35) 0%, rgba(165, 172, 111, 0.1) 60%, transparent 80%);
+  filter: blur(60px);
+}
+.dark .ambient-blob-plum {
+  background: radial-gradient(circle, rgba(144, 93, 158, 0.28) 0%, rgba(89, 45, 108, 0.08) 60%, transparent 80%);
+}
+.dark .ambient-blob-peach {
+  background: radial-gradient(circle, rgba(247, 184, 125, 0.2) 0%, rgba(244, 96, 38, 0.05) 60%, transparent 80%);
+}
+.dark .ambient-blob-sage {
+  background: radial-gradient(circle, rgba(120, 148, 110, 0.22) 0%, rgba(100, 130, 90, 0.05) 60%, transparent 80%);
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
