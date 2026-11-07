@@ -98,38 +98,38 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
           >
             <LiquidGlass
               variant="card"
-              tint="peach"
+              tint="papaya"
               interactive={false}
-              className="border-white/80 dark:border-white/15 bg-white/95 dark:bg-brand-canvas-darkCard/95 p-6 sm:p-8 rounded-3xl shadow-2xl max-h-[90vh] overflow-y-auto"
+              className="border-white/80 dark:border-white/15 bg-white/95 dark:bg-dark-card/95 p-6 sm:p-8 rounded-3xl shadow-2xl max-h-[90vh] overflow-y-auto"
             >
               {/* Close Button */}
               <button
                 type="button"
                 onClick={onClose}
                 aria-label="Close booking modal"
-                className="absolute right-4 top-4 sm:right-5 sm:top-5 rounded-full p-2 text-brand-plum-500 hover:bg-black/5 hover:text-brand-plum-900 dark:text-brand-plum-300 dark:hover:bg-white/10 dark:hover:text-white transition-colors"
+                className="absolute right-4 top-4 sm:right-5 sm:top-5 rounded-full p-2 text-ink/70 hover:bg-black/5 hover:text-ink dark:text-zinc-300 dark:hover:bg-white/10 dark:hover:text-white transition-colors cursor-pointer"
               >
                 <X className="h-5 w-5" />
               </button>
 
               {submitted ? (
-                <div className="py-8 text-center">
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-sage-100 text-brand-sage-600 dark:bg-brand-sage-900/40 dark:text-brand-sage-300">
-                    <CheckCircle2 className="h-10 w-10" />
+                <div className="py-8 text-center space-y-3">
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-tint-mint text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light shadow-md">
+                    <CheckCircle2 className="h-10 w-10 text-leaf" />
                   </div>
-                  <h3 className="mt-4 font-heading text-2xl font-bold text-brand-plum-900 dark:text-white">
+                  <h3 className="mt-4 font-heading text-2xl font-bold text-ink dark:text-white">
                     {t('bookingModal.successTitle')}
                   </h3>
-                  <p className="mt-2 text-sm text-brand-plum-700 dark:text-brand-plum-200">
+                  <p className="mt-2 text-sm text-muted dark:text-zinc-300">
                     {t('bookingModal.successDesc')}
                   </p>
-                  <p className="mt-4 text-xs text-brand-plum-500 dark:text-brand-plum-300">
+                  <p className="mt-4 text-xs text-muted dark:text-zinc-400">
                     {t('bookingModal.manualNote')}{' '}
                     <a
                       href="https://wa.me/919769512475"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-bold underline text-brand-peach-600 dark:text-brand-peach-300"
+                      className="font-bold underline text-papaya-deep dark:text-mango"
                     >
                       +91 9769512475
                     </a>.
@@ -141,7 +141,7 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
                         setSubmitted(false);
                         onClose();
                       }}
-                      className="rounded-full bg-brand-plum-700 text-white font-semibold py-2.5 px-6 text-xs shadow-md"
+                      className="rounded-full bg-gradient-to-r from-papaya-deep to-papaya text-white font-bold py-2.5 px-7 text-xs shadow-md cursor-pointer"
                     >
                       {t('bookingModal.close')}
                     </button>
@@ -150,14 +150,14 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
               ) : (
                 <>
                   <div className="mb-6 space-y-1">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-peach-600 dark:text-brand-peach-300">
-                      <Sparkles className="h-3.5 w-3.5" />
+                    <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-papaya-deep dark:text-mango">
+                      <Sparkles className="h-3.5 w-3.5 text-papaya" />
                       <span>{t('nav.bookSession')}</span>
                     </span>
-                    <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-brand-plum-950 dark:text-white">
+                    <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-ink dark:text-white">
                       {t('bookingModal.title')}
                     </h2>
-                    <p className="text-xs sm:text-sm text-brand-plum-700 dark:text-brand-plum-200">
+                    <p className="text-xs sm:text-sm text-muted dark:text-zinc-300">
                       {t('bookingModal.subtitle')}
                     </p>
                   </div>
@@ -165,7 +165,7 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="modal-name" className="block text-xs font-semibold text-brand-plum-800 dark:text-brand-plum-200 mb-1">
+                        <label htmlFor="modal-name" className="block text-xs font-bold text-ink/80 dark:text-zinc-200 mb-1">
                           {t('bookingModal.nameLabel')}
                         </label>
                         <input
@@ -177,12 +177,12 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
                           value={formData.name}
                           onChange={handleChange}
                           placeholder={t('bookingModal.namePlaceholder')}
-                          className="w-full rounded-2xl border border-brand-plum-200/80 bg-white/90 px-4 py-2.5 text-sm text-brand-plum-900 shadow-sm focus:border-brand-peach-500 focus:outline-none focus:ring-2 focus:ring-brand-peach-200 dark:border-white/15 dark:bg-brand-canvas-dark dark:text-white"
+                          className="w-full rounded-2xl border border-papaya/20 bg-white/95 px-4 py-2.5 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
                         />
                       </div>
 
                       <div>
-                        <label htmlFor="modal-phone" className="block text-xs font-semibold text-brand-plum-800 dark:text-brand-plum-200 mb-1">
+                        <label htmlFor="modal-phone" className="block text-xs font-bold text-ink/80 dark:text-zinc-200 mb-1">
                           {t('bookingModal.phoneLabel')}
                         </label>
                         <input
@@ -194,7 +194,7 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
                           value={formData.phone}
                           onChange={handleChange}
                           placeholder={t('bookingModal.phonePlaceholder')}
-                          className="w-full rounded-2xl border border-brand-plum-200/80 bg-white/90 px-4 py-2.5 text-sm text-brand-plum-900 shadow-sm focus:border-brand-peach-500 focus:outline-none focus:ring-2 focus:ring-brand-peach-200 dark:border-white/15 dark:bg-brand-canvas-dark dark:text-white"
+                          className="w-full rounded-2xl border border-papaya/20 bg-white/95 px-4 py-2.5 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
                         />
                       </div>
                     </div>
@@ -322,7 +322,7 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="w-full rounded-full bg-brand-plum-700 hover:bg-brand-plum-800 text-white font-bold py-3.5 px-6 text-sm shadow-md transition-colors flex items-center justify-center gap-2 active:scale-95"
+                        className="w-full rounded-full bg-gradient-to-r from-papaya-deep via-papaya to-mango hover:from-papaya hover:to-mango text-white font-bold py-3.5 px-6 text-sm shadow-xl shadow-papaya/30 transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer"
                       >
                         <MessageCircle className="h-4 w-4" />
                         <span>{t('bookingModal.submitBtn')}</span>
