@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Calendar, MessageCircle, ArrowRight, Phone, MapPin } from 'lucide-react';
 import LanguageToggle from '../common/LanguageToggle';
+import WhatsAppIcon from '../common/WhatsAppIcon';
 import { useLanguage } from '../../context/LanguageContext';
 import logoImg from '../../assets/logo.png';
 
@@ -170,9 +171,9 @@ export default function Navbar({ onOpenBooking }) {
                   href="https://wa.me/919769512475?text=Hello%20Simran%2C%20I%20would%20like%20to%20enquire%20about%20sessions%20with%20Fruitful%20Mind."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 py-3 rounded-full border border-primary/20 bg-white text-ink text-sm font-semibold transition-all"
+                  className="w-full flex items-center justify-center gap-2 py-3 rounded-full border border-[#25D366]/30 bg-emerald-50 text-emerald-800 text-sm font-semibold transition-all"
                 >
-                  <MessageCircle className="h-4 w-4 text-primary" />
+                  <WhatsAppIcon className="h-4 w-4 text-[#25D366]" />
                   <span>WhatsApp Directly (+91 9769512475)</span>
                 </a>
               </div>

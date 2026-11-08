@@ -16,6 +16,7 @@ import {
   MessageCircle
 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
+import WhatsAppIcon from '../common/WhatsAppIcon';
 import logoImg from '../../assets/logo.png';
 
 export default function Footer({ onOpenBooking }) {
@@ -108,10 +109,10 @@ export default function Footer({ onOpenBooking }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Chat on WhatsApp"
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/40 hover:bg-accent hover:text-ink text-white border border-primary-400/30 transition-all duration-200"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white border border-[#25D366]/40 transition-all duration-200"
                   title="WhatsApp"
                 >
-                  <MessageCircle className="h-4 w-4" />
+                  <WhatsAppIcon className="h-4 w-4" />
                 </a>
 
                 <a

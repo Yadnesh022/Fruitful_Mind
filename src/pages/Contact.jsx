@@ -21,6 +21,7 @@ import {
 
 import SEO from '../components/common/SEO';
 import LiquidGlass from '../components/common/LiquidGlass';
+import WhatsAppIcon from '../components/common/WhatsAppIcon';
 import {
   ThoughtCloudDoodle,
   CompassDoodle,
@@ -200,24 +201,24 @@ export default function Contact() {
                 </div>
 
                 {/* WhatsApp Priority */}
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-teal-tint/50 border border-teal-primary/20 hover:border-teal-primary/40 transition-all">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-primary text-white flex-shrink-0">
-                    <MessageCircle className="h-5 w-5" />
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-emerald-50/70 border border-[#25D366]/30 hover:border-[#25D366]/60 transition-all">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#25D366] text-white flex-shrink-0 shadow-sm shadow-emerald-700/20">
+                    <WhatsAppIcon className="h-5 w-5 fill-white text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <span className="text-[11px] font-semibold text-teal-deep block">
+                    <span className="text-[11px] font-semibold text-emerald-900 block">
                       {t('contactPage.whatsappTitle')} (Fastest Response)
                     </span>
                     <a
                       href="https://wa.me/919769512475?text=Hello%20Simran%2C%20I%20would%20like%20to%20enquire%20about%20a%20psychology%20session%20with%20Fruitful%20Mind."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-bold text-sm sm:text-base text-teal-deep hover:text-teal-primary hover:underline flex items-center gap-1.5"
+                      className="font-bold text-sm sm:text-base text-emerald-800 hover:text-emerald-950 hover:underline flex items-center gap-1.5"
                     >
                       <span>wa.me/919769512475</span>
                       <ArrowRight className="h-3.5 w-3.5" />
                     </a>
-                    <p className="text-[11px] text-teal-deep/80 mt-0.5">
+                    <p className="text-[11px] text-emerald-700/80 mt-0.5">
                       {t('contactPage.whatsappNote')}
                     </p>
                   </div>
@@ -293,10 +294,10 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="WhatsApp"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-teal-tint text-teal-deep border border-teal-primary/20 hover:bg-teal-primary hover:text-white transition-all duration-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-[#25D366] border border-emerald-300/60 hover:bg-[#25D366] hover:text-white transition-all duration-200"
                     title="WhatsApp"
                   >
-                    <MessageCircle className="h-4 w-4" />
+                    <WhatsAppIcon className="h-4 w-4" />
                   </a>
 
                   <a
@@ -367,9 +368,9 @@ export default function Contact() {
                       href="https://wa.me/919769512475?text=Hello%20Simran%2C%20I%20have%20just%20submitted%20the%20contact%20form%20on%20your%20website."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full bg-teal-primary hover:bg-teal-deep text-white font-semibold py-3 px-6 text-xs transition-colors shadow-sm"
+                      className="inline-flex items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold py-3 px-6 text-xs transition-colors shadow-sm"
                     >
-                      <MessageCircle className="h-4 w-4" />
+                      <WhatsAppIcon className="h-4 w-4 fill-white text-white" />
                       <span>Follow Up on WhatsApp</span>
                     </a>
                     <button
