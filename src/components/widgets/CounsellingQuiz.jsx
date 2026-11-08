@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { HelpCircle, CheckCircle2, ArrowRight, RotateCcw, HeartHandshake } from 'lucide-react';
-import LiquidGlass from '../common/LiquidGlass';
+import { HelpCircle, CheckCircle2, ArrowRight, RotateCcw, HeartHandshake, ShieldCheck } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function CounsellingQuiz({ onOpenBooking, className = '' }) {
@@ -10,15 +9,15 @@ export default function CounsellingQuiz({ onOpenBooking, className = '' }) {
   const [answers, setAnswers] = useState([]);
   const [showResult, setShowResult] = useState(false);
 
-  const questions = t('quizWidget.questions') || [
+  const questions = [
     {
       id: 1,
-      question: 'When a wave of stress or heavy emotion hits, what is your most frequent reaction?',
+      question: 'When an unexpected wave of stress or heavy emotion hits, what is your most frequent reaction?',
       options: [
         { label: 'I replay conversations and scenarios in my head over and over', tag: 'overthinking' },
         { label: 'I distract myself or scroll on my phone, only to feel drained later', tag: 'avoidance' },
         { label: 'I talk with friends, but I hesitate to burden them with my true depths', tag: 'isolation' },
-        { label: 'I try to power through, but feel a quiet tension lingering inside', tag: 'tension' },
+        { label: 'I try to power through, but feel a persistent tight tension lingering inside', tag: 'tension' },
       ],
     },
     {
@@ -33,7 +32,7 @@ export default function CounsellingQuiz({ onOpenBooking, className = '' }) {
     },
     {
       id: 3,
-      question: 'What kind of support would feel most comforting to you right now?',
+      question: 'What kind of support would feel most comforting and constructive to you right now?',
       options: [
         { label: 'A safe, 100% confidential space where no thought is judged as "too much"', tag: 'safe_space' },
         { label: 'Concrete, science-backed tools for anxiety and cognitive reframing', tag: 'practical_tools' },
@@ -63,21 +62,18 @@ export default function CounsellingQuiz({ onOpenBooking, className = '' }) {
   const currentQ = questions[currentStep] || questions[0];
 
   return (
-    <LiquidGlass
-      variant="card"
-      tint="sage"
-      interactive={false}
-      className={`relative p-6 sm:p-10 rounded-3xl border-white/80 dark:border-white/10 ${className}`}
+    <div
+      className={`relative p-6 sm:p-10 rounded-2xl bg-white border border-primary/15 shadow-soft ${className}`}
     >
       <div className="flex items-center justify-between mb-4">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-sage-100 dark:bg-brand-sage-900/40 px-3 py-1 text-xs font-bold text-brand-sage-800 dark:text-brand-sage-200">
-          <HelpCircle className="h-3.5 w-3.5 text-brand-sage-600 dark:text-brand-sage-300" />
-          <span>{t('quizWidget.badge')}</span>
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-tint px-3 py-1 text-xs font-semibold text-primary">
+          <HelpCircle className="h-3.5 w-3.5 text-primary" />
+          <span>{t('quizWidget.badge') || 'Self-Reflection Tool'}</span>
         </span>
 
         {!showResult && (
-          <span className="text-xs font-bold text-brand-plum-600 dark:text-brand-plum-300">
-            {t('quizWidget.qPrefix')} {currentStep + 1} {t('quizWidget.of')} {questions.length}
+          <span className="text-xs font-medium text-ink-muted">
+            Question {currentStep + 1} of {questions.length}
           </span>
         )}
       </div>
@@ -86,83 +82,94 @@ export default function CounsellingQuiz({ onOpenBooking, className = '' }) {
         {!showResult ? (
           <motion.div
             key={currentStep}
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: 15 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.25 }}
+            exit={{ opacity: 0, x: -15 }}
+            transition={{ duration: 0.2 }}
             className="space-y-5"
           >
             <div>
-              <h3 className="font-heading text-xl sm:text-2xl font-bold text-brand-plum-950 dark:text-white leading-snug">
+              <h3 className="font-heading text-xl sm:text-2xl font-bold text-ink leading-snug">
                 {currentQ.question}
               </h3>
-              <p className="mt-1 text-xs text-brand-plum-600 dark:text-brand-plum-300">
-                {t('quizWidget.subtitle')}
+              <p className="mt-1 text-xs text-ink-muted">
+                {t('quizWidget.subtitle') || 'Select the option that resonates closest to your lived reality.'}
               </p>
             </div>
 
             {/* Options List */}
-            <div className="space-y-3 pt-2">
+            <div className="space-y-2.5 pt-2">
               {currentQ.options.map((option, idx) => (
                 <button
                   key={idx}
                   onClick={() => handleSelectOption(option)}
-                  className="w-full text-left p-4 rounded-2xl border border-white/70 bg-white/70 hover:bg-white hover:border-brand-peach-400 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/15 shadow-sm transition-all text-xs sm:text-sm font-semibold text-brand-plum-900 dark:text-brand-plum-100 flex items-center justify-between gap-3 group active:scale-[0.99]"
+                  className="w-full text-left p-4 rounded-xl border border-primary/10 bg-sand-warm/60 hover:bg-sand-warm hover:border-primary/30:bg-white/10 shadow-sm transition-all text-xs sm:text-sm font-medium text-ink flex items-center justify-between gap-3 group active:scale-[0.99]"
                 >
                   <span className="leading-relaxed">{option.label}</span>
-                  <ArrowRight className="h-4 w-4 text-brand-plum-400 group-hover:text-brand-peach-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="h-4 w-4 text-primary group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </button>
               ))}
+            </div>
+
+            <div className="pt-2 text-[11px] text-ink-muted flex items-center gap-1.5">
+              <ShieldCheck className="h-3.5 w-3.5 text-primary" />
+              <span>Educational self-assessment only • Not a medical diagnosis</span>
             </div>
           </motion.div>
         ) : (
           <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
+            initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.25 }}
             className="space-y-5"
           >
             <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-sage-100 text-brand-sage-700 dark:bg-brand-sage-900/40 dark:text-brand-sage-300 flex-shrink-0">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-tint text-primary flex-shrink-0">
                 <HeartHandshake className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="font-heading text-xl sm:text-2xl font-bold text-brand-plum-950 dark:text-white">
-                  {t('quizWidget.resultTitle')}
+                <h3 className="font-heading text-xl sm:text-2xl font-bold text-ink">
+                  {t('quizWidget.resultTitle') || 'Counselling Could Be a Powerful Catalyst'}
                 </h3>
+                <p className="text-xs text-ink-muted">
+                  Your responses indicate thoughtful self-awareness ready for structured guidance.
+                </p>
               </div>
             </div>
 
-            <p className="text-xs sm:text-sm text-brand-plum-800 dark:text-brand-plum-200 leading-relaxed">
-              {t('quizWidget.resultDesc')}
+            <p className="text-xs sm:text-sm text-ink leading-relaxed">
+              {t('quizWidget.resultDesc') || 'You do not have to be in acute crisis to benefit from therapy. Having a structured, confidential space with an objective psychologist helps dismantle repetitive thought loops, rebuild self-compassion, and gain tangible momentum.'}
             </p>
 
-            <div className="rounded-2xl bg-white/80 dark:bg-brand-canvas-darkCard/80 p-4 border border-brand-sage-200 dark:border-white/10 text-xs text-brand-plum-800 dark:text-brand-plum-200 space-y-1">
-              <p className="font-bold text-brand-sage-700 dark:text-brand-sage-300">
-                {t('quizWidget.suggestedAction')}
+            <div className="rounded-xl bg-sand-warm p-4 border border-primary/15 text-xs text-ink space-y-1">
+              <p className="font-semibold text-primary">
+                Suggested Next Step:
+              </p>
+              <p className="text-ink-muted">
+                Schedule a 15-minute introductory conversation to discuss what is on your mind and see how Simran's eclectic approach can support your goals.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
               <button
-                onClick={() => onOpenBooking(t('common.freeDiscovery'))}
-                className="w-full sm:w-auto rounded-full bg-brand-plum-700 hover:bg-brand-plum-800 text-white font-bold py-3.5 px-7 text-xs sm:text-sm shadow-md transition-colors flex items-center justify-center gap-2 active:scale-95"
+                onClick={() => onOpenBooking && onOpenBooking('Free 15-Min Discovery Call')}
+                className="w-full sm:w-auto rounded-full bg-accent hover:bg-accent-hover text-ink font-semibold py-3 px-6 text-xs sm:text-sm shadow-sm transition-all flex items-center justify-center gap-2 active:scale-95"
               >
-                <span>{t('quizWidget.bookDiscovery')}</span>
+                <span>Schedule Free 15-Min Discovery Call</span>
                 <ArrowRight className="h-4 w-4" />
               </button>
 
               <button
                 onClick={handleReset}
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-plum-600 hover:text-brand-plum-900 dark:text-brand-plum-300 dark:hover:text-white py-2 px-4 transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-medium text-ink-muted hover:text-ink:text-white py-2 px-4 transition-colors"
               >
                 <RotateCcw className="h-3.5 w-3.5" />
-                <span>{t('quizWidget.retake')}</span>
+                <span>Retake Quiz</span>
               </button>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
-    </LiquidGlass>
+    </div>
   );
 }

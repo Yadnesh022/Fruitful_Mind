@@ -63,7 +63,7 @@ export default function App() {
       {/* Branded Preloader */}
       {showPreloader && <Preloader onComplete={() => setShowPreloader(false)} />}
 
-      <div className="flex min-h-screen flex-col bg-brand-canvas-light dark:bg-brand-canvas-dark text-brand-plum-950 dark:text-brand-plum-50 transition-colors duration-300">
+      <div className="flex min-h-screen flex-col bg-sand-warm text-ink transition-colors duration-300">
         {/* Navigation Bar */}
         <Navbar onOpenBooking={() => handleOpenBooking()} />
 

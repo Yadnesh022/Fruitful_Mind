@@ -49,12 +49,12 @@ export default function LanguageToggle({ className = '' }) {
         aria-haspopup="true"
         aria-expanded={isOpen}
         aria-label="Change language / भाषा बदला"
-        className="inline-flex h-8 sm:h-9 items-center gap-1.5 rounded-full border border-white/60 bg-white/70 px-2.5 sm:px-3 text-[11px] sm:text-xs font-bold text-brand-plum-900 shadow-sm backdrop-blur-xl transition-all hover:bg-white hover:border-brand-peach-300 focus:outline-none focus:ring-2 focus:ring-brand-peach-400 dark:border-white/15 dark:bg-white/10 dark:text-brand-plum-100 dark:hover:bg-white/20"
+        className="inline-flex h-8 sm:h-9 items-center gap-1.5 rounded-full border border-primary/15 bg-white/80 px-2.5 sm:px-3 text-xs font-semibold text-ink shadow-sm backdrop-blur-md transition-all hover:bg-white hover:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary:bg-white/20"
       >
-        <Globe className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-brand-plum-700 dark:text-brand-peach-300" />
+        <Globe className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-primary" />
         <span>{activeLang.short}</span>
         <ChevronDown
-          className={`h-3 w-3 text-brand-plum-500 transition-transform duration-200 ${
+          className={`h-3 w-3 text-ink-muted transition-transform duration-200 ${
             isOpen ? 'rotate-180' : ''
           }`}
         />
@@ -63,29 +63,27 @@ export default function LanguageToggle({ className = '' }) {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 6 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 6 }}
-            transition={{ duration: 0.15, ease: 'easeOut' }}
-            className="absolute right-0 top-full mt-2 w-36 origin-top-right rounded-2xl border border-white/80 bg-white/95 p-1.5 shadow-2xl backdrop-blur-2xl focus:outline-none dark:border-white/15 dark:bg-brand-canvas-darkCard/95 z-[100]"
+            initial={{ opacity: 0, y: 6, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 6, scale: 0.95 }}
+            transition={{ duration: 0.15 }}
+            className="absolute right-0 mt-2 w-40 rounded-xl bg-white border border-primary/15 shadow-soft-lg p-1.5 z-50 focus:outline-none"
           >
-            <div className="py-0.5 space-y-1" role="menu">
-              {languages.map((item) => {
-                const isSelected = item.code === language;
+            <div className="py-1">
+              {languages.map((lang) => {
+                const isCurrent = lang.code === language;
                 return (
                   <button
-                    key={item.code}
-                    type="button"
-                    onClick={(e) => handleSelectLanguage(item.code, e)}
-                    className={`flex w-full items-center justify-between rounded-xl px-3 py-2 text-xs font-semibold transition-all ${
-                      isSelected
-                        ? 'bg-brand-plum-700 text-white font-bold shadow-sm dark:bg-brand-peach-400 dark:text-brand-plum-950'
-                        : 'text-brand-plum-900 hover:bg-black/5 dark:text-brand-plum-100 dark:hover:bg-white/10'
+                    key={lang.code}
+                    onClick={(e) => handleSelectLanguage(lang.code, e)}
+                    className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-xs font-semibold transition-colors ${
+                      isCurrent
+                        ? 'bg-primary-tint text-primary'
+                        : 'text-ink hover:bg-sand-warm:bg-white/5'
                     }`}
-                    role="menuitem"
                   >
-                    <span>{item.native}</span>
-                    {isSelected && <Check className="h-3.5 w-3.5 flex-shrink-0" />}
+                    <span>{lang.native}</span>
+                    {isCurrent && <Check className="h-3.5 w-3.5 text-primary" />}
                   </button>
                 );
               })}

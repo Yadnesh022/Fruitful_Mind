@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Calendar, MessageCircle, Clock, MapPin, Sparkles, CheckCircle2 } from 'lucide-react';
-import LiquidGlass from '../common/LiquidGlass';
+import { X, Calendar, MessageCircle, Clock, MapPin, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function BookingModal({ isOpen, onClose, preselectedService = '' }) {
@@ -60,7 +59,7 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
     setSubmitted(true);
 
     const waText = encodeURIComponent(
-      `Hello Simran! I would like to book a session with Fruitful Mind.\n\n` +
+      `Hello Simran! I would like to schedule a consultation with Fruitful Mind.\n\n` +
       `• Name: ${formData.name}\n` +
       `• Service: ${formData.service}\n` +
       `• Mode: ${formData.mode}\n` +
@@ -85,253 +84,179 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-brand-plum-950/60 backdrop-blur-md transition-opacity"
+            className="fixed inset-0 bg-[#0B1517]/70 backdrop-blur-sm transition-opacity"
           />
 
           {/* Modal Container */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 15 }}
+            initial={{ opacity: 0, scale: 0.96, y: 12 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 15 }}
+            exit={{ opacity: 0, scale: 0.96, y: 12 }}
             transition={{ type: 'spring', stiffness: 350, damping: 28 }}
             className="relative w-full max-w-xl my-6 z-10"
           >
-            <LiquidGlass
-              variant="card"
-              tint="papaya"
-              interactive={false}
-              className="border-white/80 dark:border-white/15 bg-white/95 dark:bg-dark-card/95 p-6 sm:p-8 rounded-3xl shadow-2xl max-h-[90vh] overflow-y-auto"
+            <div
+              className="border border-primary/20 bg-white p-6 sm:p-8 rounded-2xl shadow-soft-lg max-h-[90vh] overflow-y-auto"
             >
               {/* Close Button */}
               <button
                 type="button"
                 onClick={onClose}
                 aria-label="Close booking modal"
-                className="absolute right-4 top-4 sm:right-5 sm:top-5 rounded-full p-2 text-ink/70 hover:bg-black/5 hover:text-ink dark:text-zinc-300 dark:hover:bg-white/10 dark:hover:text-white transition-colors cursor-pointer"
+                className="absolute right-4 top-4 sm:right-5 sm:top-5 rounded-full p-2 text-ink-muted hover:bg-sand-warm hover:text-ink:bg-white/10:text-white transition-colors cursor-pointer"
               >
                 <X className="h-5 w-5" />
               </button>
 
               {submitted ? (
                 <div className="py-8 text-center space-y-3">
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-tint-mint text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light shadow-md">
-                    <CheckCircle2 className="h-10 w-10 text-leaf" />
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary-tint text-primary shadow-sm">
+                    <CheckCircle2 className="h-10 w-10 text-primary" />
                   </div>
-                  <h3 className="mt-4 font-heading text-2xl font-bold text-ink dark:text-white">
-                    {t('bookingModal.successTitle')}
+                  <h3 className="mt-4 font-heading text-2xl font-bold text-ink">
+                    Request Initiated
                   </h3>
-                  <p className="mt-2 text-sm text-muted dark:text-zinc-300">
-                    {t('bookingModal.successDesc')}
+                  <p className="text-sm text-ink-muted max-w-sm mx-auto">
+                    We are connecting you with Simran Mistry on WhatsApp to confirm your preferred time slot.
                   </p>
-                  <p className="mt-4 text-xs text-muted dark:text-zinc-400">
-                    {t('bookingModal.manualNote')}{' '}
-                    <a
-                      href="https://wa.me/919769512475"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-bold underline text-papaya-deep dark:text-mango"
-                    >
-                      +91 9769512475
-                    </a>.
-                  </p>
-                  <div className="mt-6 flex justify-center">
+                  <div className="pt-4">
                     <button
-                      type="button"
-                      onClick={() => {
-                        setSubmitted(false);
-                        onClose();
-                      }}
-                      className="rounded-full bg-gradient-to-r from-papaya-deep to-papaya text-white font-bold py-2.5 px-7 text-xs shadow-md cursor-pointer"
+                      onClick={onClose}
+                      className="px-6 py-2.5 rounded-full bg-accent hover:bg-accent-hover text-ink text-sm font-semibold transition-colors"
                     >
-                      {t('bookingModal.close')}
+                      Done
                     </button>
                   </div>
                 </div>
               ) : (
-                <>
-                  <div className="mb-6 space-y-1">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-papaya-deep dark:text-mango">
-                      <Sparkles className="h-3.5 w-3.5 text-papaya" />
-                      <span>{t('nav.bookSession')}</span>
+                <div>
+                  <div className="mb-6">
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-tint px-3 py-1 text-xs font-semibold text-primary">
+                      <Calendar className="h-3.5 w-3.5 text-primary" />
+                      <span>Confidential Consultation</span>
                     </span>
-                    <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-ink dark:text-white">
-                      {t('bookingModal.title')}
-                    </h2>
-                    <p className="text-xs sm:text-sm text-muted dark:text-zinc-300">
-                      {t('bookingModal.subtitle')}
+                    <h3 className="mt-2 font-heading text-2xl font-bold text-ink">
+                      Connect with Simran Mistry
+                    </h3>
+                    <p className="text-xs sm:text-sm text-ink-muted">
+                      Fill out your details to schedule an online video session or in-person consultation in Kothrud, Pune.
                     </p>
                   </div>
 
                   <form onSubmit={handleSubmit} className="space-y-4">
+                    <div>
+                      <label className="block text-xs font-semibold text-ink mb-1">
+                        Full Name *
+                      </label>
+                      <input
+                        type="text"
+                        name="name"
+                        required
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Your name"
+                        className="w-full px-4 py-2.5 rounded-xl border border-primary/20 bg-sand-warm/60 focus:bg-white text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                      />
+                    </div>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="modal-name" className="block text-xs font-bold text-ink/80 dark:text-zinc-200 mb-1">
-                          {t('bookingModal.nameLabel')}
+                        <label className="block text-xs font-semibold text-ink mb-1">
+                          Phone / WhatsApp *
                         </label>
                         <input
-                          id="modal-name"
-                          name="name"
-                          type="text"
+                          type="tel"
+                          name="phone"
                           required
-                          autoComplete="name"
-                          value={formData.name}
+                          value={formData.phone}
                           onChange={handleChange}
-                          placeholder={t('bookingModal.namePlaceholder')}
-                          className="w-full rounded-2xl border border-papaya/20 bg-white/95 px-4 py-2.5 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
+                          placeholder="+91 98765 43210"
+                          className="w-full px-4 py-2.5 rounded-xl border border-primary/20 bg-sand-warm/60 focus:bg-white text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                         />
                       </div>
 
                       <div>
-                        <label htmlFor="modal-phone" className="block text-xs font-bold text-ink/80 dark:text-zinc-200 mb-1">
-                          {t('bookingModal.phoneLabel')}
+                        <label className="block text-xs font-semibold text-ink mb-1">
+                          Email Address *
                         </label>
                         <input
-                          id="modal-phone"
-                          name="phone"
-                          type="tel"
+                          type="email"
+                          name="email"
                           required
-                          autoComplete="tel"
-                          value={formData.phone}
+                          value={formData.email}
                           onChange={handleChange}
-                          placeholder={t('bookingModal.phonePlaceholder')}
-                          className="w-full rounded-2xl border border-papaya/20 bg-white/95 px-4 py-2.5 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
+                          placeholder="name@example.com"
+                          className="w-full px-4 py-2.5 rounded-xl border border-primary/20 bg-sand-warm/60 focus:bg-white text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                         />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="modal-email" className="block text-xs font-semibold text-brand-plum-800 dark:text-brand-plum-200 mb-1">
-                          {t('bookingModal.emailLabel')}
-                        </label>
-                        <input
-                          id="modal-email"
-                          name="email"
-                          type="email"
-                          required
-                          autoComplete="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          placeholder={t('bookingModal.emailPlaceholder')}
-                          className="w-full rounded-2xl border border-brand-plum-200/80 bg-white/90 px-4 py-2.5 text-sm text-brand-plum-900 shadow-sm focus:border-brand-peach-500 focus:outline-none focus:ring-2 focus:ring-brand-peach-200 dark:border-white/15 dark:bg-brand-canvas-dark dark:text-white"
-                        />
-                      </div>
-
-                      <div>
-                        <label htmlFor="modal-service" className="block text-xs font-semibold text-brand-plum-800 dark:text-brand-plum-200 mb-1">
-                          {t('bookingModal.serviceLabel')}
+                        <label className="block text-xs font-semibold text-ink mb-1">
+                          Service
                         </label>
                         <select
-                          id="modal-service"
                           name="service"
                           value={formData.service}
                           onChange={handleChange}
-                          className="w-full rounded-2xl border border-brand-plum-200/80 bg-white/90 px-4 py-2.5 text-sm text-brand-plum-900 shadow-sm focus:border-brand-peach-500 focus:outline-none focus:ring-2 focus:ring-brand-peach-200 dark:border-white/15 dark:bg-brand-canvas-dark dark:text-white"
+                          className="w-full px-4 py-2.5 rounded-xl border border-primary/20 bg-sand-warm/60 focus:bg-white text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                         >
-                          <option value="Emotional Wellbeing Counselling">{t('servicesPage.service1.name')}</option>
-                          <option value="Career Counselling">{t('servicesPage.service2.name')}</option>
-                          <option value="Psychology Tuition">{t('servicesPage.service3.name')}</option>
-                          <option value="Emotional Wellbeing Course">{t('coursePage.title')}</option>
-                          <option value="Free 15-Min Discovery Call">{t('common.freeDiscovery')}</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    {/* Mode Selection */}
-                    <div>
-                      <label className="block text-xs font-semibold text-brand-plum-800 dark:text-brand-plum-200 mb-1.5">
-                        {t('bookingModal.modeLabel')}
-                      </label>
-                      <div className="grid grid-cols-2 gap-3">
-                        <button
-                          type="button"
-                          onClick={() => setFormData((p) => ({ ...p, mode: 'Online (Video)' }))}
-                          className={`rounded-2xl border py-2.5 px-4 text-xs font-bold text-center transition-all ${
-                            formData.mode.includes('Online')
-                              ? 'border-brand-peach-500 bg-brand-peach-100/70 text-brand-plum-900 dark:border-brand-peach-400 dark:bg-brand-peach-950/40 dark:text-brand-peach-200'
-                              : 'border-brand-plum-200/70 bg-white/70 text-brand-plum-700 dark:border-white/10 dark:bg-white/5 dark:text-brand-plum-200'
-                          }`}
-                        >
-                          {t('bookingModal.modeOnline')}
-                        </button>
-
-                        <button
-                          type="button"
-                          onClick={() => setFormData((p) => ({ ...p, mode: 'In-Person (Kothrud, Pune)' }))}
-                          className={`rounded-2xl border py-2.5 px-4 text-xs font-bold text-center transition-all ${
-                            formData.mode.includes('In-Person')
-                              ? 'border-brand-peach-500 bg-brand-peach-100/70 text-brand-plum-900 dark:border-brand-peach-400 dark:bg-brand-peach-950/40 dark:text-brand-peach-200'
-                              : 'border-brand-plum-200/70 bg-white/70 text-brand-plum-700 dark:border-white/10 dark:bg-white/5 dark:text-brand-plum-200'
-                          }`}
-                        >
-                          {t('bookingModal.modeInPerson')}
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div>
-                        <label htmlFor="modal-day" className="block text-xs font-semibold text-brand-plum-800 dark:text-brand-plum-200 mb-1">
-                          {t('bookingModal.dayLabel')}
-                        </label>
-                        <select
-                          id="modal-day"
-                          name="preferredDay"
-                          value={formData.preferredDay}
-                          onChange={handleChange}
-                          className="w-full rounded-2xl border border-brand-plum-200/80 bg-white/90 px-4 py-2.5 text-sm text-brand-plum-900 shadow-sm focus:border-brand-peach-500 focus:outline-none focus:ring-2 focus:ring-brand-peach-200 dark:border-white/15 dark:bg-brand-canvas-dark dark:text-white"
-                        >
-                          <option value="Weekdays">{t('bookingModal.dayWeekdays')}</option>
-                          <option value="Weekends">{t('bookingModal.dayWeekends')}</option>
+                          <option value="Emotional Wellbeing Counselling">Emotional Wellbeing Counselling</option>
+                          <option value="Career Counselling & Guidance">Career Counselling & Guidance</option>
+                          <option value="Psychology Tuition (Grade 11/12/Degree)">Psychology Tuition (Grade 11/12/Degree)</option>
+                          <option value="Free 15-Min Discovery Call">Free 15-Min Discovery Call</option>
                         </select>
                       </div>
 
                       <div>
-                        <label htmlFor="modal-time" className="block text-xs font-semibold text-brand-plum-800 dark:text-brand-plum-200 mb-1">
-                          {t('bookingModal.timeLabel')}
+                        <label className="block text-xs font-semibold text-ink mb-1">
+                          Session Mode
                         </label>
                         <select
-                          id="modal-time"
-                          name="preferredTime"
-                          value={formData.preferredTime}
+                          name="mode"
+                          value={formData.mode}
                           onChange={handleChange}
-                          className="w-full rounded-2xl border border-brand-plum-200/80 bg-white/90 px-4 py-2.5 text-sm text-brand-plum-900 shadow-sm focus:border-brand-peach-500 focus:outline-none focus:ring-2 focus:ring-brand-peach-200 dark:border-white/15 dark:bg-brand-canvas-dark dark:text-white"
+                          className="w-full px-4 py-2.5 rounded-xl border border-primary/20 bg-sand-warm/60 focus:bg-white text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                         >
-                          <option value="Morning">{t('bookingModal.timeMorning')}</option>
-                          <option value="Afternoon">{t('bookingModal.timeAfternoon')}</option>
-                          <option value="Evening">{t('bookingModal.timeEvening')}</option>
+                          <option value="Online (Video - Google Meet / Zoom)">Online (Video - Google Meet / Zoom)</option>
+                          <option value="In-Person (Kothrud, Pune)">In-Person (Kothrud, Pune)</option>
                         </select>
                       </div>
                     </div>
 
                     <div>
-                      <label htmlFor="modal-message" className="block text-xs font-semibold text-brand-plum-800 dark:text-brand-plum-200 mb-1">
-                        {t('bookingModal.noteLabel')}
+                      <label className="block text-xs font-semibold text-ink mb-1">
+                        Brief Note / Reason for Connecting (Optional)
                       </label>
                       <textarea
-                        id="modal-message"
                         name="message"
-                        rows={2}
+                        rows="3"
                         value={formData.message}
                         onChange={handleChange}
-                        placeholder={t('bookingModal.notePlaceholder')}
-                        className="w-full rounded-2xl border border-brand-plum-200/80 bg-white/90 px-4 py-2.5 text-sm text-brand-plum-900 shadow-sm focus:border-brand-peach-500 focus:outline-none focus:ring-2 focus:ring-brand-peach-200 dark:border-white/15 dark:bg-brand-canvas-dark dark:text-white resize-none"
+                        placeholder="What is primarily on your mind? (100% confidential)"
+                        className="w-full px-4 py-2.5 rounded-xl border border-primary/20 bg-sand-warm/60 focus:bg-white text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                       />
                     </div>
 
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="w-full rounded-full bg-gradient-to-r from-papaya-deep via-papaya to-mango hover:from-papaya hover:to-mango text-white font-bold py-3.5 px-6 text-sm shadow-xl shadow-papaya/30 transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer"
+                        className="w-full py-3 rounded-full bg-accent hover:bg-accent-hover text-ink font-semibold text-sm shadow-sm transition-all flex items-center justify-center gap-2 active:scale-98"
                       >
                         <MessageCircle className="h-4 w-4" />
-                        <span>{t('bookingModal.submitBtn')}</span>
+                        <span>Continue to WhatsApp Confirmation</span>
                       </button>
                     </div>
+
+                    <div className="flex items-center justify-center gap-2 text-[11px] text-ink-muted pt-1">
+                      <ShieldCheck className="h-3.5 w-3.5 text-primary" />
+                      <span>Strictly confidential • Ethical psychological care</span>
+                    </div>
                   </form>
-                </>
+                </div>
               )}
-            </LiquidGlass>
+            </div>
           </motion.div>
         </div>
       )}

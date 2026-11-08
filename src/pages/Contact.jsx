@@ -10,25 +10,22 @@ import {
   ShieldCheck,
   CheckCircle2,
   AlertCircle,
-  Sparkles,
+  Calendar,
+  Lock,
   Instagram,
   Linkedin,
   Youtube,
   Twitter,
-  Facebook,
-  Sparkle,
-  Calendar,
-  Lock
+  ArrowRight
 } from 'lucide-react';
 
 import SEO from '../components/common/SEO';
 import LiquidGlass from '../components/common/LiquidGlass';
 import {
-  PapayaDoodle,
-  MangoDoodle,
-  LeafDoodle,
-  TeaCupDoodle,
-  FloatingElement
+  ThoughtCloudDoodle,
+  CompassDoodle,
+  BrainBulbDoodle,
+  FloatingShape
 } from '../components/illustrations/BrandDoodles';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -87,7 +84,7 @@ export default function Contact() {
       }
     } catch (err) {
       setStatus('error');
-      setErrorMessage(err.message || 'Something went wrong. Please connect with Simran via WhatsApp or direct phone call.');
+      setErrorMessage(err.message || 'Something went wrong. Please connect with Simran directly via WhatsApp or phone call.');
     }
   };
 
@@ -101,43 +98,38 @@ export default function Contact() {
   ];
 
   return (
-    <div className="relative pt-32 sm:pt-40 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-cream dark:bg-dark-bg text-ink dark:text-white transition-colors duration-300">
+    <div className="relative pt-32 sm:pt-40 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-sand-warm text-ink">
       <SEO
         title="Contact Simran Mistry | Psychologist Kothrud Pune | Fruitful Mind"
         description="Connect with Simran Mistry, Psychologist in Kothrud, Pune. Book in-person or online counselling for anxiety, overthinking, career clarity, and psychology tuition."
         canonical="https://fruitfulmind.in/contact"
       />
 
-      {/* Ambient background glows */}
-      <div className="ambient-blob-papaya absolute top-20 -left-20 h-[500px] w-[500px] rounded-full pointer-events-none" />
-      <div className="ambient-blob-mango absolute top-96 -right-20 h-[550px] w-[550px] rounded-full pointer-events-none" />
-      <div className="ambient-blob-leaf absolute top-[1400px] -left-20 h-[500px] w-[500px] rounded-full pointer-events-none" />
-
-      {/* Floating Decorative Elements */}
-      <div className="hidden lg:block">
-        <FloatingElement className="absolute top-36 left-12 z-10" duration={7} delay={0.2} yOffset={16}>
-          <PapayaDoodle className="w-12 h-12 drop-shadow-md" />
-        </FloatingElement>
-        <FloatingElement className="absolute top-48 right-14 z-10" duration={8} delay={0.8} yOffset={18}>
-          <MangoDoodle className="w-12 h-12 drop-shadow-md" />
-        </FloatingElement>
-        <FloatingElement className="absolute top-[850px] left-8 z-10" duration={6.5} delay={1.4} yOffset={14}>
-          <TeaCupDoodle className="w-10 h-10 drop-shadow-sm" />
-        </FloatingElement>
+      {/* Floating Abstract Mind-Themed Shapes */}
+      <div className="hidden lg:block pointer-events-none select-none">
+        <FloatingShape className="absolute top-36 left-10 z-0" duration={8} delay={0.2} yOffset={16}>
+          <ThoughtCloudDoodle className="w-16 h-12 text-teal-primary/30" />
+        </FloatingShape>
+        <FloatingShape className="absolute top-48 right-12 z-0" duration={9} delay={0.6} yOffset={20}>
+          <CompassDoodle className="w-14 h-14 text-lavender/40" />
+        </FloatingShape>
+        <FloatingShape className="absolute top-[850px] left-6 z-0" duration={7.5} delay={1.2} yOffset={14}>
+          <BrainBulbDoodle className="w-12 h-12 text-yellow-accent/50" />
+        </FloatingShape>
       </div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* ========================================================= */}
         {/* HEADER HERO                                               */}
         {/* ========================================================= */}
-        <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-papaya/30 bg-tint-peach/80 px-4 py-1.5 text-xs sm:text-sm font-bold text-papaya-deep backdrop-blur-md dark:border-white/10 dark:bg-white/10 dark:text-mango shadow-sm"
+            className="inline-flex items-center gap-2 rounded-full border border-teal-primary/20 bg-teal-tint px-4 py-1.5 text-xs sm:text-sm font-semibold text-teal-deep"
           >
-            <MessageCircle className="h-4 w-4 text-papaya" />
+            <MessageCircle className="h-4 w-4 text-teal-primary" />
             <span>{t('contactPage.badge')}</span>
           </motion.div>
 
@@ -145,11 +137,12 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15, duration: 0.6 }}
-            className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-ink dark:text-white leading-[1.15]"
+            className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-teal-deep leading-[1.15]"
           >
             {t('contactPage.title')}{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-papaya-deep via-papaya to-mango">
-              Simran Mistry
+            <span className="relative inline-block">
+              <span>Simran Mistry</span>
+              <span className="absolute left-0 -bottom-1.5 w-full h-2.5 bg-yellow-accent/50 -z-10 rounded-sm"></span>
             </span>
           </motion.h1>
 
@@ -157,108 +150,110 @@ export default function Contact() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25, duration: 0.5 }}
-            className="text-base sm:text-lg text-ink/80 dark:text-zinc-200 leading-relaxed"
+            className="text-base sm:text-lg text-ink/80 leading-relaxed max-w-2xl mx-auto"
           >
             {t('contactPage.subtitle')}
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-28">
+        {/* ========================================================= */}
+        {/* CONTACT GRID: INFO & FORM                                 */}
+        {/* ========================================================= */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-24">
           {/* ========================================================= */}
-          {/* LEFT COLUMN: DIRECT CONTACT INFO & ACCESSIBLE CHANNELS    */}
+          {/* LEFT COLUMN: DIRECT CLINICAL CONTACT DETAILS             */}
           {/* ========================================================= */}
           <div className="lg:col-span-5 space-y-6">
-            <LiquidGlass
-              variant="card"
-              tint="default"
-              interactive={false}
-              className="p-8 sm:p-10 rounded-3xl border-white/80 dark:border-white/15 shadow-2xl space-y-6"
-            >
+            <div className="p-7 sm:p-9 rounded-2xl bg-white border border-teal-primary/15 shadow-sm space-y-6">
               <div>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-papaya-deep dark:text-mango block mb-1">
-                  Connect Directly
+                <span className="text-[11px] font-bold uppercase tracking-wider text-teal-primary block mb-1">
+                  Direct Practice Channels
                 </span>
-                <h2 className="font-heading text-2xl font-extrabold text-ink dark:text-white">
+                <h2 className="font-heading text-2xl font-bold text-teal-deep">
                   {t('contactPage.infoTitle')}
                 </h2>
+                <p className="text-xs text-muted mt-1">
+                  Confidential appointments in Kothrud, Pune or online across India.
+                </p>
               </div>
 
-              <div className="space-y-5">
+              <div className="space-y-4">
                 {/* Phone / Call */}
-                <div className="flex items-start gap-4 p-3 rounded-2xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/5 transition-transform hover:scale-[1.01]">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-tint-peach text-papaya-deep dark:bg-papaya/20 dark:text-mango flex-shrink-0 shadow-sm">
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-sand-warm/60 border border-teal-primary/10 hover:border-teal-primary/25 transition-all">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-tint text-teal-deep flex-shrink-0">
                     <Phone className="h-5 w-5" />
                   </div>
-                  <div>
-                    <span className="text-[11px] font-semibold text-muted dark:text-zinc-300 block">
+                  <div className="flex-1 min-w-0">
+                    <span className="text-[11px] font-semibold text-muted block">
                       {t('contactPage.phoneTitle')}
                     </span>
                     <a
                       href="tel:+919769512475"
-                      className="font-bold text-sm sm:text-base text-ink dark:text-white hover:text-papaya transition-colors"
+                      className="font-bold text-sm sm:text-base text-teal-deep hover:text-teal-primary transition-colors block"
                     >
                       +91 9769512475
                     </a>
-                    <p className="text-[11px] text-muted dark:text-zinc-400">
+                    <p className="text-[11px] text-muted mt-0.5">
                       {t('contactPage.phoneHours')}
                     </p>
                   </div>
                 </div>
 
-                {/* WhatsApp */}
-                <div className="flex items-start gap-4 p-3 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200/60 dark:border-emerald-800/20 transition-transform hover:scale-[1.01]">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300 flex-shrink-0 shadow-sm">
+                {/* WhatsApp Priority */}
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-teal-tint/50 border border-teal-primary/20 hover:border-teal-primary/40 transition-all">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-primary text-white flex-shrink-0">
                     <MessageCircle className="h-5 w-5" />
                   </div>
-                  <div>
-                    <span className="text-[11px] font-semibold text-emerald-800 dark:text-emerald-300 block">
-                      {t('contactPage.whatsappTitle')}
+                  <div className="flex-1 min-w-0">
+                    <span className="text-[11px] font-semibold text-teal-deep block">
+                      {t('contactPage.whatsappTitle')} (Fastest Response)
                     </span>
                     <a
-                      href="https://wa.me/919769512475?text=Hello%20Simran%2C%20I%20would%20like%20to%20enquire%20about%20sessions%20with%20Fruitful%20Mind."
+                      href="https://wa.me/919769512475?text=Hello%20Simran%2C%20I%20would%20like%20to%20enquire%20about%20a%20psychology%20session%20with%20Fruitful%20Mind."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-bold text-sm sm:text-base text-emerald-700 dark:text-emerald-400 hover:underline"
+                      className="font-bold text-sm sm:text-base text-teal-deep hover:text-teal-primary hover:underline flex items-center gap-1.5"
                     >
-                      wa.me/919769512475
+                      <span>wa.me/919769512475</span>
+                      <ArrowRight className="h-3.5 w-3.5" />
                     </a>
-                    <p className="text-[11px] text-emerald-700/80 dark:text-emerald-400/80">
+                    <p className="text-[11px] text-teal-deep/80 mt-0.5">
                       {t('contactPage.whatsappNote')}
                     </p>
                   </div>
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start gap-4 p-3 rounded-2xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/5 transition-transform hover:scale-[1.01]">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-tint-lavender text-grape dark:bg-grape/20 dark:text-grape-light flex-shrink-0 shadow-sm">
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-sand-warm/60 border border-teal-primary/10 hover:border-teal-primary/25 transition-all">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-lavender-tint text-lavender flex-shrink-0">
                     <Mail className="h-5 w-5" />
                   </div>
-                  <div>
-                    <span className="text-[11px] font-semibold text-muted dark:text-zinc-300 block">
+                  <div className="flex-1 min-w-0">
+                    <span className="text-[11px] font-semibold text-muted block">
                       {t('contactPage.emailTitle')}
                     </span>
                     <a
                       href="mailto:simran.thefruitfulmind@gmail.com"
-                      className="font-bold text-sm sm:text-base text-ink dark:text-white hover:text-papaya transition-colors break-all"
+                      className="font-bold text-sm sm:text-base text-teal-deep hover:text-teal-primary transition-colors break-all block"
                     >
                       simran.thefruitfulmind@gmail.com
                     </a>
                   </div>
                 </div>
 
-                {/* Location */}
-                <div className="flex items-start gap-4 p-3 rounded-2xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/5 transition-transform hover:scale-[1.01]">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-tint-mint text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light flex-shrink-0 shadow-sm">
+                {/* Practice Location */}
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-sand-warm/60 border border-teal-primary/10 hover:border-teal-primary/25 transition-all">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-tint text-teal-deep flex-shrink-0">
                     <MapPin className="h-5 w-5" />
                   </div>
-                  <div>
-                    <span className="text-[11px] font-semibold text-muted dark:text-zinc-300 block">
+                  <div className="flex-1 min-w-0">
+                    <span className="text-[11px] font-semibold text-muted block">
                       {t('contactPage.locationTitle')}
                     </span>
-                    <span className="font-bold text-sm sm:text-base text-ink dark:text-white block">
+                    <span className="font-bold text-sm sm:text-base text-teal-deep block">
                       {t('contactPage.locationVal')}
                     </span>
-                    <p className="text-[11px] text-muted dark:text-zinc-400">
+                    <p className="text-[11px] text-muted mt-0.5">
                       {t('contactPage.locationNote')}
                     </p>
                   </div>
@@ -266,8 +261,8 @@ export default function Contact() {
               </div>
 
               {/* Social Channels */}
-              <div className="pt-3 border-t border-black/5 dark:border-white/10">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-muted dark:text-zinc-300 block mb-3">
+              <div className="pt-4 border-t border-teal-primary/10">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-muted block mb-3">
                   {t('footer.socialTitle')}
                 </span>
                 <div className="flex items-center gap-2.5 flex-wrap">
@@ -276,10 +271,10 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                    className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/80 text-ink shadow-sm border border-white/60 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 hover:text-white hover:border-transparent hover:scale-110 active:scale-95 transition-all duration-300 dark:bg-white/10 dark:text-zinc-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-sand-warm text-ink border border-teal-primary/15 hover:bg-teal-tint hover:text-teal-deep hover:border-teal-primary transition-all duration-200"
                     title="Instagram"
                   >
-                    <Instagram className="h-5 w-5" />
+                    <Instagram className="h-4 w-4" />
                   </a>
 
                   <a
@@ -287,10 +282,10 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/80 text-ink shadow-sm border border-white/60 hover:bg-[#0077b5] hover:text-white hover:border-transparent hover:scale-110 active:scale-95 transition-all duration-300 dark:bg-white/10 dark:text-zinc-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-sand-warm text-ink border border-teal-primary/15 hover:bg-teal-tint hover:text-teal-deep hover:border-teal-primary transition-all duration-200"
                     title="LinkedIn"
                   >
-                    <Linkedin className="h-5 w-5" />
+                    <Linkedin className="h-4 w-4" />
                   </a>
 
                   <a
@@ -298,10 +293,10 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="WhatsApp"
-                    className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/80 text-ink shadow-sm border border-white/60 hover:bg-emerald-600 hover:text-white hover:border-transparent hover:scale-110 active:scale-95 transition-all duration-300 dark:bg-white/10 dark:text-zinc-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-teal-tint text-teal-deep border border-teal-primary/20 hover:bg-teal-primary hover:text-white transition-all duration-200"
                     title="WhatsApp"
                   >
-                    <MessageCircle className="h-5 w-5" />
+                    <MessageCircle className="h-4 w-4" />
                   </a>
 
                   <a
@@ -309,10 +304,10 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="YouTube"
-                    className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/80 text-ink shadow-sm border border-white/60 hover:bg-[#ff0000] hover:text-white hover:border-transparent hover:scale-110 active:scale-95 transition-all duration-300 dark:bg-white/10 dark:text-zinc-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-sand-warm text-ink border border-teal-primary/15 hover:bg-teal-tint hover:text-teal-deep hover:border-teal-primary transition-all duration-200"
                     title="YouTube"
                   >
-                    <Youtube className="h-5 w-5" />
+                    <Youtube className="h-4 w-4" />
                   </a>
 
                   <a
@@ -320,58 +315,67 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Twitter"
-                    className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/80 text-ink shadow-sm border border-white/60 hover:bg-slate-900 hover:text-white hover:border-transparent hover:scale-110 active:scale-95 transition-all duration-300 dark:bg-white/10 dark:text-zinc-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-sand-warm text-ink border border-teal-primary/15 hover:bg-teal-tint hover:text-teal-deep hover:border-teal-primary transition-all duration-200"
                     title="Twitter"
                   >
-                    <Twitter className="h-5 w-5" />
+                    <Twitter className="h-4 w-4" />
                   </a>
                 </div>
               </div>
 
-              {/* Confidentiality Reminder */}
-              <div className="rounded-2xl bg-tint-mint/50 dark:bg-white/5 p-4 border border-leaf/20 flex items-start gap-3 shadow-sm">
-                <Lock className="h-5 w-5 text-leaf-deep dark:text-leaf flex-shrink-0 mt-0.5" />
-                <p className="text-xs text-ink/80 dark:text-zinc-200 leading-relaxed">
-                  <strong>{t('contactPage.privacyGuaranteeTitle')} </strong>
+              {/* Confidentiality Guarantee */}
+              <div className="rounded-xl bg-teal-tint/40 p-4 border border-teal-primary/15 flex items-start gap-3">
+                <Lock className="h-5 w-5 text-teal-primary flex-shrink-0 mt-0.5" />
+                <p className="text-xs text-ink/80 leading-relaxed">
+                  <strong className="text-teal-deep">{t('contactPage.privacyGuaranteeTitle')} </strong>
                   {t('contactPage.privacyGuaranteeDesc')}
                 </p>
               </div>
-            </LiquidGlass>
+            </div>
           </div>
 
           {/* ========================================================= */}
-          {/* RIGHT COLUMN: CONTACT FORM WITH LIQUID GLASS              */}
+          {/* RIGHT COLUMN: CONSULTATION INTAKE FORM                    */}
           {/* ========================================================= */}
           <div className="lg:col-span-7">
-            <LiquidGlass
-              variant="card"
-              tint="papaya"
-              interactive={false}
-              className="p-8 sm:p-12 rounded-3xl border-white/80 dark:border-white/15 shadow-2xl"
-            >
-              <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-ink dark:text-white mb-2">
-                {t('contactPage.formTitle')}
-              </h2>
-              <p className="text-xs sm:text-sm text-muted dark:text-zinc-300 mb-8">
-                {t('contactPage.formSubtitle')}
-              </p>
+            <div className="p-8 sm:p-11 rounded-2xl bg-white border border-teal-primary/15 shadow-sm">
+              <div className="mb-8">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-teal-primary block mb-1">
+                  Confidential Form
+                </span>
+                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-teal-deep mb-2">
+                  {t('contactPage.formTitle')}
+                </h2>
+                <p className="text-xs sm:text-sm text-muted">
+                  {t('contactPage.formSubtitle')}
+                </p>
+              </div>
 
               {status === 'success' ? (
                 <div className="py-12 text-center space-y-4">
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-tint-mint text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light shadow-md">
-                    <CheckCircle2 className="h-10 w-10 text-leaf" />
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-teal-tint text-teal-deep shadow-sm">
+                    <CheckCircle2 className="h-10 w-10 text-teal-primary" />
                   </div>
-                  <h3 className="font-heading text-2xl font-bold text-ink dark:text-white">
+                  <h3 className="font-heading text-2xl font-bold text-teal-deep">
                     {t('contactPage.successTitle')}
                   </h3>
-                  <p className="text-xs sm:text-sm text-muted dark:text-zinc-300 max-w-md mx-auto leading-relaxed">
+                  <p className="text-xs sm:text-sm text-muted max-w-md mx-auto leading-relaxed">
                     {t('contactPage.successDesc')}
                   </p>
-                  <div className="pt-3">
+                  <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <a
+                      href="https://wa.me/919769512475?text=Hello%20Simran%2C%20I%20have%20just%20submitted%20the%20contact%20form%20on%20your%20website."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-teal-primary hover:bg-teal-deep text-white font-semibold py-3 px-6 text-xs transition-colors shadow-sm"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      <span>Follow Up on WhatsApp</span>
+                    </a>
                     <button
                       type="button"
                       onClick={() => setStatus('idle')}
-                      className="rounded-full bg-gradient-to-r from-papaya-deep to-papaya text-white font-bold py-3 px-7 text-xs active:scale-95 transition-transform cursor-pointer shadow-md"
+                      className="rounded-full bg-sand-warm text-ink font-semibold py-3 px-6 text-xs hover:bg-sand-warm/80 transition-colors border border-teal-primary/20"
                     >
                       {t('contactPage.sendAnother')}
                     </button>
@@ -380,7 +384,7 @@ export default function Contact() {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   {status === 'error' && (
-                    <div className="rounded-2xl bg-red-100/90 p-4 text-xs text-red-800 dark:bg-red-900/30 dark:text-red-200 flex items-center gap-2 border border-red-200">
+                    <div className="rounded-xl bg-red-50 p-4 text-xs text-red-800 flex items-center gap-2 border border-red-200">
                       <AlertCircle className="h-4 w-4 flex-shrink-0" />
                       <span>{errorMessage}</span>
                     </div>
@@ -388,8 +392,8 @@ export default function Contact() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="contact-name" className="block text-xs font-bold text-ink/80 dark:text-zinc-200 mb-1.5">
-                        {t('contactPage.nameLabel')}
+                      <label htmlFor="contact-name" className="block text-xs font-bold text-ink mb-1.5">
+                        {t('contactPage.nameLabel')} <span className="text-teal-primary">*</span>
                       </label>
                       <input
                         id="contact-name"
@@ -400,13 +404,13 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder={t('contactPage.namePlaceholder')}
-                        className="w-full rounded-2xl border border-papaya/20 bg-white/95 px-4 py-3 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
+                        className="w-full rounded-xl border border-teal-primary/20 bg-sand-warm/40 px-4 py-3 text-sm text-ink placeholder:text-muted/60 focus:border-teal-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-primary/20 transition-all"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="contact-phone" className="block text-xs font-bold text-ink/80 dark:text-zinc-200 mb-1.5">
-                        {t('contactPage.phoneLabel')}
+                      <label htmlFor="contact-phone" className="block text-xs font-bold text-ink mb-1.5">
+                        {t('contactPage.phoneLabel')} <span className="text-teal-primary">*</span>
                       </label>
                       <input
                         id="contact-phone"
@@ -417,15 +421,15 @@ export default function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder={t('contactPage.phonePlaceholder')}
-                        className="w-full rounded-2xl border border-papaya/20 bg-white/95 px-4 py-3 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
+                        className="w-full rounded-xl border border-teal-primary/20 bg-sand-warm/40 px-4 py-3 text-sm text-ink placeholder:text-muted/60 focus:border-teal-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-primary/20 transition-all"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="contact-email" className="block text-xs font-bold text-ink/80 dark:text-zinc-200 mb-1.5">
-                        {t('contactPage.emailLabel')}
+                      <label htmlFor="contact-email" className="block text-xs font-bold text-ink mb-1.5">
+                        {t('contactPage.emailLabel')} <span className="text-teal-primary">*</span>
                       </label>
                       <input
                         id="contact-email"
@@ -436,12 +440,12 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder={t('contactPage.emailPlaceholder')}
-                        className="w-full rounded-2xl border border-papaya/20 bg-white/95 px-4 py-3 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
+                        className="w-full rounded-xl border border-teal-primary/20 bg-sand-warm/40 px-4 py-3 text-sm text-ink placeholder:text-muted/60 focus:border-teal-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-primary/20 transition-all"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="contact-service" className="block text-xs font-bold text-ink/80 dark:text-zinc-200 mb-1.5">
+                      <label htmlFor="contact-service" className="block text-xs font-bold text-ink mb-1.5">
                         {t('contactPage.serviceLabel')}
                       </label>
                       <select
@@ -449,7 +453,7 @@ export default function Contact() {
                         name="service"
                         value={formData.service}
                         onChange={handleChange}
-                        className="w-full rounded-2xl border border-papaya/20 bg-white/95 px-4 py-3 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white"
+                        className="w-full rounded-xl border border-teal-primary/20 bg-sand-warm/40 px-4 py-3 text-sm text-ink focus:border-teal-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-primary/20 transition-all cursor-pointer"
                       >
                         {serviceOptions.map((opt) => (
                           <option key={opt.value} value={opt.value}>
@@ -461,8 +465,8 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="contact-message" className="block text-xs font-bold text-ink/80 dark:text-zinc-200 mb-1.5">
-                      {t('contactPage.messageLabel')}
+                    <label htmlFor="contact-message" className="block text-xs font-bold text-ink mb-1.5">
+                      {t('contactPage.messageLabel')} <span className="text-teal-primary">*</span>
                     </label>
                     <textarea
                       id="contact-message"
@@ -472,7 +476,7 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       placeholder={t('contactPage.messagePlaceholder')}
-                      className="w-full rounded-2xl border border-papaya/20 bg-white/95 px-4 py-3 text-sm text-ink shadow-sm focus:border-papaya focus:outline-none focus:ring-2 focus:ring-papaya/20 dark:border-white/15 dark:bg-dark-bg dark:text-white resize-none"
+                      className="w-full rounded-xl border border-teal-primary/20 bg-sand-warm/40 px-4 py-3 text-sm text-ink placeholder:text-muted/60 focus:border-teal-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-primary/20 transition-all resize-none"
                     />
                   </div>
 
@@ -480,39 +484,39 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={status === 'loading'}
-                      className="w-full rounded-full bg-gradient-to-r from-papaya-deep via-papaya to-mango hover:from-papaya hover:to-mango text-white font-bold py-4 px-6 text-sm shadow-xl shadow-papaya/30 transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer"
+                      className="w-full rounded-xl bg-yellow-accent hover:bg-amber-400 text-ink font-bold py-4 px-6 text-sm shadow-md transition-all flex items-center justify-center gap-2 active:scale-[0.99] cursor-pointer"
                     >
-                      <Send className="h-4 w-4" />
+                      <Send className="h-4 w-4 text-teal-deep" />
                       <span>{status === 'loading' ? t('contactPage.submitting') : t('contactPage.submitBtn')}</span>
                     </button>
-                    <p className="mt-3 text-center text-[11px] text-muted dark:text-zinc-400">
+                    <p className="mt-3 text-center text-[11px] text-muted">
                       {t('contactPage.noSpamNote')}
                     </p>
                   </div>
                 </form>
               )}
-            </LiquidGlass>
+            </div>
           </div>
         </div>
 
         {/* ========================================================= */}
-        {/* EMBEDDED GOOGLE MAP OF KOTHRUD, PUNE                      */}
+        {/* EMBEDDED CLINIC MAP OF KOTHRUD, PUNE                      */}
         {/* ========================================================= */}
         <div className="mb-24">
           <div className="text-center max-w-xl mx-auto mb-10 space-y-2">
-            <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-tint-mint text-leaf-deep dark:bg-leaf/20 dark:text-leaf-light">
-              <MapPin className="h-3.5 w-3.5" />
+            <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-teal-tint text-teal-deep">
+              <MapPin className="h-3.5 w-3.5 text-teal-primary" />
               <span>{t('contactPage.mapBadge')}</span>
             </span>
-            <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-ink dark:text-white">
+            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-teal-deep">
               {t('contactPage.mapTitle')}
             </h2>
-            <p className="text-xs sm:text-sm text-muted dark:text-zinc-300">
+            <p className="text-xs sm:text-sm text-muted">
               {t('contactPage.mapSubtitle')}
             </p>
           </div>
 
-          <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/80 dark:border-white/15 aspect-[16/9] sm:aspect-[21/9] w-full relative">
+          <div className="rounded-2xl overflow-hidden shadow-sm border border-teal-primary/20 aspect-[16/9] sm:aspect-[21/9] w-full relative bg-sand-warm">
             <iframe
               title="Fruitful Mind Location - Kothrud, Pune"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30271.742398572427!2d73.7937402!3d18.5074211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfa0521e14ab%3A0x8e8749c953a99e8b!2sKothrud%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
@@ -530,30 +534,30 @@ export default function Contact() {
         {/* ========================================================= */}
         {/* EMERGENCY HELPLINES NOTICE (CRITICAL ETHICS GUARDRAIL)    */}
         {/* ========================================================= */}
-        <div className="rounded-3xl border border-papaya/30 bg-tint-peach/40 p-6 sm:p-10 text-xs sm:text-sm text-ink dark:border-white/15 dark:bg-white/5 dark:text-zinc-100 space-y-4 shadow-md">
-          <div className="flex items-center gap-2.5 font-heading text-base sm:text-lg font-bold text-papaya-deep dark:text-mango">
-            <AlertCircle className="h-5 w-5" />
+        <div className="rounded-2xl border border-teal-primary/20 bg-white p-7 sm:p-10 text-xs sm:text-sm text-ink space-y-4 shadow-sm">
+          <div className="flex items-center gap-2.5 font-heading text-base sm:text-lg font-bold text-teal-deep">
+            <AlertCircle className="h-5 w-5 text-teal-primary" />
             <span>{t('contactPage.emergencyTitle')}</span>
           </div>
-          <p className="leading-relaxed text-muted dark:text-zinc-300">
+          <p className="leading-relaxed text-muted">
             {t('contactPage.emergencyNotice')}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 font-semibold">
-            <div className="rounded-2xl bg-white/90 p-4 shadow-sm dark:bg-dark-card/90 border border-white/60 dark:border-white/10">
-              <span className="block text-xs text-papaya-deep dark:text-mango font-bold">Tele-MANAS (Govt of India):</span>
-              <a href="tel:14416" className="text-base font-extrabold text-ink dark:text-white hover:underline mt-1 block">
+            <div className="rounded-xl bg-sand-warm/60 p-4 border border-teal-primary/10">
+              <span className="block text-xs text-teal-deep font-bold">Tele-MANAS (Govt of India):</span>
+              <a href="tel:14416" className="text-base font-bold text-teal-deep hover:text-teal-primary hover:underline mt-1 block">
                 14416 / 1800-891-4416
               </a>
             </div>
-            <div className="rounded-2xl bg-white/90 p-4 shadow-sm dark:bg-dark-card/90 border border-white/60 dark:border-white/10">
-              <span className="block text-xs text-papaya-deep dark:text-mango font-bold">KIRAN Mental Health:</span>
-              <a href="tel:18005990019" className="text-base font-extrabold text-ink dark:text-white hover:underline mt-1 block">
+            <div className="rounded-xl bg-sand-warm/60 p-4 border border-teal-primary/10">
+              <span className="block text-xs text-teal-deep font-bold">KIRAN Mental Health:</span>
+              <a href="tel:18005990019" className="text-base font-bold text-teal-deep hover:text-teal-primary hover:underline mt-1 block">
                 1800-599-0019
               </a>
             </div>
-            <div className="rounded-2xl bg-white/90 p-4 shadow-sm dark:bg-dark-card/90 border border-white/60 dark:border-white/10">
-              <span className="block text-xs text-papaya-deep dark:text-mango font-bold">National Emergency Services:</span>
-              <a href="tel:112" className="text-base font-extrabold text-ink dark:text-white hover:underline mt-1 block">
+            <div className="rounded-xl bg-sand-warm/60 p-4 border border-teal-primary/10">
+              <span className="block text-xs text-teal-deep font-bold">National Emergency Services:</span>
+              <a href="tel:112" className="text-base font-bold text-teal-deep hover:text-teal-primary hover:underline mt-1 block">
                 112
               </a>
             </div>

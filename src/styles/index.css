@@ -4,42 +4,52 @@
 
 @layer base {
   :root {
-    --color-cream: #FFF7EE;
-    --color-papaya: #FF7A59;
-    --color-papaya-deep: #D9442B;
-    --color-mango: #FFB627;
-    --color-leaf: #1FA886;
-    --color-leaf-deep: #0F7A62;
-    --color-grape: #7C5CFF;
-    --color-ink: #231F2E;
-    --color-muted: #6B6677;
-    --color-tint-peach: #FFE6DA;
-    --color-tint-mint: #DDF5EC;
-    --color-tint-butter: #FFF1CC;
-    --color-tint-lavender: #ECE6FF;
-    --color-canvas-light: #FFF7EE;
-    --color-canvas-dark: #15121D;
+    --color-sand-warm: #FBF8F1;
+    --color-sand-white: #FFFFFF;
+    --color-teal: #12766E;
+    --color-teal-deep: #0B4F4A;
+    --color-teal-tint: #D9F0EC;
+    --color-yellow: #FFC845;
+    --color-lavender: #8C7AE6;
+    --color-lavender-tint: #ECE8FB;
+    --color-sky-tint: #E3F1FA;
+    --color-coral: #FF8A5B;
+    --color-ink: #1D2B2E;
+    --color-muted: #5B6B6E;
+    --color-dark-bg: #0F1A1C;
+    --color-dark-surface: #16282B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 1.0625rem; /* ~17px */
     line-height: 1.7;
-    color: #231F2E;
-    background-color: #FFF7EE;
+    color: #1D2B2E;
+    background-color: #FBF8F1;
     overflow-x: hidden;
     min-height: 100vh;
   }
 
   .dark body {
-    color: #F7F6F8;
-    background-color: #15121D;
+    color: #F1F7F6;
+    background-color: #0F1A1C;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Fraunces', 'DM Serif Display', Georgia, serif;
     letter-spacing: -0.02em;
-    line-height: 1.25;
+    line-height: 1.2;
+    font-feature-settings: 'opsz' 32, 'swsh' 1;
+  }
+
+  p {
+    max-width: 68ch;
   }
 }
 
@@ -60,141 +70,84 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-/* Custom delicate scrollbar */
+/* Subtle, intelligent scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(255, 230, 218, 0.3);
+  background: #FBF8F1;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0F1A1C;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 122, 89, 0.35);
+  background: rgba(18, 118, 110, 0.35);
   border-radius: 9999px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background-clip: content-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(217, 68, 43, 0.65);
+  background: rgba(18, 118, 110, 0.7);
   background-clip: content-box;
 }
 
-/* Liquid Glass Core Classes */
+/* Liquid Glass Core Classes (Restrained, subtle) */
 .glass-surface {
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(16px) saturate(160%);
-  -webkit-backdrop-filter: blur(16px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 10px 30px -5px rgba(35, 31, 46, 0.06),
-              inset 0 1px 1px 0 rgba(255, 255, 255, 0.8),
-              inset 0 -1px 2px 0 rgba(255, 122, 89, 0.05);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(11, 79, 74, 0.06),
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .dark .glass-surface {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.45),
-              inset 0 1px 1px 0 rgba(255, 255, 255, 0.15),
-              inset 0 -1px 2px 0 rgba(0, 0, 0, 0.3);
+  background: rgba(22, 40, 43, 0.75);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(217, 240, 236, 0.12);
+  box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.4),
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-/* Specular top-left highlight and inner chromatic refraction glow */
-.liquid-specular {
+/* Yellow Marker Highlight Underline (Animated on reveal) */
+.marker-highlight {
   position: relative;
-  overflow: hidden;
+  display: inline;
+  white-space: nowrap;
 }
 
-.liquid-specular::before {
+.marker-highlight::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.08) 60%,
-    transparent 100%
-  );
-  border-radius: inherit;
-  pointer-events: none;
+  left: -2px;
+  right: -2px;
+  bottom: 2px;
+  height: 0.38em;
+  background-color: #FFC845;
+  z-index: -1;
+  border-radius: 4px;
+  opacity: 0.85;
+  transform-origin: left;
+  animation: markerReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.dark .liquid-specular::before {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(255, 255, 255, 0.02) 60%,
-    transparent 100%
-  );
+.dark .marker-highlight::after {
+  background-color: #FFC845;
+  opacity: 0.65;
 }
 
-/* Subtle chromatic dispersion edge */
-.chromatic-border {
-  border: 1px solid transparent;
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
+/* Focus Visible Accessibility */
+:focus-visible {
+  outline: 2px solid #12766E;
+  outline-offset: 3px;
 }
 
-/* Ambient animated blur blobs */
-.ambient-blob-papaya {
-  background: radial-gradient(circle, rgba(255, 122, 89, 0.32) 0%, rgba(217, 68, 43, 0.08) 60%, transparent 80%);
-  filter: blur(65px);
-}
-.ambient-blob-mango {
-  background: radial-gradient(circle, rgba(255, 182, 39, 0.35) 0%, rgba(255, 241, 204, 0.12) 60%, transparent 80%);
-  filter: blur(65px);
-}
-.ambient-blob-leaf {
-  background: radial-gradient(circle, rgba(31, 168, 134, 0.3) 0%, rgba(15, 122, 98, 0.08) 60%, transparent 80%);
-  filter: blur(60px);
-}
-.ambient-blob-grape {
-  background: radial-gradient(circle, rgba(124, 92, 255, 0.28) 0%, rgba(92, 56, 235, 0.06) 60%, transparent 80%);
-  filter: blur(60px);
-}
-
-/* Backwards-compatibility aliases */
-.ambient-blob-plum {
-  background: radial-gradient(circle, rgba(124, 92, 255, 0.28) 0%, rgba(92, 56, 235, 0.06) 60%, transparent 80%);
-  filter: blur(60px);
-}
-.ambient-blob-peach {
-  background: radial-gradient(circle, rgba(255, 122, 89, 0.32) 0%, rgba(217, 68, 43, 0.08) 60%, transparent 80%);
-  filter: blur(65px);
-}
-.ambient-blob-sage {
-  background: radial-gradient(circle, rgba(31, 168, 134, 0.3) 0%, rgba(15, 122, 98, 0.08) 60%, transparent 80%);
-  filter: blur(60px);
-}
-
-.dark .ambient-blob-papaya {
-  background: radial-gradient(circle, rgba(255, 122, 89, 0.22) 0%, rgba(217, 68, 43, 0.05) 60%, transparent 80%);
-}
-.dark .ambient-blob-mango {
-  background: radial-gradient(circle, rgba(255, 182, 39, 0.2) 0%, rgba(255, 182, 39, 0.04) 60%, transparent 80%);
-}
-.dark .ambient-blob-leaf {
-  background: radial-gradient(circle, rgba(31, 168, 134, 0.2) 0%, rgba(15, 122, 98, 0.04) 60%, transparent 80%);
-}
-.dark .ambient-blob-grape {
-  background: radial-gradient(circle, rgba(124, 92, 255, 0.2) 0%, rgba(92, 56, 235, 0.04) 60%, transparent 80%);
-}
-.dark .ambient-blob-plum {
-  background: radial-gradient(circle, rgba(124, 92, 255, 0.2) 0%, rgba(92, 56, 235, 0.04) 60%, transparent 80%);
-}
-.dark .ambient-blob-peach {
-  background: radial-gradient(circle, rgba(255, 122, 89, 0.2) 0%, rgba(217, 68, 43, 0.05) 60%, transparent 80%);
-}
-.dark .ambient-blob-sage {
-  background: radial-gradient(circle, rgba(31, 168, 134, 0.2) 0%, rgba(15, 122, 98, 0.04) 60%, transparent 80%);
-}
-
-/* Respect prefers-reduced-motion */
+/* Respect user's reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
