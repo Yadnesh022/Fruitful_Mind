@@ -179,83 +179,106 @@ export default function Contact() {
               </div>
 
               <div className="space-y-4">
-                {/* Phone / Call */}
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-sand-warm/60 border border-teal-primary/10 hover:border-teal-primary/25 transition-all">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-tint text-teal-deep flex-shrink-0">
+                {/* 1. Phone / Voice Call */}
+                <div className="flex flex-col sm:flex-row items-start gap-4 p-4 sm:p-5 rounded-2xl bg-sky-50/80 border border-sky-200 hover:border-sky-400 transition-all shadow-xs">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-600 text-white flex-shrink-0 shadow-sm shadow-sky-600/30">
                     <Phone className="h-5 w-5" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <span className="text-[11px] font-semibold text-muted block">
-                      {t('contactPage.phoneTitle')}
-                    </span>
+                    <div className="flex items-center justify-between gap-2 flex-wrap mb-1">
+                      <span className="text-[11px] font-bold text-sky-950 uppercase tracking-wider">
+                        {t('contactPage.phoneTitle') || 'Phone / Click-to-Call'}
+                      </span>
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-sky-100 text-sky-800 border border-sky-200">
+                        Voice Consultation
+                      </span>
+                    </div>
                     <a
                       href="tel:+919769512475"
-                      className="font-bold text-sm sm:text-base text-teal-deep hover:text-teal-primary transition-colors block"
+                      className="font-extrabold text-base sm:text-lg text-sky-900 hover:text-sky-700 transition-colors block leading-snug"
                     >
                       +91 9769512475
                     </a>
-                    <p className="text-[11px] text-muted mt-0.5">
-                      {t('contactPage.phoneHours')}
+                    <p className="text-[11px] text-sky-800/80 mt-0.5 font-medium">
+                      {t('contactPage.phoneHours') || 'Mon - Sat, 9:00 AM - 7:00 PM IST'}
                     </p>
                   </div>
                 </div>
 
-                {/* WhatsApp Priority */}
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-emerald-50/70 border border-[#25D366]/30 hover:border-[#25D366]/60 transition-all">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#25D366] text-white flex-shrink-0 shadow-sm shadow-emerald-700/20">
+                {/* 2. WhatsApp Priority Chat */}
+                <div className="flex flex-col sm:flex-row items-start gap-4 p-4 sm:p-5 rounded-2xl bg-emerald-50/90 border border-[#25D366]/40 hover:border-[#25D366]/80 transition-all shadow-xs">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#25D366] text-white flex-shrink-0 shadow-sm shadow-emerald-700/25">
                     <WhatsAppIcon className="h-5 w-5 fill-white text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <span className="text-[11px] font-semibold text-emerald-900 block">
-                      {t('contactPage.whatsappTitle')} (Fastest Response)
-                    </span>
+                    <div className="flex items-center justify-between gap-2 flex-wrap mb-1">
+                      <span className="text-[11px] font-bold text-emerald-950 uppercase tracking-wider">
+                        {t('contactPage.whatsappTitle') || 'WhatsApp Chat'}
+                      </span>
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-300">
+                        Fastest Response
+                      </span>
+                    </div>
                     <a
                       href="https://wa.me/919769512475?text=Hello%20Simran%2C%20I%20would%20like%20to%20enquire%20about%20a%20psychology%20session%20with%20Fruitful%20Mind."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-bold text-sm sm:text-base text-emerald-800 hover:text-emerald-950 hover:underline flex items-center gap-1.5"
+                      className="font-extrabold text-base sm:text-lg text-emerald-900 hover:text-emerald-700 hover:underline flex items-center gap-1.5 leading-snug"
                     >
                       <span>wa.me/919769512475</span>
-                      <ArrowRight className="h-3.5 w-3.5" />
+                      <ArrowRight className="h-4 w-4" />
                     </a>
-                    <p className="text-[11px] text-emerald-700/80 mt-0.5">
-                      {t('contactPage.whatsappNote')}
+                    <p className="text-[11px] text-emerald-800/80 mt-0.5 font-medium">
+                      {t('contactPage.whatsappNote') || 'Quickest response for enquiries & slot confirmations'}
                     </p>
                   </div>
                 </div>
 
-                {/* Email */}
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-sand-warm/60 border border-teal-primary/10 hover:border-teal-primary/25 transition-all">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-lavender-tint text-lavender flex-shrink-0">
+                {/* 3. Direct Email */}
+                <div className="flex flex-col sm:flex-row items-start gap-4 p-4 sm:p-5 rounded-2xl bg-indigo-50/80 border border-indigo-200 hover:border-indigo-400 transition-all shadow-xs">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-600 text-white flex-shrink-0 shadow-sm shadow-indigo-600/25">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <span className="text-[11px] font-semibold text-muted block">
-                      {t('contactPage.emailTitle')}
-                    </span>
+                    <div className="flex items-center justify-between gap-2 flex-wrap mb-1">
+                      <span className="text-[11px] font-bold text-indigo-950 uppercase tracking-wider">
+                        {t('contactPage.emailTitle') || 'Direct Practice Email'}
+                      </span>
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">
+                        Confidential Inbox
+                      </span>
+                    </div>
                     <a
                       href="mailto:simran.thefruitfulmind@gmail.com"
-                      className="font-bold text-sm sm:text-base text-teal-deep hover:text-teal-primary transition-colors break-all block"
+                      className="font-bold text-sm sm:text-base text-indigo-900 hover:text-indigo-700 transition-colors break-all block leading-snug"
                     >
                       simran.thefruitfulmind@gmail.com
                     </a>
+                    <p className="text-[11px] text-indigo-800/80 mt-0.5 font-medium">
+                      Direct enquiries replied within 24 business hours
+                    </p>
                   </div>
                 </div>
 
-                {/* Practice Location */}
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-sand-warm/60 border border-teal-primary/10 hover:border-teal-primary/25 transition-all">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-tint text-teal-deep flex-shrink-0">
+                {/* 4. Physical Practice Location */}
+                <div className="flex flex-col sm:flex-row items-start gap-4 p-4 sm:p-5 rounded-2xl bg-amber-50/85 border border-amber-200 hover:border-amber-400 transition-all shadow-xs">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-600 text-white flex-shrink-0 shadow-sm shadow-amber-600/25">
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <span className="text-[11px] font-semibold text-muted block">
-                      {t('contactPage.locationTitle')}
+                    <div className="flex items-center justify-between gap-2 flex-wrap mb-1">
+                      <span className="text-[11px] font-bold text-amber-950 uppercase tracking-wider">
+                        {t('contactPage.locationTitle') || 'Physical Practice Location'}
+                      </span>
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200">
+                        In-Person Clinic
+                      </span>
+                    </div>
+                    <span className="font-bold text-sm sm:text-base text-amber-950 block leading-snug">
+                      {t('contactPage.locationVal') || 'Kothrud, Pune, Maharashtra 411038'}
                     </span>
-                    <span className="font-bold text-sm sm:text-base text-teal-deep block">
-                      {t('contactPage.locationVal')}
-                    </span>
-                    <p className="text-[11px] text-muted mt-0.5">
-                      {t('contactPage.locationNote')}
+                    <p className="text-[11px] text-amber-900/80 mt-0.5 font-medium">
+                      In-person sessions by appointment • Near Paud Road / Karve Road
                     </p>
                   </div>
                 </div>
@@ -272,7 +295,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-sand-warm text-ink border border-teal-primary/15 hover:bg-teal-tint hover:text-teal-deep hover:border-teal-primary transition-all duration-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-pink-50 text-pink-600 border border-pink-200 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 hover:text-white transition-all duration-200 shadow-xs"
                     title="Instagram"
                   >
                     <Instagram className="h-4 w-4" />
@@ -283,7 +306,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-sand-warm text-ink border border-teal-primary/15 hover:bg-teal-tint hover:text-teal-deep hover:border-teal-primary transition-all duration-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-700 border border-blue-200 hover:bg-[#0077b5] hover:text-white transition-all duration-200 shadow-xs"
                     title="LinkedIn"
                   >
                     <Linkedin className="h-4 w-4" />
@@ -294,7 +317,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="WhatsApp"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-[#25D366] border border-emerald-300/60 hover:bg-[#25D366] hover:text-white transition-all duration-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-[#25D366] border border-emerald-300 hover:bg-[#25D366] hover:text-white transition-all duration-200 shadow-xs"
                     title="WhatsApp"
                   >
                     <WhatsAppIcon className="h-4 w-4" />
@@ -305,7 +328,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="YouTube"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-sand-warm text-ink border border-teal-primary/15 hover:bg-teal-tint hover:text-teal-deep hover:border-teal-primary transition-all duration-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-red-50 text-red-600 border border-red-200 hover:bg-[#ff0000] hover:text-white transition-all duration-200 shadow-xs"
                     title="YouTube"
                   >
                     <Youtube className="h-4 w-4" />
@@ -316,7 +339,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Twitter"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-sand-warm text-ink border border-teal-primary/15 hover:bg-teal-tint hover:text-teal-deep hover:border-teal-primary transition-all duration-200"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-800 border border-slate-300 hover:bg-black hover:text-white transition-all duration-200 shadow-xs"
                     title="Twitter"
                   >
                     <Twitter className="h-4 w-4" />

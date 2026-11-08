@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, ArrowRight, MapPin } from 'lucide-react';
+import { Calendar, ArrowRight, MapPin, Sparkles, Clock, ShieldCheck } from 'lucide-react';
 import LanguageToggle from '../common/LanguageToggle';
 import WhatsAppIcon from '../common/WhatsAppIcon';
 import { useLanguage } from '../../context/LanguageContext';
@@ -39,13 +39,13 @@ export default function Navbar({ onOpenBooking }) {
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { to: '/about', label: t('nav.about') || 'About' },
-    { to: '/services', label: t('nav.services') || 'Services' },
-    { to: '/blogs', label: t('nav.blogs') || 'Articles' },
-    { to: '/wellbeing-guide', label: t('nav.wellbeingGuide') || 'Guide' },
-    { to: '/psychology-concepts', label: t('nav.concepts') || 'Concepts' },
-    { to: '/course', label: t('nav.course') || 'Course' },
-    { to: '/contact', label: t('nav.contact') || 'Contact' },
+    { to: '/about', label: t('nav.about') || 'About Simran', num: '01' },
+    { to: '/services', label: t('nav.services') || 'Services & Fees', num: '02' },
+    { to: '/blogs', label: t('nav.blogs') || 'Articles & Insights', num: '03' },
+    { to: '/wellbeing-guide', label: t('nav.wellbeingGuide') || 'Wellbeing Toolkit', num: '04' },
+    { to: '/psychology-concepts', label: t('nav.concepts') || 'Concepts Simplified', num: '05' },
+    { to: '/course', label: t('nav.course') || 'Emotional Course', num: '06' },
+    { to: '/contact', label: t('nav.contact') || 'Contact & Clinic', num: '07' },
   ];
 
   return (
@@ -158,7 +158,7 @@ export default function Navbar({ onOpenBooking }) {
         </div>
       </div>
 
-      {/* Mobile Slide-Down Drawer with Full Backdrop and Safe Touch Area */}
+      {/* Mobile Slide-Down Drawer with Crisp Dividing Lines & Structured Cards */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <>
@@ -169,20 +169,32 @@ export default function Navbar({ onOpenBooking }) {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               onClick={() => setMobileMenuOpen(false)}
-              className="lg:hidden fixed inset-0 top-[60px] sm:top-[68px] bg-black/25 backdrop-blur-[2px] z-40"
+              className="lg:hidden fixed inset-0 top-[58px] sm:top-[68px] bg-black/35 backdrop-blur-[2px] z-40"
               aria-hidden="true"
             />
 
             {/* Slide Down Menu Content */}
             <motion.div
-              initial={{ opacity: 0, y: -8 }}
+              initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
+              exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.22, ease: 'easeOut' }}
-              className="lg:hidden relative z-50 border-t border-teal-primary/15 bg-sand-warm shadow-2xl max-h-[calc(100vh-70px)] overflow-y-auto"
+              className="lg:hidden relative z-50 border-t border-teal-primary/20 bg-sand-warm shadow-2xl max-h-[calc(100vh-65px)] overflow-y-auto"
             >
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 space-y-4">
-                <nav className="grid grid-cols-1 gap-1.5">
+              <div className="max-w-7xl mx-auto px-4 py-4 space-y-4">
+                {/* Practice Header Strip with Subtle Border Line */}
+                <div className="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-white/70 border border-teal-primary/15 text-xs text-muted">
+                  <div className="flex items-center gap-1.5 font-semibold text-teal-deep">
+                    <ShieldCheck className="h-4 w-4 text-teal-primary" />
+                    <span>Psychologist Simran Mistry</span>
+                  </div>
+                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-teal-tint text-teal-deep">
+                    Kothrud, Pune
+                  </span>
+                </div>
+
+                {/* Structured Navigation Box with Clear Dividing Lines */}
+                <div className="rounded-2xl border border-teal-primary/20 bg-white shadow-xs overflow-hidden divide-y divide-teal-primary/10">
                   {navLinks.map((link) => {
                     const isActive = location.pathname === link.to;
                     return (
@@ -190,26 +202,38 @@ export default function Navbar({ onOpenBooking }) {
                         key={link.to}
                         to={link.to}
                         onClick={() => setMobileMenuOpen(false)}
-                        className={`flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold transition-all ${
+                        className={`flex items-center justify-between px-4 py-3.5 text-sm transition-all ${
                           isActive
-                            ? 'bg-teal-tint text-teal-deep border border-teal-primary/20 shadow-xs'
-                            : 'text-ink hover:bg-white active:bg-white/80'
+                            ? 'bg-teal-tint/60 text-teal-deep font-bold border-l-4 border-teal-primary'
+                            : 'text-ink hover:bg-sand-warm/60 active:bg-teal-tint/30'
                         }`}
                       >
-                        <span>{link.label}</span>
-                        <ArrowRight className="h-4 w-4 text-teal-primary opacity-60" />
+                        <div className="flex items-center gap-3">
+                          <span className="text-[11px] font-mono font-bold text-teal-primary/60 w-5">
+                            {link.num}
+                          </span>
+                          <span className={isActive ? 'font-bold text-teal-deep' : 'font-medium'}>
+                            {link.label}
+                          </span>
+                        </div>
+                        <ArrowRight className={`h-4 w-4 transition-transform ${isActive ? 'text-teal-primary translate-x-0.5' : 'text-muted/50'}`} />
                       </Link>
                     );
                   })}
-                </nav>
+                </div>
 
-                <div className="pt-3 border-t border-teal-primary/15 space-y-2.5">
+                {/* Quick Action Buttons with Clear Dividing Lines */}
+                <div className="pt-2 border-t border-teal-primary/15 space-y-2.5">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-muted block px-1">
+                    Direct Appointments
+                  </span>
+
                   <button
                     onClick={() => {
                       setMobileMenuOpen(false);
                       if (onOpenBooking) onOpenBooking('Mobile Drawer');
                     }}
-                    className="w-full flex items-center justify-center gap-2 py-3 rounded-full text-sm font-bold bg-yellow-accent hover:bg-amber-400 text-ink shadow-xs transition-all active:scale-98"
+                    className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold bg-yellow-accent hover:bg-amber-400 text-ink shadow-sm transition-all active:scale-98 border border-amber-300"
                   >
                     <Calendar className="h-4 w-4 text-ink" />
                     <span>{t('nav.bookSession') || 'Book a Session'}</span>
@@ -219,16 +243,23 @@ export default function Navbar({ onOpenBooking }) {
                     href="https://wa.me/919769512475?text=Hello%20Simran%2C%20I%20would%20like%20to%20enquire%20about%20sessions%20with%20Fruitful%20Mind."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full flex items-center justify-center gap-2 py-3 rounded-full border border-[#25D366]/30 bg-emerald-50 hover:bg-emerald-100/70 text-emerald-800 text-sm font-semibold transition-all active:scale-98"
+                    className="w-full flex items-center justify-center gap-2 py-3 rounded-xl border border-[#25D366]/40 bg-emerald-50 hover:bg-emerald-100/80 text-emerald-900 text-sm font-semibold transition-all active:scale-98"
                   >
                     <WhatsAppIcon className="h-4 w-4 text-[#25D366]" />
                     <span>WhatsApp Directly (+91 9769512475)</span>
                   </a>
                 </div>
 
-                <div className="pt-1 text-center text-xs text-muted flex items-center justify-center gap-1.5">
-                  <MapPin className="h-3.5 w-3.5 text-teal-primary" />
-                  <span>Kothrud, Pune & Online Worldwide</span>
+                {/* Clinic Footer Info Strip */}
+                <div className="pt-2 border-t border-teal-primary/15 flex flex-col sm:flex-row items-center justify-between text-[11px] text-muted gap-1.5 px-1">
+                  <div className="flex items-center gap-1.5">
+                    <MapPin className="h-3.5 w-3.5 text-teal-primary flex-shrink-0" />
+                    <span>Kothrud, Pune & Online Pan-India</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <Clock className="h-3.5 w-3.5 text-teal-primary flex-shrink-0" />
+                    <span>Mon - Sat: 10:00 AM - 7:30 PM</span>
+                  </div>
                 </div>
               </div>
             </motion.div>
