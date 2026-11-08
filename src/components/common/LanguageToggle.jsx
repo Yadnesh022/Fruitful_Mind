@@ -49,7 +49,7 @@ export default function LanguageToggle({ className = '' }) {
         aria-haspopup="true"
         aria-expanded={isOpen}
         aria-label="Change language / भाषा बदला"
-        className="inline-flex h-8 sm:h-9 items-center gap-1.5 rounded-full border border-primary/15 bg-white/80 px-2.5 sm:px-3 text-xs font-semibold text-ink shadow-sm backdrop-blur-md transition-all hover:bg-white hover:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary:bg-white/20"
+        className="inline-flex h-8 sm:h-9 items-center gap-1.5 rounded-full border border-teal-primary/20 bg-white/90 px-2.5 sm:px-3 text-xs font-semibold text-ink shadow-xs backdrop-blur-md transition-all hover:bg-white hover:border-teal-primary/40 focus:outline-none focus:ring-2 focus:ring-teal-primary"
       >
         <Globe className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-primary" />
         <span>{activeLang.short}</span>
